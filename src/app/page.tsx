@@ -71,6 +71,9 @@ export default function HomePage() {
       {/* Content Showcase - Automated carousels */}
       <ContentShowcase />
 
+      {/* Pricing — Conversion section (right after Kids section) */}
+      <PricingSection />
+
       {/* Features — Value proposition */}
       <FeaturesSection />
 
@@ -79,9 +82,6 @@ export default function HomePage() {
 
       {/* Testimonials — Social Proof */}
       <TestimonialsSection />
-
-      {/* Pricing — Conversion section */}
-      <PricingSection />
 
       {/* Guides — Knowledge base links */}
       <GuidesSection />
