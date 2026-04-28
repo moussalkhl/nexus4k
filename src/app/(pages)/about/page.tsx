@@ -5,7 +5,8 @@ import { CTASection } from '@/components/sections/CTASection'
 import styles from './page.module.css'
 
 export const metadata: Metadata = genMeta({
-  title: 'About Us | Nexus 4K IPTV IPTV',
+  // Final: "About Nexus 4K IPTV – Our Story & Mission | Nexus 4K IPTV" = 59 chars
+  title: 'About Nexus 4K IPTV – Our Story & Mission',
   description: 'Learn about Nexus 4K IPTV, the premier global IPTV provider delivering top-tier streaming experiences since 2020. Our mission, technology, and global infrastructure.',
   canonical: '/about',
 })

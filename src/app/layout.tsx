@@ -6,11 +6,14 @@ import { GalaxyBackground } from '@/components/ui/GalaxyBackground'
 import { generateMetadata as genMeta, generateOrganizationJsonLd, generateWebSiteJsonLd } from '@/seo/metadata'
 import { siteConfig } from '@/config/site'
 
-export const metadata: Metadata = genMeta({
-  title: siteConfig.name,
+export const metadata: Metadata = {
+  title: {
+    default: 'Nexus 4K IPTV – 20K+ Channels | Free Trial',
+    template: '%s | Nexus 4K IPTV',
+  },
   description: siteConfig.description,
-  keywords: ['IPTV', 'streaming', 'live TV', '4K channels', 'sports streaming', 'movies online'],
-})
+  metadataBase: new URL(siteConfig.url),
+}
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   const orgJsonLd = generateOrganizationJsonLd()

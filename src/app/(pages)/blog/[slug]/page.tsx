@@ -16,8 +16,13 @@ export async function generateMetadata({ params }: BlogPostPageProps): Promise<M
 
   if (!post) return {}
 
+  // Truncate post title to 36 chars so the final output:
+  // "[truncated title] | Nexus 4K IPTV" stays within 50–60 chars
+  const truncatedTitle =
+    post.title.length > 36 ? post.title.slice(0, 33).trimEnd() + '...' : post.title
+
   return genMeta({
-    title: post.title,
+    title: truncatedTitle,
     description: post.excerpt,
     canonical: `/blog/${post.slug}`,
     ogType: 'article',

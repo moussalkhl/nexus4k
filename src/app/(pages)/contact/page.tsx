@@ -6,7 +6,8 @@ import { ContactForm } from './ContactForm'
 import styles from './page.module.css'
 
 export const metadata: Metadata = genMeta({
-  title: 'Contact Support | Nexus 4K IPTV IPTV',
+  // Final: "Contact Nexus 4K IPTV – 24/7 Live Support | Nexus 4K IPTV" = 59 chars
+  title: 'Contact Nexus 4K IPTV – 24/7 Live Support',
   description: 'Need help with your IPTV subscription? Contact our 24/7 support team for immediate assistance with setup, billing, or technical issues.',
   canonical: '/contact',
 })

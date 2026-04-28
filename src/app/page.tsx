@@ -7,7 +7,7 @@
  */
 
 import type { Metadata } from 'next'
-import { generateMetadata as genMeta, generateProductJsonLd } from '@/seo/metadata'
+import { generateProductJsonLd } from '@/seo/metadata'
 import { pricingPlans } from '@/config/site'
 import { HeroSection } from '@/components/sections/HeroSection'
 import { CategoriesSection } from '@/components/sections/CategoriesSection'
@@ -23,11 +23,10 @@ import { ContactSection } from '@/components/sections/ContactSection'
 import { CTASection } from '@/components/sections/CTASection'
 
 
-export const metadata: Metadata = genMeta({
-  title: 'Nexus 4K IPTV – Premium Streaming Service | Nexus4kTV.pro',
+// Character count: 44 — approved homepage title
+export const metadata: Metadata = {
+  title: { absolute: 'Nexus 4K IPTV – 20K+ Channels | Free Trial' },
   description: 'Nexus 4K IPTV delivers 30,000+ live TV channels, sports, PPV, movies and VODs in 4K/UHD quality. Get premium access at nexus4ktv.pro today.',
-  canonical: '/',
-  noindex: false,
   keywords: [
     'Nexus 4K IPTV',
     'Nexus4kTV',
@@ -36,8 +35,8 @@ export const metadata: Metadata = genMeta({
     'best IPTV provider Nexus',
     'Nexus 4K live TV channels',
     'nexus4ktv.pro',
-  ],
-})
+  ].join(', '),
+}
 
 export default function HomePage() {
   // Product schema for pricing (boosts rich results)

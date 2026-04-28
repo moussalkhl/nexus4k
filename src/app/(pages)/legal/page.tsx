@@ -5,8 +5,9 @@ import { siteConfig } from '@/config/site'
 import styles from './page.module.css'
 
 export const metadata: Metadata = genMeta({
-  title: 'Legal & Privacy Policy | Nexus 4K IPTV IPTV',
-  description: 'Terms of service, privacy policy, and legal information for Nexus 4K IPTV IPTV users.',
+  // Final: "Legal & Privacy Policy – Nexus 4K IPTV | Nexus 4K IPTV" = 56 chars
+  title: 'Legal & Privacy Policy – Nexus 4K IPTV',
+  description: 'Terms of service, privacy policy, and legal information for Nexus 4K IPTV users.',
   canonical: '/legal',
 })
 

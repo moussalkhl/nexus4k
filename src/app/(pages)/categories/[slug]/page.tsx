@@ -16,8 +16,10 @@ export async function generateMetadata({ params }: CategoryPageProps): Promise<M
 
   if (!category) return {}
 
+  // Pattern: "[Name] on Nexus 4K IPTV – Live & HD | Nexus 4K IPTV"
+  // Range: 51–59 chars across all categories (Sports → Documentaries)
   return genMeta({
-    title: `${category.name} IPTV Channels | ${category.channelCount} Live Streams`,
+    title: `${category.name} on Nexus 4K IPTV – Live & HD`,
     description: `Stream ${category.channelCount} live ${category.name} channels in HD, FHD, and 4K. ${category.description}`,
     canonical: category.href,
     keywords: [`${category.name.toLowerCase()} iptv`, `live ${category.name.toLowerCase()}`, `stream ${category.name.toLowerCase()}`, 'iptv channels'],
