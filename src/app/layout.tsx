@@ -3,7 +3,7 @@ import '@/styles/globals.css'
 import { Header } from '@/components/layout/Header'
 import { Footer } from '@/components/layout/Footer'
 import { GalaxyBackground } from '@/components/ui/GalaxyBackground'
-import { generateMetadata as genMeta, generateOrganizationJsonLd, generateWebSiteJsonLd } from '@/seo/metadata'
+import { generateOrganizationJsonLd, generateWebSiteJsonLd } from '@/seo/metadata'
 import { siteConfig } from '@/config/site'
 
 export const metadata: Metadata = {
