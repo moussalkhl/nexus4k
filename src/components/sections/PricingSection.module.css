@@ -1,0 +1,245 @@
+.pricing {
+  position: relative;
+  overflow: hidden;
+}
+
+.glow {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 800px;
+  height: 400px;
+  background: radial-gradient(ellipse, rgba(168, 85, 247, 0.10) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: var(--space-4xl);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header .section-subtitle { text-align: center; }
+
+/* ─── Grid ─────────────────── */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-xl);
+  align-items: start;
+}
+
+.card {
+  position: relative;
+  background: rgba(10, 10, 15, 0.4);
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: var(--radius-2xl);
+  padding: var(--space-2xl);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xl);
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; height: 2px;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.1), transparent);
+  transition: all 0.4s ease;
+  border-top-left-radius: var(--radius-2xl);
+  border-top-right-radius: var(--radius-2xl);
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+.card:hover::before {
+  background: linear-gradient(90deg, #00d4ff, #a855f7, #ff6b6b);
+}
+
+.cardHighlight {
+  background: rgba(20, 15, 30, 0.6);
+  border-color: rgba(168, 85, 247, 0.4);
+  box-shadow: 0 0 30px rgba(168, 85, 247, 0.15), inset 0 0 20px rgba(168, 85, 247, 0.05);
+  transform: scale(1.05);
+  z-index: 10;
+}
+
+.cardHighlight::before {
+  height: 3px;
+  background: linear-gradient(90deg, #ff6b6b, #a855f7, #00d4ff);
+}
+
+.cardHighlight:hover {
+  transform: scale(1.05) translateY(-8px);
+  box-shadow: 0 10px 40px rgba(168, 85, 247, 0.3), inset 0 0 20px rgba(168, 85, 247, 0.1);
+}
+
+/* ─── Badge ────────────────── */
+.badge {
+  position: absolute;
+  top: -14px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--gradient-primary);
+  color: #000;
+  font-size: var(--fs-xs);
+  font-weight: 700;
+  padding: 0.25rem 1rem;
+  border-radius: var(--radius-full);
+  white-space: nowrap;
+  letter-spacing: 0.03em;
+}
+
+/* ─── Plan header ──────────── */
+.planHeader { display: flex; flex-direction: column; gap: var(--space-sm); }
+
+.planLabel {
+  font-family: var(--font-display);
+  font-size: var(--fs-xl);
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  background: linear-gradient(to right, #fff, #a855f7);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+@keyframes floatPrice {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+.priceRow {
+  display: flex;
+  align-items: baseline;
+  gap: 2px;
+  animation: floatPrice 3s ease-in-out infinite;
+}
+
+.currency {
+  font-size: var(--fs-2xl);
+  font-weight: 700;
+  color: #fff;
+  line-height: 1;
+  align-self: flex-start;
+  margin-top: 8px;
+}
+
+.price {
+  font-family: var(--font-display);
+  font-size: clamp(var(--fs-4xl), 4vw, 3.5rem);
+  font-weight: 900;
+  color: #fff;
+  line-height: 1;
+}
+
+
+
+/* ─── Features ─────────────── */
+.featureList {
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
+  flex: 1;
+}
+
+.feature {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-sm);
+  font-size: var(--fs-sm);
+  color: var(--text-secondary);
+}
+
+.checkIcon {
+  color: #00E676;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1.5px solid rgba(0, 230, 118, 0.4);
+  background: rgba(0, 230, 118, 0.1);
+  box-shadow: 0 0 10px rgba(0, 230, 118, 0.2);
+  margin-top: 2px;
+}
+
+.checkIcon svg {
+  width: 12px;
+  height: 12px;
+}
+
+/* ─── CTA ──────────────────── */
+.cta {
+  width: 100%;
+  text-align: center;
+  background: linear-gradient(135deg, #a855f7, #ff6b6b);
+  color: #fff;
+  font-weight: 700;
+  padding: 1rem;
+  border-radius: var(--radius-lg);
+  text-decoration: none;
+  transition: all 0.3s ease;
+  display: inline-block;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  box-shadow: 0 4px 15px rgba(168, 85, 247, 0.3);
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.cta::after {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: linear-gradient(135deg, #00d4ff, #a855f7);
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.cta:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0, 212, 255, 0.4);
+}
+
+.cta:hover::after {
+  opacity: 1;
+}
+
+/* ─── Guarantee ────────────── */
+.guarantee {
+  text-align: center;
+  margin-top: var(--space-2xl);
+  font-size: var(--fs-sm);
+  color: var(--text-muted);
+}
+
+/* ─── Responsive ───────────── */
+@media (max-width: 1024px) {
+  .grid { grid-template-columns: 1fr; max-width: 480px; margin-inline: auto; }
+  .cardHighlight { transform: scale(1); }
+  .cardHighlight:hover { transform: translateY(-6px); }
+}
+
+@media (max-width: 640px) {
+  .card { padding: var(--space-xl); }
+}

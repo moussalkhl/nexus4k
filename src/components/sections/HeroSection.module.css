@@ -1,0 +1,322 @@
+.hero {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+  padding-top: 10rem;
+  padding-bottom: 8rem;
+  background-color: #020408; /* Deepest space */
+}
+
+/* Creative Background Effects */
+.bgGlowMain {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80vw;
+  height: 80vw;
+  max-width: 1000px;
+  max-height: 1000px;
+  background: radial-gradient(circle, rgba(0, 212, 255, 0.08) 0%, transparent 60%);
+  z-index: 0;
+  pointer-events: none;
+}
+
+.bgGlowAccent {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100vw;
+  height: 400px;
+  background: radial-gradient(ellipse at center, rgba(168, 85, 247, 0.05) 0%, transparent 60%);
+  z-index: 0;
+  pointer-events: none;
+}
+
+.gridFloor {
+  position: absolute;
+  bottom: 0;
+  left: -50vw;
+  width: 200vw;
+  height: 60vh;
+  background-image: 
+    linear-gradient(to top, rgba(0, 212, 255, 0.1) 1px, transparent 1px),
+    linear-gradient(to right, rgba(0, 212, 255, 0.05) 1px, transparent 1px);
+  background-size: 80px 80px;
+  transform: perspective(600px) rotateX(75deg);
+  transform-origin: top;
+  z-index: 0;
+  opacity: 0.8;
+  pointer-events: none;
+  /* Animation for the grid moving towards user */
+  animation: gridMove 20s linear infinite;
+}
+
+@keyframes gridMove {
+  0% { background-position: 0 0; }
+  100% { background-position: 0 80px; }
+}
+
+.content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Badge */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  background: rgba(0, 212, 255, 0.05);
+  border: 1px solid rgba(0, 212, 255, 0.2);
+  border-radius: 99px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--color-primary); /* Cyan */
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 2.5rem;
+  backdrop-filter: blur(4px);
+}
+
+.pulseDot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: var(--color-primary);
+  box-shadow: 0 0 10px var(--color-primary);
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% { box-shadow: 0 0 0 0 rgba(0, 212, 255, 0.4); }
+  70% { box-shadow: 0 0 0 6px rgba(0, 212, 255, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(0, 212, 255, 0); }
+}
+
+/* Headline */
+.heading {
+  font-family: var(--font-display, sans-serif);
+  font-size: clamp(2.5rem, 6vw, 5rem);
+  font-weight: 900;
+  line-height: 1.1;
+  color: #ffffff;
+  margin-bottom: 3.5rem;
+  letter-spacing: -0.02em;
+  max-width: 1200px;
+}
+
+.gradientText {
+  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Timer */
+.timerSection {
+  margin-bottom: 3.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.timerLabel {
+  font-size: 0.85rem;
+  font-weight: 800;
+  color: #f59e0b; /* Orange/Gold for urgency */
+  letter-spacing: 0.15em;
+  margin-bottom: 1rem;
+}
+
+.timerBox {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 1rem 2.5rem;
+  border-radius: 16px;
+  backdrop-filter: blur(10px);
+}
+
+.timeBlock {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 60px;
+}
+
+.timeNum {
+  font-family: monospace;
+  font-size: 3rem;
+  font-weight: 700;
+  color: #fff;
+  line-height: 1;
+}
+
+.timeText {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #888;
+  margin-top: 0.5rem;
+  letter-spacing: 0.1em;
+}
+
+.timeColon {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.2);
+  margin-top: -15px;
+}
+
+/* Buttons */
+.ctas {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  margin-bottom: 5rem;
+}
+
+.primaryBtn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.125rem 3rem;
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: #000;
+  background: var(--color-primary); /* Cyan */
+  border-radius: 99px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 25px rgba(0, 212, 255, 0.3);
+}
+
+.primaryBtn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0 45px rgba(0, 212, 255, 0.5);
+  background: #fff;
+}
+
+.secondaryBtn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  padding: 1.125rem 3rem;
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #fff;
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 99px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
+}
+
+.secondaryBtn:hover {
+  background: rgba(255, 255, 255, 0.05);
+  border-color: #fff;
+}
+
+.secondaryBtn svg {
+  fill: currentColor;
+  width: 18px;
+  height: 18px;
+}
+
+/* Trust Bar */
+.trustBarWrapper {
+  width: 100%;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  background: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+  position: absolute;
+  bottom: 0;
+  z-index: 3;
+}
+
+.trustBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 0;
+}
+
+.trustItem {
+  text-align: center;
+  flex: 1;
+}
+
+.trustItem h4 {
+  font-size: 1.85rem;
+  font-weight: 800;
+  color: #fff;
+  margin-bottom: 0.25rem;
+}
+
+.trustItem p {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #64748b;
+  letter-spacing: 0.15em;
+}
+
+.trustDivider {
+  width: 1px;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+@media (max-width: 1024px) {
+  .heading {
+    font-size: 3.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding-top: 8rem;
+  }
+  .ctas {
+    flex-direction: column;
+    width: 100%;
+    padding: 0 1rem;
+  }
+  .primaryBtn, .secondaryBtn {
+    width: 100%;
+  }
+  .timerBox {
+    padding: 1rem 1.5rem;
+    gap: 1rem;
+  }
+  .timeNum {
+    font-size: 2rem;
+  }
+  .trustBar {
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+  .trustItem {
+    flex: 1 1 40%;
+  }
+  .trustDivider {
+    display: none;
+  }
+  .trustBarWrapper {
+    position: relative;
+    border-top: none;
+    margin-top: 2rem;
+  }
+}
