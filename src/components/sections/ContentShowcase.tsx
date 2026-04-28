@@ -1,6 +1,6 @@
 'use client';
 
-import React from 'react';
+import type { CSSProperties } from 'react';
 import Image from 'next/image';
 import styles from './ContentShowcase.module.css';
 
@@ -65,7 +65,7 @@ export function ContentShowcase() {
                 <div
                   key={i}
                   className={`${styles.card} ${styles.logoCard}`}
-                  style={{ '--accent': item.accent } as React.CSSProperties}
+                  style={{ '--accent': item.accent } as CSSProperties}
                 >
                   {/* Accent glow blob behind the logo */}
                   <div className={styles.logoGlow} style={{ background: item.accent }} />

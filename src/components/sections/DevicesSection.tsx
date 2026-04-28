@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, type CSSProperties } from 'react';
 import Image from 'next/image';
 import styles from './DevicesSection.module.css';
 
@@ -83,7 +83,7 @@ export function DevicesSection() {
       style={{
         '--active-bg-color': activeColor ? `${activeColor}15` : 'transparent',
         '--active-glow': activeColor || 'transparent'
-      } as React.CSSProperties}
+      } as CSSProperties}
     >
       <div className={styles.backgroundTransition} />
       
@@ -117,7 +117,7 @@ export function DevicesSection() {
               onMouseEnter={() => setActiveColor(device.color)}
               onMouseLeave={() => setActiveColor(null)}
               onClick={() => setActiveColor(device.color)}
-              style={{ '--device-color': device.color } as React.CSSProperties}
+              style={{ '--device-color': device.color } as CSSProperties}
             >
               <div className={styles.iconWrapper}>
                 {device.icon}

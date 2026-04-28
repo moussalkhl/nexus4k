@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useRef, useState } from 'react';
+import { useRef, useState } from 'react';
 import styles from './FeaturesSection.module.css';
 
 const FEATURES = [

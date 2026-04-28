@@ -1,6 +1,5 @@
 'use client';
 
-import React from 'react';
 import styles from './ContactSection.module.css';
 import { siteConfig } from '@/config/site';
 import { ContactForm } from '@/app/(pages)/contact/ContactForm';

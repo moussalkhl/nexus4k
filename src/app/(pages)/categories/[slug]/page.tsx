@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import type { CSSProperties } from 'react'
 import { notFound } from 'next/navigation'
 import { generateMetadata as genMeta } from '@/seo/metadata'
 import { categories } from '@/config/site'
@@ -56,7 +57,7 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
       </div>
 
       {/* Hero */}
-      <section className={`section ${styles.hero}`} style={{ '--accent': category.color } as React.CSSProperties}>
+      <section className={`section ${styles.hero}`} style={{ '--accent': category.color } as CSSProperties}>
         <div className={styles.glow} aria-hidden="true" />
         <div className="container">
           <div className={styles.heroContent}>

@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState } from 'react';
+import { useState } from 'react';
 import Link from 'next/link';
 import { categories } from '@/config/site';
 import styles from './CategoriesSection.module.css';

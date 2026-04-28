@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import type { CSSProperties } from 'react'
 import Link from 'next/link'
 import { generateMetadata as genMeta } from '@/seo/metadata'
 import { categories } from '@/config/site'
@@ -44,7 +45,7 @@ export default function CategoriesIndexPage() {
                 key={cat.id}
                 href={cat.href}
                 className={styles.card}
-                style={{ '--accent': cat.color } as React.CSSProperties}
+                style={{ '--accent': cat.color } as CSSProperties}
               >
                 <div className={styles.icon} aria-hidden="true">{cat.icon}</div>
                 <div className={styles.info}>
