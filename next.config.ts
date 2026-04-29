@@ -17,7 +17,12 @@ const nextConfig: NextConfig = {
 
   // Power-efficient bundling
   experimental: {
-    optimizePackageImports: ['react', 'react-dom'],
+    optimizePackageImports: ['react', 'react-dom', 'next'],
+  },
+
+  // Compiler optimizations
+  compiler: {
+    removeConsole: process.env.NODE_ENV === 'production',
   },
 
   // Security headers

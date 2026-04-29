@@ -52,13 +52,11 @@ export default function HomePage() {
 
   return (
     <>
-      {productSchemas.map((schema, i) => (
-        <script
-          key={i}
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
-        />
-      ))}
+      {/* Consolidated JSON-LD for better performance */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(productSchemas) }}
+      />
 
       {/* Hero — Authority section, primary CTA, H1 */}
       <HeroSection />

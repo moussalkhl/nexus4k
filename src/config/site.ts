@@ -19,7 +19,7 @@ export const siteConfig = {
 export const navLinks = [
   { label: 'Home', href: '/' },
   {
-    label: 'Categories',
+    label: 'Channel List',
     href: '/categories',
     children: [
       { label: 'Sports', href: '/categories/sports' },

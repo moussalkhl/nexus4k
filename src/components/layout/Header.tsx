@@ -107,7 +107,7 @@ export function Header() {
         {/* CTA */}
         <div className={styles.actions}>
           <Link href={`https://wa.me/${siteConfig.whatsappNumber}?text=Hi!%20I%27m%20ready%20to%20upgrade%20my%20entertainment%20with%20a%20premium%20Nexus%204K%20IPTV%20subscription.%20How%20can%20I%20get%20started%3F`} target="_blank" rel="noopener noreferrer" className="btn btn--primary btn--sm" title="Contact us on WhatsApp to get started">
-            Get Started
+            Get Started Now
           </Link>
           {/* Hamburger */}
           <button
@@ -166,7 +166,7 @@ export function Header() {
           onClick={() => setMobileOpen(false)}
           title="Contact us on WhatsApp to get started"
         >
-          Get Started
+          Join Nexus Today
         </Link>
       </nav>
     </header>

@@ -29,11 +29,11 @@ export function Footer() {
           <div className={styles.linkCol}>
             <div className={styles.colTitle}>Pages</div>
             <ul className={styles.linkList}>
-              <li><Link href="/" title="Back to Home Page">Home</Link></li>
-              <li><Link href="/#features" title="Learn about our IPTV features">Features</Link></li>
-              <li><Link href="/#pricing" title="View our pricing plans">Pricing</Link></li>
-              <li><Link href="/blog" title="Read our latest blog posts">Blog</Link></li>
-              <li><Link href="/contact" title="Get in touch with our support team">Support</Link></li>
+              <li><Link href="/" title="Back to Home Page">Nexus Home</Link></li>
+              <li><Link href="/#features" title="Learn about our IPTV features">Our Features</Link></li>
+              <li><Link href="/#pricing" title="View our pricing plans">Pricing Plans</Link></li>
+              <li><Link href="/blog" title="Read our latest blog posts">Streaming Blog</Link></li>
+              <li><Link href="/contact" title="Get in touch with our support team">Help Center</Link></li>
             </ul>
           </div>
 
@@ -42,8 +42,7 @@ export function Footer() {
             <div className={styles.colTitle}>Resources</div>
             <ul className={styles.linkList}>
               <li><Link href="/blog/setup" title="How to set up your IPTV service">Setup Guides</Link></li>
-              <li><Link href="/#faq" title="Frequently asked questions">FAQ</Link></li>
-              <li><Link href="/blog" title="Browse our blog for tips and news">Blog</Link></li>
+              <li><Link href="/#faq" title="Frequently asked questions">View FAQs</Link></li>
             </ul>
           </div>
 
