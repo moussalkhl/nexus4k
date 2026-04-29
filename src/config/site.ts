@@ -53,7 +53,7 @@ export const pricingPlans = [
       'Extend Anytime',
       '24/7 Active support',
     ],
-    cta: 'Get Started',
+    cta: 'Start 3 Months',
     href: 'https://wa.me/447476603520?text=I%27m%20interested%20in%20the%203%20Months%20plan.',
   },
   {
@@ -72,7 +72,7 @@ export const pricingPlans = [
       'Extend Anytime',
       '24/7 Active support',
     ],
-    cta: 'Get Started',
+    cta: 'Choose 6 Months',
     href: 'https://wa.me/447476603520?text=I%27m%20interested%20in%20the%206%20Months%20plan.',
   },
   {
@@ -91,7 +91,7 @@ export const pricingPlans = [
       'Extend Anytime',
       '24/7 Active support',
     ],
-    cta: 'Get Started',
+    cta: 'Get Yearly Plan',
     href: 'https://wa.me/447476603520?text=I%27m%20interested%20in%20the%2012%20Months%20plan.',
   },
 ] as const

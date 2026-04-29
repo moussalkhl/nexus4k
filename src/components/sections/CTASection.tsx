@@ -76,11 +76,11 @@ export function CTASection() {
             </p>
 
             <div className={styles.btnGroup}>
-              <Link href="https://wa.me/447476603520?text=Hi!%20I%27m%20ready%20to%20upgrade%20my%20entertainment%20with%20a%20premium%20Nexus%204K%20IPTV%20subscription.%20How%20can%20I%20get%20started%3F" target="_blank" rel="noopener noreferrer" className={styles.primaryBtn} title="Contact us on WhatsApp for premium IPTV access">
-                Get Premium Access
+              <Link href={`https://wa.me/${siteConfig.whatsappNumber}`} target="_blank" rel="noopener noreferrer" className={styles.primaryBtn} title="Activate your Nexus IPTV subscription on WhatsApp">
+                Activate IPTV Now
               </Link>
-              <Link href="/#pricing" className={styles.secondaryBtn} title="View all our IPTV pricing plans">
-                View All Plans
+              <Link href="/contact" className={styles.secondaryBtn} title="Contact our support team for help">
+                Get Setup Help
               </Link>
             </div>
           </div>

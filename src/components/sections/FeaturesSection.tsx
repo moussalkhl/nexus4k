@@ -123,7 +123,7 @@ function BentoCard({ feature }: { feature: typeof FEATURES[0] }) {
           {feature.icon}
         </div>
         <div>
-          <h3 className={styles.cardTitle}>{feature.title}</h3>
+          <div className={styles.cardTitle}>{feature.title}</div>
           <p className={styles.cardDescription}>{feature.description}</p>
         </div>
       </div>

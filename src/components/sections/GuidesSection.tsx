@@ -102,7 +102,7 @@ export function GuidesSection() {
 
         <div className={styles.featuredGrid}>
           {FEATURED_GUIDES.map((post) => (
-            <Link key={post.id} href={post.href} className={styles.featuredCard} title={`Read our guide: ${post.title}`}>
+            <div key={post.id} className={styles.featuredCard}>
               <div className={styles.imageWrapper}>
                 {post.image && (
                   <Image 
@@ -114,6 +114,7 @@ export function GuidesSection() {
                   />
                 )}
                 <div className={styles.postType}>{post.type}</div>
+                <Link href={post.href} className={styles.stretchedLink} title={`Read guide: ${post.title}`} aria-label={`Read guide: ${post.title}`} />
               </div>
               <div className={styles.cardContent}>
                 <div className={styles.meta}>
@@ -121,13 +122,15 @@ export function GuidesSection() {
                   <span className={styles.dot}>•</span>
                   <span>{post.readTime}</span>
                 </div>
-                <h3 className={styles.cardTitle}>{post.title}</h3>
+                <h3 className={styles.cardTitle}>
+                  <Link href={post.href} title={`Read guide: ${post.title}`}>{post.title}</Link>
+                </h3>
                 <p className={styles.cardExcerpt}>{post.excerpt}</p>
                 <div className={styles.readMore}>
-                  Read Full Guide <span className={styles.arrow}>→</span>
+                  <Link href={post.href} title={`Read guide: ${post.title}`}>Read Full Guide <span className={styles.arrow}>→</span></Link>
                 </div>
               </div>
-            </Link>
+            </div>
           ))}
         </div>
 
@@ -156,7 +159,7 @@ export function GuidesSection() {
 
           <div className={styles.recentGrid}>
             {RECENT_POSTS.map((post) => (
-              <Link key={post.id} href={post.href} className={styles.recentCard} title={`Read article: ${post.title}`}>
+              <div key={post.id} className={styles.recentCard}>
                 {post.image && (
                   <div className={styles.recentImageWrapper}>
                     <Image 
@@ -166,6 +169,7 @@ export function GuidesSection() {
                       className={styles.postImage}
                       sizes="(max-width: 768px) 100vw, 50vw"
                     />
+                    <Link href={post.href} className={styles.stretchedLink} title={`Read article: ${post.title}`} aria-label={`Read article: ${post.title}`} />
                   </div>
                 )}
                 <div className={styles.recentCardContent}>
@@ -173,7 +177,9 @@ export function GuidesSection() {
                     <span className={styles.tagType}>{post.type}</span>
                     {post.isNew && <span className={styles.tagNew}>NEW</span>}
                   </div>
-                  <h3 className={styles.recentTitle}>{post.title}</h3>
+                  <h3 className={styles.recentTitle}>
+                    <Link href={post.href} title={`Read article: ${post.title}`}>{post.title}</Link>
+                  </h3>
                   <p className={styles.recentExcerpt}>{post.excerpt}</p>
                   <div className={styles.recentFooter}>
                     <div className={styles.meta}>
@@ -182,11 +188,11 @@ export function GuidesSection() {
                       <span>{post.readTime}</span>
                     </div>
                     <div className={styles.readMore}>
-                      Read More <span className={styles.arrow}>→</span>
+                      <Link href={post.href} title={`Read article: ${post.title}`}>Read More <span className={styles.arrow}>→</span></Link>
                     </div>
                   </div>
                 </div>
-              </Link>
+              </div>
             ))}
           </div>
         </div>

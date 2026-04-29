@@ -30,7 +30,7 @@ export function ContactSection() {
                   </svg>
                 </div>
                 <div className={styles.contactText}>
-                  <h3>WhatsApp Support <span className={styles.number}>{siteConfig.phone}</span></h3>
+                  <div className={styles.contactTitle}>WhatsApp Support <span className={styles.number}>{siteConfig.phone}</span></div>
                   <p>Instant replies, best for live troubleshooting.</p>
                 </div>
               </a>
@@ -44,7 +44,7 @@ export function ContactSection() {
                   </svg>
                 </div>
                 <div className={styles.contactText}>
-                  <h3>Telegram</h3>
+                  <div className={styles.contactTitle}>Telegram</div>
                   <p>Secure and fast communication channel.</p>
                 </div>
               </a>
@@ -58,7 +58,7 @@ export function ContactSection() {
                   </svg>
                 </div>
                 <div className={styles.contactText}>
-                  <h3>Email Support</h3>
+                  <div className={styles.contactTitle}>Email Support</div>
                   <p>{siteConfig.email} (Reply within 24h)</p>
                 </div>
               </a>

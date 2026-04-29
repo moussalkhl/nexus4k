@@ -95,7 +95,7 @@ export function TestimonialsSection() {
         </div>
         
         {/* Duplicated group for seamless infinite scrolling */}
-        <div className={styles.marqueeGroup} aria-hidden="true">
+        <div className={styles.marqueeGroup} aria-hidden="true" data-nosnippet role="presentation">
           {REVIEWS.map((review, index) => (
             <ReviewCard key={`g2-${index}`} review={review} />
           ))}

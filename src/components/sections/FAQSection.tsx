@@ -60,8 +60,8 @@ export function FAQSection() {
               Everything you need to know about Nexus 4K IPTV. Can&apos;t find your
               answer? Our support team is available 24/7.
             </p>
-            <Link href="/contact" className="btn btn--primary">
-              Contact Support
+            <Link href="/contact" className="btn btn--primary" title="Ask our support team a specific question about our IPTV service">
+              Ask a Question
             </Link>
           </div>
 
