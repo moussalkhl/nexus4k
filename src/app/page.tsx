@@ -42,17 +42,20 @@ export const metadata: Metadata = genMeta({
 
 export default function HomePage() {
   // Product schema for pricing (boosts rich results)
-  const productSchemas = pricingPlans.map((plan) =>
-    generateProductJsonLd({
-      name: `Nexus 4K IPTV ${plan.name} Plan`,
-      description: plan.features.join(', '),
-      price: plan.price,
-    })
-  )
+  const productSchemas = {
+    '@context': 'https://schema.org',
+    '@graph': pricingPlans.map((plan) =>
+      generateProductJsonLd({
+        name: `Nexus 4K IPTV ${plan.name} Plan`,
+        description: plan.features.join(', '),
+        price: plan.price,
+      })
+    ),
+  }
 
   return (
     <>
-      {/* Consolidated JSON-LD for better performance */}
+      {/* Product JSON-LD structured data — wrapped in @graph for valid multi-item schema */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(productSchemas) }}
