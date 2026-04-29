@@ -13,6 +13,9 @@ export const metadata: Metadata = {
   },
   description: siteConfig.description,
   metadataBase: new URL(siteConfig.url),
+  alternates: {
+    canonical: siteConfig.url,
+  },
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
