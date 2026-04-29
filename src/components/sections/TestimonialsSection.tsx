@@ -62,7 +62,7 @@ function ReviewCard({ review }: { review: typeof REVIEWS[0] }) {
           {review.initials}
         </div>
         <div className={styles.userInfo}>
-          <h4 className={styles.userName}>{review.name}</h4>
+          <div className={styles.userName}>{review.name}</div>
           <span className={styles.userRole}>{review.role}</span>
         </div>
       </div>
