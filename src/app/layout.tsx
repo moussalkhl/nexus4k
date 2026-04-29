@@ -5,6 +5,7 @@ import { Footer } from '@/components/layout/Footer'
 import { GalaxyBackground } from '@/components/ui/GalaxyBackground'
 import { generateOrganizationJsonLd, generateWebSiteJsonLd } from '@/seo/metadata'
 import { siteConfig } from '@/config/site'
+import { SpeedInsights } from '@vercel/speed-insights/next'
 
 export const metadata: Metadata = {
   title: {
@@ -57,6 +58,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           {children}
         </main>
         <Footer />
+        <SpeedInsights />
       </body>
     </html>
   )
