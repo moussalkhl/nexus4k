@@ -4,7 +4,7 @@ export const siteConfig = {
   name: 'Nexus 4K IPTV',
   tagline: 'Stream Everything. Anywhere. Anytime.',
   description:
-    'Nexus 4K IPTV delivers 30,000+ live TV channels, sports, PPV, movies and VODs in 4K/UHD quality. Get premium access at nexus4ktv.pro today.',
+    'Experience Nexus 4K IPTV with 30,000+ live channels, sports, movies, and VOD in stunning UHD. Get your premium streaming subscription at nexus4ktv.pro today.',
   url: process.env.NEXT_PUBLIC_SITE_URL || 'https://nexus4ktv.pro',
   ogImage: '/images/og-default.jpg',
   twitterHandle: '@Nexus4KIPTV',

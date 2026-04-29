@@ -8,7 +8,7 @@ import styles from './page.module.css'
 export const metadata: Metadata = genMeta({
   // Final: "Contact Nexus 4K IPTV – 24/7 Live Support | Nexus 4K IPTV" = 59 chars
   title: 'Contact Nexus 4K IPTV – 24/7 Live Support',
-  description: 'Need help with your IPTV subscription? Contact our 24/7 support team for immediate assistance with setup, billing, or technical issues.',
+  description: 'Need help with your Nexus 4K IPTV subscription? Contact our 24/7 support team for immediate assistance with setup, billing, or technical issues anytime.',
   canonical: '/contact',
 })
 
