@@ -149,6 +149,7 @@ export function generateProductJsonLd({
     '@type': 'Product',
     name,
     description,
+    image: 'https://nexus4ktv.pro/logo.png',
     brand: { '@type': 'Brand', name: siteConfig.name },
     offers: {
       '@type': 'Offer',
