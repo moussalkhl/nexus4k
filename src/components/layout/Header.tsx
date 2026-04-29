@@ -52,6 +52,7 @@ export function Header() {
         {/* Logo */}
         <Link href="/" className={styles.logo} aria-label="Nexus 4K IPTV home" title="Nexus 4K IPTV - Back to Home">
           <Image src="/logo.png" alt="Nexus 4K IPTV" width={180} height={45} className={styles.logoImage} priority />
+          <span className="sr-only">Nexus 4K IPTV</span>
         </Link>
 
         {/* Desktop Navigation */}

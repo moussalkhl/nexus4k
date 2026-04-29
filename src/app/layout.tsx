@@ -49,7 +49,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       </head>
       <body>
         <GalaxyBackground />
-        <a href="#main-content" className="sr-only">
+        <a href="#main-content" className="sr-only" title="Skip to main content">
           Skip to main content
         </a>
         <Header />
