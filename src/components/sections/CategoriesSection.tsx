@@ -93,7 +93,7 @@ export function CategoriesSection() {
                     <h3 className={styles.name}>{cat.name}</h3>
                     <p className={styles.count}>{cat.channelCount} Channels</p>
                     <p className={styles.description}>{cat.description}</p>
-                    <Link href={cat.href} className={styles.exploreBtn}>
+                    <Link href={cat.href} className={styles.exploreBtn} title={`Explore our full library of ${cat.name} channels`}>
                       Explore {cat.name} <span>→</span>
                     </Link>
                   </div>
@@ -108,7 +108,7 @@ export function CategoriesSection() {
         </div>
 
         <div className={styles.cta}>
-          <Link href="/categories" className="btn btn--secondary">
+          <Link href="/categories" className="btn btn--secondary" title="Browse all IPTV channel categories">
             Explore All Categories
           </Link>
         </div>

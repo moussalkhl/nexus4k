@@ -50,7 +50,7 @@ export function Header() {
     >
       <div className={`container ${styles.inner}`}>
         {/* Logo */}
-        <Link href="/" className={styles.logo} aria-label="Nexus 4K IPTV home">
+        <Link href="/" className={styles.logo} aria-label="Nexus 4K IPTV home" title="Nexus 4K IPTV - Back to Home">
           <Image src="/logo.png" alt="Nexus 4K IPTV" width={180} height={45} className={styles.logoImage} priority />
         </Link>
 
@@ -86,6 +86,7 @@ export function Header() {
                           className={styles.dropdownLink}
                           role="menuitem"
                           onClick={() => setOpenDropdown(null)}
+                          title={`Explore ${child.label} channels`}
                         >
                           {child.label}
                         </Link>
@@ -94,7 +95,7 @@ export function Header() {
                   )}
                 </>
               ) : (
-                <Link href={link.href} className={styles.navLink}>
+                <Link href={link.href} className={styles.navLink} title={`Go to ${link.label} page`}>
                   {link.label}
                 </Link>
               )}
@@ -104,7 +105,7 @@ export function Header() {
 
         {/* CTA */}
         <div className={styles.actions}>
-          <Link href={`https://wa.me/${siteConfig.whatsappNumber}`} target="_blank" rel="noopener noreferrer" className="btn btn--primary btn--sm">
+          <Link href={`https://wa.me/${siteConfig.whatsappNumber}`} target="_blank" rel="noopener noreferrer" className="btn btn--primary btn--sm" title="Contact us on WhatsApp to get started">
             Get Started
           </Link>
           {/* Hamburger */}
@@ -135,6 +136,7 @@ export function Header() {
               href={link.href}
               className={styles.mobileLink}
               onClick={() => setMobileOpen(false)}
+              title={`Go to ${link.label} page`}
             >
               {link.label}
             </Link>
@@ -146,6 +148,7 @@ export function Header() {
                     href={child.href}
                     className={styles.mobileSubLink}
                     onClick={() => setMobileOpen(false)}
+                    title={`Explore ${child.label} channels`}
                   >
                     → {child.label}
                   </Link>
@@ -160,6 +163,7 @@ export function Header() {
           className="btn btn--primary"
           style={{ marginTop: '1rem', width: '100%' }}
           onClick={() => setMobileOpen(false)}
+          title="Contact us on WhatsApp to get started"
         >
           Get Started
         </Link>

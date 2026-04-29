@@ -38,7 +38,7 @@ export function Breadcrumb({ items }: BreadcrumbProps) {
                   </span>
                 ) : (
                   <>
-                    <Link href={item.href} className={styles.link} itemProp="item">
+                    <Link href={item.href} className={styles.link} itemProp="item" title={`Back to ${item.label}`}>
                       <span itemProp="name">{item.label}</span>
                     </Link>
                     <span className={styles.separator} aria-hidden="true">/</span>

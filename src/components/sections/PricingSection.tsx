@@ -64,6 +64,7 @@ export function PricingSection() {
                 href={plan.href}
                 className={`${styles.btn} ${styles.cta}`}
                 aria-label={`${plan.cta} — ${plan.name} for $${plan.price}`}
+                title={`Subscribe to the ${plan.name} IPTV plan`}
               >
                 {plan.cta}
               </Link>

@@ -102,7 +102,7 @@ export function GuidesSection() {
 
         <div className={styles.featuredGrid}>
           {FEATURED_GUIDES.map((post) => (
-            <Link key={post.id} href={post.href} className={styles.featuredCard}>
+            <Link key={post.id} href={post.href} className={styles.featuredCard} title={`Read our guide: ${post.title}`}>
               <div className={styles.imageWrapper}>
                 {post.image && (
                   <Image 
@@ -132,7 +132,7 @@ export function GuidesSection() {
         </div>
 
         <div className={styles.centerBtn}>
-          <Link href="/blog" className={styles.outlineBtn}>
+          <Link href="/blog" className={styles.outlineBtn} title="View all our IPTV guides and streaming tips">
             View All Guides <span className={styles.arrow}>→</span>
           </Link>
         </div>
@@ -148,7 +148,7 @@ export function GuidesSection() {
               Updated weekly with new guides, fixes, and comparisons to keep your streaming experience optimized.
             </p>
             <div className={styles.centerBtnTop}>
-              <Link href="/blog/recent" className={styles.outlineBtn}>
+              <Link href="/blog/recent" className={styles.outlineBtn} title="Browse all our recently published articles">
                 All Articles <span className={styles.arrow}>→</span>
               </Link>
             </div>
@@ -156,7 +156,7 @@ export function GuidesSection() {
 
           <div className={styles.recentGrid}>
             {RECENT_POSTS.map((post) => (
-              <Link key={post.id} href={post.href} className={styles.recentCard}>
+              <Link key={post.id} href={post.href} className={styles.recentCard} title={`Read article: ${post.title}`}>
                 {post.image && (
                   <div className={styles.recentImageWrapper}>
                     <Image 
