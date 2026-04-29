@@ -52,7 +52,7 @@ export default function ContactPage() {
               <div className={styles.card}>
                 <h3>Live Chat</h3>
                 <p>For immediate technical assistance during setup.</p>
-                <a href={`https://wa.me/${siteConfig.whatsappNumber}?text=I%20need%20immediate%20technical%20assistance.`} target="_blank" rel="noopener noreferrer" className="btn btn--secondary btn--sm">Start Chat</a>
+                <a href={`https://wa.me/${siteConfig.whatsappNumber}?text=Hi!%20I%27m%20ready%20to%20upgrade%20my%20entertainment%20with%20a%20premium%20Nexus%204K%20IPTV%20subscription.%20How%20can%20I%20get%20started%3F`} target="_blank" rel="noopener noreferrer" className="btn btn--secondary btn--sm">Start Chat</a>
               </div>
             </div>
 

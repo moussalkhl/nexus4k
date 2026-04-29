@@ -5,7 +5,7 @@ import styles from './Footer.module.css'
 
 export function Footer() {
   const year = new Date().getFullYear()
-  const whatsappMsg = encodeURIComponent("I'm interested in Nexus 4K IPTV IPTV.")
+  const whatsappMsg = encodeURIComponent("Hi! I'm ready to upgrade my entertainment with a premium Nexus 4K IPTV subscription. How can I get started?")
 
   return (
     <footer className={styles.footer} role="contentinfo">
