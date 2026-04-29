@@ -124,7 +124,7 @@ export function GuidesSection() {
                 <h3 className={styles.cardTitle}>{post.title}</h3>
                 <p className={styles.cardExcerpt}>{post.excerpt}</p>
                 <div className={styles.readMore}>
-                  Read Article <span className={styles.arrow}>→</span>
+                  Read Full Guide <span className={styles.arrow}>→</span>
                 </div>
               </div>
             </Link>
@@ -182,7 +182,7 @@ export function GuidesSection() {
                       <span>{post.readTime}</span>
                     </div>
                     <div className={styles.readMore}>
-                      Read <span className={styles.arrow}>→</span>
+                      Read More <span className={styles.arrow}>→</span>
                     </div>
                   </div>
                 </div>

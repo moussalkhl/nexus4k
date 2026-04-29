@@ -54,7 +54,7 @@ export function CTASection() {
             <div key={i} className={styles.featureItem}>
               <div className={styles.featureIcon}>{f.icon}</div>
               <div className={styles.featureText}>
-                <h4>{f.title}</h4>
+                <div className={styles.featureTitle}>{f.title}</div>
                 <p>{f.desc}</p>
               </div>
             </div>

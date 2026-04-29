@@ -110,22 +110,22 @@ export function HeroSection() {
         <div className="container">
           <div className={styles.trustBar}>
             <div className={styles.trustItem}>
-              <h4>30K+</h4>
+              <div className={styles.trustNumber}>30K+</div>
               <p>CHANNELS</p>
             </div>
             <div className={styles.trustDivider} />
             <div className={styles.trustItem}>
-              <h4>4K UHD</h4>
+              <div className={styles.trustNumber}>4K UHD</div>
               <p>QUALITY</p>
             </div>
             <div className={styles.trustDivider} />
             <div className={styles.trustItem}>
-              <h4>99.9%</h4>
+              <div className={styles.trustNumber}>99.9%</div>
               <p>UPTIME</p>
             </div>
             <div className={styles.trustDivider} />
             <div className={styles.trustItem}>
-              <h4>24/7</h4>
+              <div className={styles.trustNumber}>24/7</div>
               <p>SUPPORT</p>
             </div>
           </div>

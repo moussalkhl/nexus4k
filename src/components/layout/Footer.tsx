@@ -27,7 +27,7 @@ export function Footer() {
 
           {/* Pages Column */}
           <div className={styles.linkCol}>
-            <h4 className={styles.colTitle}>Pages</h4>
+            <div className={styles.colTitle}>Pages</div>
             <ul className={styles.linkList}>
               <li><Link href="/" title="Back to Home Page">Home</Link></li>
               <li><Link href="/#features" title="Learn about our IPTV features">Features</Link></li>
@@ -39,7 +39,7 @@ export function Footer() {
 
           {/* Resources Column */}
           <div className={styles.linkCol}>
-            <h4 className={styles.colTitle}>Resources</h4>
+            <div className={styles.colTitle}>Resources</div>
             <ul className={styles.linkList}>
               <li><Link href="/blog/setup" title="How to set up your IPTV service">Setup Guides</Link></li>
               <li><Link href="/#faq" title="Frequently asked questions">FAQ</Link></li>
@@ -49,7 +49,7 @@ export function Footer() {
 
           {/* Contact Column */}
           <div className={styles.contactCol}>
-            <h4 className={styles.colTitle}>Contact</h4>
+            <div className={styles.colTitle}>Contact</div>
             <ul className={styles.contactList}>
               <li>
                 <a href={`https://wa.me/${siteConfig.whatsappNumber}?text=${whatsappMsg}`} target="_blank" rel="noopener noreferrer" title="Contact our support on WhatsApp">
