@@ -25,16 +25,15 @@ import { CTASection } from '@/components/sections/CTASection'
 
 // Character count: 44 — approved homepage title
 export const metadata: Metadata = genMeta({
-  title: 'Nexus 4K IPTV – 20K+ Channels | Free Trial',
+  title: 'Premium 20K+ Live Channels & Free Trial',
   description: 'Experience Nexus 4K IPTV with 30,000+ live channels, sports, movies, and VOD in stunning UHD. Get your premium streaming subscription at nexus4ktv.pro today.',
   canonical: '/',
   keywords: [
     'Nexus 4K IPTV',
     'Nexus4kTV',
-    'Nexus IPTV subscription',
-    'Nexus 4K streaming service',
-    'best IPTV provider Nexus',
-    'Nexus 4K live TV channels',
+    'IPTV subscription',
+    '4K streaming',
+    'Best IPTV',
     'nexus4ktv.pro',
   ],
 })
