@@ -11,6 +11,7 @@ export const siteConfig = {
   email: 'support@nexus4ktv.pro',
   phone: '+44 747 660 3520',
   whatsappNumber: '447476603520',
+  defaultWhatsappMessage: 'Hi! I am interested in the Nexus 4k IPTV subscription',
   telegramUrl: 'https://t.me/nexus4kiptv',
 } as const
 
@@ -54,7 +55,7 @@ export const pricingPlans = [
       '24/7 Active support',
     ],
     cta: 'Start 3 Months',
-    href: 'https://wa.me/447476603520?text=I%27m%20interested%20in%20the%203%20Months%20plan.',
+    href: 'https://wa.me/447476603520?text=Hi!%20I%20am%20interested%20in%20the%20Nexus%204k%20IPTV%203%20Months%20subscription',
   },
   {
     id: '6-months',
@@ -73,7 +74,7 @@ export const pricingPlans = [
       '24/7 Active support',
     ],
     cta: 'Choose 6 Months',
-    href: 'https://wa.me/447476603520?text=I%27m%20interested%20in%20the%206%20Months%20plan.',
+    href: 'https://wa.me/447476603520?text=Hi!%20I%20am%20interested%20in%20the%20Nexus%204k%20IPTV%206%20Months%20subscription',
   },
   {
     id: '12-months',
@@ -92,7 +93,7 @@ export const pricingPlans = [
       '24/7 Active support',
     ],
     cta: 'Get Yearly Plan',
-    href: 'https://wa.me/447476603520?text=I%27m%20interested%20in%20the%2012%20Months%20plan.',
+    href: 'https://wa.me/447476603520?text=Hi!%20I%20am%20interested%20in%20the%20Nexus%204k%20IPTV%2012%20Months%20subscription',
   },
 ] as const
 
