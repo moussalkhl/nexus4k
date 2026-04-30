@@ -10,8 +10,8 @@ import { SpeedInsights } from '@vercel/speed-insights/next'
 
 export const metadata: Metadata = {
   title: {
-    default: 'Nexus 4K IPTV – 20K+ Channels | Free Trial',
-    template: '%s | Nexus 4K IPTV',
+    default: 'Nexus4kTV – 30,000+ Channels | Free Trial',
+    template: '%s | Nexus4kTV',
   },
   description: siteConfig.description,
   metadataBase: new URL(siteConfig.url),

@@ -1,7 +1,7 @@
 // ─── Site Configuration ─────────────────────────────────────────────────────
 
 export const siteConfig = {
-  name: 'Nexus 4K IPTV',
+  name: 'Nexus4kTV',
   tagline: 'Stream Everything. Anywhere. Anytime.',
   description:
     'Nexus4kTV : Premium IPTV Subscription with Free Trial. Stream 30,000+ live channels, sports & movies in 4K/UHD. Trusted by 20,000+ users worldwide.',

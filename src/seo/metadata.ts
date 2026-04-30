@@ -84,7 +84,7 @@ export function generateOrganizationJsonLd() {
   return {
     '@context': 'https://schema.org',
     '@type': 'Organization',
-    name: 'Nexus 4K IPTV',
+    name: 'Nexus4kTV',
     url: 'https://nexus4ktv.pro',
     logo: 'https://nexus4ktv.pro/logo.png',
     sameAs: [],
@@ -96,7 +96,7 @@ export function generateWebSiteJsonLd() {
     '@context': 'https://schema.org',
     '@type': 'WebSite',
     url: 'https://nexus4ktv.pro',
-    name: 'Nexus 4K IPTV',
+    name: 'Nexus4kTV',
     potentialAction: {
       '@type': 'SearchAction',
       target: 'https://nexus4ktv.pro/search?q={search_term_string}',
