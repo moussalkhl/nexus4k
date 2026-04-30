@@ -52,13 +52,8 @@
   z-index: 0;
   opacity: 0.8;
   pointer-events: none;
-  /* Animation for the grid moving towards user */
-  animation: gridMove 20s linear infinite;
-}
-
-@keyframes gridMove {
-  0% { background-position: 0 0; }
-  100% { background-position: 0 80px; }
+  /* Removed heavy background-position animation to drastically improve FCP/LCP */
+  will-change: transform;
 }
 
 .content {

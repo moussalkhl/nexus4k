@@ -51,7 +51,7 @@ export function Header() {
       <div className={`container ${styles.inner}`}>
         {/* Logo */}
         <Link href="/" className={styles.logo} aria-label="Nexus4kTV home" title="Nexus4kTV - Back to Home">
-          <Image src="/logo.png" alt="Nexus4kTV" width={180} height={45} className={styles.logoImage} priority />
+          <Image src="/logo.png" alt="Nexus4kTV" width={180} height={45} className={styles.logoImage} />
           <span className="sr-only">Nexus4kTV</span>
         </Link>
 
