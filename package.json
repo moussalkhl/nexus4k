@@ -11,8 +11,6 @@
   },
   "dependencies": {
     "@isomorphic-git/lightning-fs": "^4.6.2",
-    "@vercel/analytics": "^2.0.1",
-    "@vercel/speed-insights": "^2.0.0",
     "isomorphic-git": "^1.37.6",
     "next": "16.2.4",
     "react": "^19.0.0",

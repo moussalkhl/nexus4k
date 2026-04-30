@@ -15,7 +15,7 @@ export function Footer() {
           <div className={styles.brandCol}>
             <Link href="/" className={styles.logo} aria-label="Nexus4kTV home" title="Nexus4kTV - Back to Home">
               <Image src="/logo.png" alt="Nexus4kTV" width={220} height={55} className={styles.logoImage} />
-              <span className="sr-only">Nexus4kTV</span>
+              <span className="sr-only">Nexus4kTV Footer Logo</span>
             </Link>
             <p className={styles.description}>
               Stream 30,000+ Channels in 4K — Zero Buffering. Ever.

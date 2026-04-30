@@ -139,7 +139,7 @@ export function Header() {
               onClick={() => setMobileOpen(false)}
               title={`Go to ${link.label} page`}
             >
-              {link.label}
+              <span className="sr-only">Mobile Navigation: </span>{link.label}
             </Link>
             {'children' in link && link.children && (
               <div className={styles.mobileSubNav}>
