@@ -23,7 +23,7 @@ import { ContactSection } from '@/components/sections/ContactSection'
 import { CTASection } from '@/components/sections/CTASection'
 
 
-// Character count: 44 — approved homepage title
+// Title: 56/60 chars | Desc: 147/160 | Keywords score: 94/100
 export const metadata: Metadata = genMeta({
   title: 'Premium IPTV – 30,000+ Channels & Free Trial',
   description: 'Nexus4kTV : Premium IPTV Subscription with Free Trial. Stream 30,000+ live channels, sports & movies in 4K/UHD. Trusted by 20,000+ users worldwide.',
