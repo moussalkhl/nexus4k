@@ -86,7 +86,7 @@ export function generateOrganizationJsonLd() {
     '@type': 'Organization',
     name: 'Nexus 4K IPTV',
     url: 'https://nexus4ktv.pro',
-    logo: 'https://nexus4ktv.pro/logo.jpg',
+    logo: 'https://nexus4ktv.pro/logo.png',
     sameAs: [],
   }
 }
