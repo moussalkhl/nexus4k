@@ -2,7 +2,6 @@
 
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
-import Image from 'next/image';
 import { siteConfig } from '@/config/site';
 import styles from './HeroSection.module.css';
 
@@ -59,17 +58,6 @@ export function HeroSection() {
         <p className={styles.subtitle} style={{ fontSize: '1.2rem', color: 'rgba(255,255,255,0.8)', marginBottom: '2rem', maxWidth: '600px', marginLeft: 'auto', marginRight: 'auto' }}>
           Experience the ultimate entertainment with <strong>Nexus4kTV</strong>. Stream over 30,000+ live TV channels, sports, movies, and VODs in breathtaking 4K UHD quality with zero buffering.
         </p>
-        
-        {/* SEO Required Hero Image (for alt text and preload) */}
-        <div style={{ position: 'absolute', width: 0, height: 0, overflow: 'hidden' }}>
-          <Image 
-            src="/images/og-default.jpg" 
-            alt="Nexus4kTV streaming service – live TV channels on all devices" 
-            width={1200} 
-            height={630} 
-            priority
-          />
-        </div>
 
         {/* Urgency Timer Box */}
         <div className={styles.timerSection}>

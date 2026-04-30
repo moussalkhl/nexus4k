@@ -7,6 +7,19 @@ import { generateOrganizationJsonLd, generateWebSiteJsonLd } from '@/seo/metadat
 import { siteConfig } from '@/config/site'
 import { Analytics } from '@vercel/analytics/react'
 import { SpeedInsights } from '@vercel/speed-insights/next'
+import { Inter, Outfit } from 'next/font/google'
+
+const inter = Inter({
+  subsets: ['latin'],
+  variable: '--font-inter',
+  display: 'swap',
+})
+
+const outfit = Outfit({
+  subsets: ['latin'],
+  variable: '--font-outfit',
+  display: 'swap',
+})
 
 export const metadata: Metadata = {
   title: {
@@ -34,11 +47,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         
         {/* SEO Required Tags */}
         <link rel="alternate" hrefLang="en" href="https://nexus4ktv.pro/" />
-        <link rel="preload" as="image" href="/hero.webp" />
 
-        {/* Preconnect for fonts */}
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         {/* JSON-LD structured data */}
         <script
           type="application/ld+json"
@@ -49,7 +58,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           dangerouslySetInnerHTML={{ __html: JSON.stringify(siteJsonLd) }}
         />
       </head>
-      <body>
+      <body className={`${inter.variable} ${outfit.variable}`}>
         <GalaxyBackground />
         <a href="#main-content" className="sr-only" title="Skip to main content">
           Skip to main content
