@@ -1,7 +1,6 @@
 'use client';
 
 import type { CSSProperties } from 'react';
-import Image from 'next/image';
 import styles from './ContentShowcase.module.css';
 
 // ── Sports logo data — mapped to your uploaded images ────────────────────────
@@ -46,41 +45,34 @@ const KIDS_ITEMS = [
 ];
 
 export function ContentShowcase() {
-  const tripleLogos = [...SPORT_LOGOS, ...SPORT_LOGOS, ...SPORT_LOGOS];
-
   return (
     <section className={styles.showcaseSection}>
       <div className={styles.glowBg} />
 
       <div className={styles.container}>
 
-        {/* ── Sports Logo Row ────────────────────────────────── */}
+        {/* ── Sports Row ─────────────────────────────────────── */}
         <div className={styles.rowContainer}>
           <h2 className={styles.rowTitle}>
             {"DON'T MISS OUT OUR BEST"} <span className={styles.highlight}>SPORT LIVE</span> CHANNELS
           </h2>
           <div className={styles.carouselWrapper}>
             <div className={`${styles.carouselTrack} ${styles.scrollLeft}`}>
-              {tripleLogos.map((item, i) => (
+              {[...SPORT_LOGOS, ...SPORT_LOGOS].map((item, i) => (
                 <div
                   key={i}
                   className={`${styles.card} ${styles.logoCard}`}
                   style={{ '--accent': item.accent } as CSSProperties}
                 >
-                  {/* Accent glow blob behind the logo */}
                   <div className={styles.logoGlow} style={{ background: item.accent }} />
-
                   <div className={styles.logoImgWrap}>
-                    <Image
+                    <img
                       src={item.img}
-                      alt={`${item.name} on Nexus4kTV - Watch live sports in 4K on Nexus IPTV – PPV and EPG included`}
-                      fill
-                      unoptimized
+                      alt={`${item.name} on Nexus4kTV`}
+                      loading="lazy"
                       className={styles.logoImg}
                     />
                   </div>
-
-                  {/* Name label at the bottom */}
                   <span className={styles.logoLabel}>{item.name}</span>
                 </div>
               ))}
@@ -95,10 +87,10 @@ export function ContentShowcase() {
           </h2>
           <div className={styles.carouselWrapper}>
             <div className={`${styles.carouselTrack} ${styles.scrollRight}`}>
-              {[...MOVIE_ITEMS, ...MOVIE_ITEMS, ...MOVIE_ITEMS].map((item, i) => (
+              {[...MOVIE_ITEMS, ...MOVIE_ITEMS].map((item, i) => (
                 <div key={i} className={styles.card}>
                   <div className={styles.imageWrapper}>
-                    <Image src={item.img} alt={`${item.name} - 30,000+ live channels available on Nexus4kTV`} fill unoptimized className={styles.cardImage} />
+                    <img src={item.img} alt={`${item.name} on Nexus4kTV`} loading="lazy" className={styles.cardImage} />
                     <div className={styles.cardOverlay}>
                       <span className={styles.cardTitle}>{item.name}</span>
                     </div>
@@ -116,10 +108,10 @@ export function ContentShowcase() {
           </h2>
           <div className={styles.carouselWrapper}>
             <div className={`${styles.carouselTrack} ${styles.scrollLeft}`}>
-              {[...KIDS_ITEMS, ...KIDS_ITEMS, ...KIDS_ITEMS].map((item, i) => (
+              {[...KIDS_ITEMS, ...KIDS_ITEMS].map((item, i) => (
                 <div key={i} className={styles.card}>
                   <div className={styles.imageWrapper}>
-                    <Image src={item.img} alt={`${item.name} - Kids streaming on Nexus4kTV`} fill unoptimized className={styles.cardImage} />
+                    <img src={item.img} alt={`${item.name} on Nexus4kTV`} loading="lazy" className={styles.cardImage} />
                     <div className={styles.cardOverlay}>
                       <span className={styles.cardTitle}>{item.name}</span>
                     </div>
