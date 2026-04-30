@@ -46,7 +46,7 @@ export default function HomePage() {
     '@context': 'https://schema.org',
     '@graph': pricingPlans.map((plan) =>
       generateProductJsonLd({
-        name: `Nexus 4K IPTV ${plan.name} Plan`,
+        name: `Nexus4kTV ${plan.name} Plan`,
         description: plan.features.join(', '),
         price: plan.price,
       })

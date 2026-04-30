@@ -33,7 +33,7 @@ const BLOG_POSTS: BlogPost[] = [
 
         <div style="background: rgba(168, 85, 247, 0.1); border: 1px solid rgba(168, 85, 247, 0.3); padding: 2rem; border-radius: 12px; margin-top: 3rem; text-align: center;">
           <h3 style="color: #fff; margin-bottom: 1rem;">Ready to test these players?</h3>
-          <p style="color: #cbd5e1; margin-bottom: 1.5rem;">Pair your player with Nexus 4K IPTV for an unbeatable streaming experience. Zero buffering, 30,000+ channels, and true 4K quality.</p>
+          <p style="color: #cbd5e1; margin-bottom: 1.5rem;">Pair your player with Nexus4kTV for an unbeatable streaming experience. Zero buffering, 30,000+ channels, and true 4K quality.</p>
           <a href="/contact" style="display: inline-block; background: linear-gradient(90deg, #a855f7, #00d4ff); color: #fff; padding: 10px 24px; border-radius: 6px; text-decoration: none; font-weight: bold;">Get Your Subscription Now</a>
         </div>
       </div>
@@ -71,12 +71,12 @@ const BLOG_POSTS: BlogPost[] = [
         </ul>
 
         <h2 style="color: #fff; margin-top: 2rem; font-size: 1.8rem;">Step 3: Install Your Preferred Player</h2>
-        <p style="margin-bottom: 1.5rem; line-height: 1.7; color: #cbd5e1;">For the absolute best experience with our <a href="/" style="color: #00d4ff; text-decoration: underline; font-weight: 600;">Nexus 4K IPTV premium service</a>, we highly recommend installing Tivimate or Smarters Pro. Open the Downloader app and enter the specific download code provided when you purchase your subscription.</p>
+        <p style="margin-bottom: 1.5rem; line-height: 1.7; color: #cbd5e1;">For the absolute best experience with our <a href="/" style="color: #00d4ff; text-decoration: underline; font-weight: 600;">Nexus4kTV premium service</a>, we highly recommend installing Tivimate or Smarters Pro. Open the Downloader app and enter the specific download code provided when you purchase your subscription.</p>
 
         <div style="background: rgba(168, 85, 247, 0.1); border: 1px solid rgba(168, 85, 247, 0.3); padding: 2rem; border-radius: 12px; margin-top: 3rem; text-align: center;">
           <h3 style="color: #fff; margin-bottom: 1rem;">Need an ultra-fast IPTV Provider?</h3>
           <p style="color: #cbd5e1; margin-bottom: 1.5rem;">Now that your Firestick is ready, power it up with the ultimate streaming service. Get 30,000+ channels in true 4K without buffering.</p>
-          <a href="/contact" style="display: inline-block; background: linear-gradient(90deg, #a855f7, #00d4ff); color: #fff; padding: 10px 24px; border-radius: 6px; text-decoration: none; font-weight: bold;">Unlock Nexus 4K IPTV Now</a>
+          <a href="/contact" style="display: inline-block; background: linear-gradient(90deg, #a855f7, #00d4ff); color: #fff; padding: 10px 24px; border-radius: 6px; text-decoration: none; font-weight: bold;">Unlock Nexus4kTV Now</a>
         </div>
       </div>
     `
@@ -122,7 +122,7 @@ const BLOG_POSTS: BlogPost[] = [
   {
     slug: 'mag-box-setup-2026',
     title: 'How to Set Up IPTV on a MAG Box — 2026 Step-by-Step Guide',
-    excerpt: 'Set up Nexus 4K IPTV IPTV on any MAG box in under 10 minutes. Portal URL, MAC address, and troubleshooting — works on all models.',
+    excerpt: 'Set up Nexus4kTV IPTV on any MAG box in under 10 minutes. Portal URL, MAC address, and troubleshooting — works on all models.',
     publishedAt: '2026-04-20T10:00:00Z',
     author: 'Tech Review Team',
     category: 'Setup',
@@ -139,7 +139,7 @@ const BLOG_POSTS: BlogPost[] = [
         <h2 style="color: #fff; margin-top: 2rem; font-size: 1.8rem;">Step 2: Add the Portal URL</h2>
         <p style="margin-bottom: 1.5rem; line-height: 1.7; color: #cbd5e1;">Once your MAC is activated, turn on the box and go to <strong>Settings -> System Settings -> Servers -> Portals</strong>.</p>
         <ul style="margin-bottom: 1.5rem; padding-left: 1.5rem; color: #cbd5e1; line-height: 1.7;">
-          <li>In <strong>Portal 1 name</strong>, type "Nexus 4K IPTV".</li>
+          <li>In <strong>Portal 1 name</strong>, type "Nexus4kTV".</li>
           <li>In <strong>Portal 1 URL</strong>, carefully type the exact portal URL provided in your welcome email.</li>
         </ul>
 
@@ -157,7 +157,7 @@ const BLOG_POSTS: BlogPost[] = [
   {
     slug: 'apple-tv-iptv-2026',
     title: 'How to Watch IPTV on Apple TV: Best Apps & Setup Guide',
-    excerpt: 'Watch Nexus 4K IPTV IPTV on Apple TV in minutes. We cover the best tvOS apps — iPlayTV, GSE Smart IPTV, Smarters — with a full guide.',
+    excerpt: 'Watch Nexus4kTV IPTV on Apple TV in minutes. We cover the best tvOS apps — iPlayTV, GSE Smart IPTV, Smarters — with a full guide.',
     publishedAt: '2026-04-20T11:00:00Z',
     author: 'Tech Review Team',
     category: 'Setup',
@@ -217,7 +217,7 @@ const BLOG_POSTS: BlogPost[] = [
         <div style="background: rgba(168, 85, 247, 0.1); border: 1px solid rgba(168, 85, 247, 0.3); padding: 2rem; border-radius: 12px; margin-top: 3rem; text-align: center;">
           <h3 style="color: #fff; margin-bottom: 1rem;">Now Install the Best IPTV Service</h3>
           <p style="color: #cbd5e1; margin-bottom: 1.5rem;">With Developer Options unlocked, you are ready to sideload the ultimate streaming experience.</p>
-          <a href="/" style="display: inline-block; background: linear-gradient(90deg, #a855f7, #00d4ff); color: #fff; padding: 10px 24px; border-radius: 6px; text-decoration: none; font-weight: bold;">Explore Nexus 4K IPTV</a>
+          <a href="/" style="display: inline-block; background: linear-gradient(90deg, #a855f7, #00d4ff); color: #fff; padding: 10px 24px; border-radius: 6px; text-decoration: none; font-weight: bold;">Explore Nexus4kTV</a>
         </div>
       </div>
     `
@@ -225,7 +225,7 @@ const BLOG_POSTS: BlogPost[] = [
   {
     slug: 'android-tv-players-2026',
     title: 'Best IPTV Players for Android TV in 2026 (Ranked & Tested)',
-    excerpt: 'We tested every major IPTV player with Nexus 4K IPTV 4K streams. Here are the top 7 apps ranked by performance and EPG quality.',
+    excerpt: 'We tested every major IPTV player with Nexus4kTV 4K streams. Here are the top 7 apps ranked by performance and EPG quality.',
     publishedAt: '2026-04-17T10:00:00Z',
     author: 'Tech Review Team',
     category: 'Guide',
@@ -247,7 +247,7 @@ const BLOG_POSTS: BlogPost[] = [
 
         <div style="background: rgba(168, 85, 247, 0.1); border: 1px solid rgba(168, 85, 247, 0.3); padding: 2rem; border-radius: 12px; margin-top: 3rem; text-align: center;">
           <h3 style="color: #fff; margin-bottom: 1rem;">Power Your Android TV Properly</h3>
-          <p style="color: #cbd5e1; margin-bottom: 1.5rem;">These players are only as good as the service feeding them. Get the most reliable 4K streams with Nexus 4K IPTV.</p>
+          <p style="color: #cbd5e1; margin-bottom: 1.5rem;">These players are only as good as the service feeding them. Get the most reliable 4K streams with Nexus4kTV.</p>
           <a href="/#pricing" style="display: inline-block; background: linear-gradient(90deg, #a855f7, #00d4ff); color: #fff; padding: 10px 24px; border-radius: 6px; text-decoration: none; font-weight: bold;">View Pricing Packages</a>
         </div>
       </div>

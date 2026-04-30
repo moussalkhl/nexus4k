@@ -7,9 +7,9 @@ import { Breadcrumb } from '@/components/ui/Breadcrumb'
 import styles from './page.module.css'
 
 export const metadata: Metadata = genMeta({
-  // Final: "Nexus 4K IPTV Blog – Guides & Tutorials | Nexus 4K IPTV" = 57 chars
-  title: 'Nexus 4K IPTV Blog – Guides & Tutorials',
-  description: 'Read the latest Nexus 4K IPTV news, setup guides, and tutorials for premium streaming. Learn how to optimize your setup for the best viewing experience today.',
+  // Final: "Nexus4kTV Blog – Guides & Tutorials | Nexus4kTV" = 57 chars
+  title: 'Nexus4kTV Blog – Guides & Tutorials',
+  description: 'Read the latest Nexus4kTV news, setup guides, and tutorials for premium streaming. Learn how to optimize your setup for the best viewing experience today.',
   canonical: '/blog',
 })
 

@@ -90,7 +90,7 @@ export function DevicesSection() {
       <div className={styles.container}>
         <div className={styles.header}>
           <h2 className={styles.title}>
-            Nexus 4K IPTV Compatible Devices
+            Nexus4kTV Compatible Devices
           </h2>
           <p className={styles.description}>
             Whether you're at home on the big screen or traveling with your smartphone,

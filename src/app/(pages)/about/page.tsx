@@ -5,9 +5,9 @@ import { CTASection } from '@/components/sections/CTASection'
 import styles from './page.module.css'
 
 export const metadata: Metadata = genMeta({
-  // Final: "About Nexus 4K IPTV – Our Story & Mission | Nexus 4K IPTV" = 59 chars
-  title: 'About Nexus 4K IPTV – Our Story & Mission',
-  description: 'Learn about Nexus 4K IPTV, the premier global provider delivering top-tier streaming since 2020. Discover our mission, technology, and global infrastructure.',
+  // Final: "About Nexus4kTV – Our Story & Mission | Nexus4kTV" = 59 chars
+  title: 'About Nexus4kTV – Our Story & Mission',
+  description: 'Learn about Nexus4kTV, the premier global provider delivering top-tier streaming since 2020. Discover our mission, technology, and global infrastructure.',
   canonical: '/about',
 })
 
@@ -30,7 +30,7 @@ export default function AboutPage() {
               Redefining How the World <span className="text-gradient">Watches TV</span>
             </h1>
             <p className="section-subtitle">
-              We built Nexus 4K IPTV because we were tired of expensive cable bills and unreliable streams. Now, we serve over 20,000 customers globally with the highest quality IPTV infrastructure available.
+              We built Nexus4kTV because we were tired of expensive cable bills and unreliable streams. Now, we serve over 20,000 customers globally with the highest quality IPTV infrastructure available.
             </p>
           </div>
         </div>
@@ -46,7 +46,7 @@ export default function AboutPage() {
               </p>
               <h2>The Infrastructure</h2>
               <p>
-                Nexus 4K IPTV isn't just another reseller. We operate our own load-balanced servers across 15 datacenters worldwide. This true CDN approach means that whether you're in New York, London, or Sydney, you're connecting to a local server for buffer-free 4K streaming.
+                Nexus4kTV isn't just another reseller. We operate our own load-balanced servers across 15 datacenters worldwide. This true CDN approach means that whether you're in New York, London, or Sydney, you're connecting to a local server for buffer-free 4K streaming.
               </p>
             </div>
             <div className={styles.stats}>

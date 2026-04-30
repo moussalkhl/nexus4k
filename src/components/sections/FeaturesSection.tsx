@@ -138,9 +138,9 @@ export function FeaturesSection() {
       
       <div className="container" style={{ position: 'relative', zIndex: 1 }}>
         <header className={styles.header}>
-          <span className="section-label">Why Nexus 4K IPTV</span>
+          <span className="section-label">Why Nexus4kTV</span>
           <h2 className="section-title" id="features-heading">
-            Why Choose <span className="text-gradient">Nexus 4K IPTV?</span>
+            Why Choose <span className="text-gradient">Nexus4kTV?</span>
           </h2>
           <p className="section-subtitle" style={{ margin: '0 auto' }}>
             Experience the next generation of IPTV with advanced features tailored for

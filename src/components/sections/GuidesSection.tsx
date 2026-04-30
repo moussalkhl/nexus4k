@@ -43,7 +43,7 @@ const RECENT_POSTS = [
     type: 'SETUP',
     isNew: true,
     title: 'How to Set Up IPTV on a MAG Box — 2026 Step-by-Step Guide',
-    excerpt: 'Set up Nexus 4K IPTV IPTV on any MAG box in under 10 minutes. Portal URL, MAC address, and troubleshooting — works on all models.',
+    excerpt: 'Set up Nexus4kTV IPTV on any MAG box in under 10 minutes. Portal URL, MAC address, and troubleshooting — works on all models.',
     date: 'Apr 20, 2026',
     readTime: '10 min read',
     href: '/blog/mag-box-setup-2026',
@@ -54,7 +54,7 @@ const RECENT_POSTS = [
     type: 'SETUP',
     isNew: true,
     title: 'How to Watch IPTV on Apple TV: Best Apps & Setup Guide',
-    excerpt: 'Watch Nexus 4K IPTV IPTV on Apple TV in minutes. We cover the best tvOS apps — iPlayTV, GSE Smart IPTV, Smarters — with a full guide.',
+    excerpt: 'Watch Nexus4kTV IPTV on Apple TV in minutes. We cover the best tvOS apps — iPlayTV, GSE Smart IPTV, Smarters — with a full guide.',
     date: 'Apr 20, 2026',
     readTime: '12 min read',
     href: '/blog/apple-tv-iptv-2026',
@@ -76,7 +76,7 @@ const RECENT_POSTS = [
     type: 'GUIDE',
     isNew: true,
     title: 'Best IPTV Players for Android TV in 2026 (Ranked & Tested)',
-    excerpt: 'We tested every major IPTV player with Nexus 4K IPTV 4K streams. Here are the top 7 apps ranked by performance and EPG quality.',
+    excerpt: 'We tested every major IPTV player with Nexus4kTV 4K streams. Here are the top 7 apps ranked by performance and EPG quality.',
     date: 'Apr 17, 2026',
     readTime: '13 min read',
     href: '/blog/android-tv-players-2026',
@@ -96,7 +96,7 @@ export function GuidesSection() {
             IPTV Guides & Streaming Tips
           </h2>
           <p className={styles.subtitle}>
-            Everything you need to get the most out of your Nexus 4K IPTV IPTV subscription.
+            Everything you need to get the most out of your Nexus4kTV IPTV subscription.
           </p>
         </header>
 
@@ -145,7 +145,7 @@ export function GuidesSection() {
       <div className={styles.recentSection}>
         <div className="container">
           <header className={styles.header}>
-            <div className={styles.badge}>FRESH FROM NEXUS 4K IPTV</div>
+            <div className={styles.badge}>FRESH FROM Nexus4kTV</div>
             <h2 className={styles.title}>Recently Published</h2>
             <p className={styles.subtitle}>
               Updated weekly with new guides, fixes, and comparisons to keep your streaming experience optimized.

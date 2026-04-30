@@ -17,10 +17,10 @@ export async function generateMetadata({ params }: CategoryPageProps): Promise<M
 
   if (!category) return {}
 
-  // Pattern: "[Name] on Nexus 4K IPTV – Live & HD | Nexus 4K IPTV"
+  // Pattern: "[Name] on Nexus4kTV – Live & HD | Nexus4kTV"
   // Range: 51–59 chars across all categories (Sports → Documentaries)
   return genMeta({
-    title: `${category.name} on Nexus 4K IPTV – Live & HD`,
+    title: `${category.name} on Nexus4kTV – Live & HD`,
     description: `Stream ${category.channelCount} live ${category.name} channels in HD, FHD, and 4K. ${category.description}`,
     canonical: category.href,
     keywords: [`${category.name.toLowerCase()} iptv`, `live ${category.name.toLowerCase()}`, `stream ${category.name.toLowerCase()}`, 'iptv channels'],
@@ -84,7 +84,7 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
       <section className="section">
         <div className="container">
           <div className={styles.content}>
-            <h2>Why Choose Nexus 4K IPTV for {category.name}?</h2>
+            <h2>Why Choose Nexus4kTV for {category.name}?</h2>
             <p>
               When it comes to streaming <strong>{category.name.toLowerCase()}</strong>, reliability and quality are paramount. 
               Our premium infrastructure ensures that all {category.channelCount} channels in this category are delivered with 

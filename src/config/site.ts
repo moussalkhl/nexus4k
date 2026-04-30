@@ -11,7 +11,7 @@ export const siteConfig = {
   email: 'support@nexus4ktv.pro',
   phone: '+44 747 660 3520',
   whatsappNumber: '447476603520',
-  defaultWhatsappMessage: 'Hi! I am interested in the Nexus 4k IPTV subscription',
+  defaultWhatsappMessage: 'Hi! I am interested in the Nexus4kTV subscription',
   telegramUrl: 'https://t.me/nexus4kiptv',
 } as const
 

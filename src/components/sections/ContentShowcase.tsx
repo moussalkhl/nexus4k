@@ -73,7 +73,7 @@ export function ContentShowcase() {
                   <div className={styles.logoImgWrap}>
                     <Image
                       src={item.img}
-                      alt={`${item.name} on Nexus 4K IPTV - Watch live sports in 4K on Nexus IPTV – PPV and EPG included`}
+                      alt={`${item.name} on Nexus4kTV - Watch live sports in 4K on Nexus IPTV – PPV and EPG included`}
                       fill
                       unoptimized
                       className={styles.logoImg}
@@ -98,7 +98,7 @@ export function ContentShowcase() {
               {[...MOVIE_ITEMS, ...MOVIE_ITEMS, ...MOVIE_ITEMS].map((item, i) => (
                 <div key={i} className={styles.card}>
                   <div className={styles.imageWrapper}>
-                    <Image src={item.img} alt={`${item.name} - 30,000+ live channels available on Nexus 4K IPTV`} fill unoptimized className={styles.cardImage} />
+                    <Image src={item.img} alt={`${item.name} - 30,000+ live channels available on Nexus4kTV`} fill unoptimized className={styles.cardImage} />
                     <div className={styles.cardOverlay}>
                       <span className={styles.cardTitle}>{item.name}</span>
                     </div>
@@ -119,7 +119,7 @@ export function ContentShowcase() {
               {[...KIDS_ITEMS, ...KIDS_ITEMS, ...KIDS_ITEMS].map((item, i) => (
                 <div key={i} className={styles.card}>
                   <div className={styles.imageWrapper}>
-                    <Image src={item.img} alt={`${item.name} - Kids streaming on Nexus 4K IPTV`} fill unoptimized className={styles.cardImage} />
+                    <Image src={item.img} alt={`${item.name} - Kids streaming on Nexus4kTV`} fill unoptimized className={styles.cardImage} />
                     <div className={styles.cardOverlay}>
                       <span className={styles.cardTitle}>{item.name}</span>
                     </div>
