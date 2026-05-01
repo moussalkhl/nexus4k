@@ -13,9 +13,9 @@ export function Footer() {
         <div className={styles.grid}>
           {/* Brand Column */}
           <div className={styles.brandCol}>
-            <Link href="/" className={styles.logo} aria-label="Nexus4kTV home" title="Nexus4kTV - Back to Home">
-              <Image src="/logo.png" alt="Nexus4kTV" width={220} height={55} className={styles.logoImage} />
-              <span className="sr-only">Nexus4kTV Footer Logo</span>
+            <Link href="/" className={styles.logo} aria-label="Nexus 4K IPTV home" title="Nexus 4K IPTV - Back to Home">
+              <Image src="/logo.png" alt="Nexus 4K IPTV logo" width={220} height={55} className={styles.logoImage} />
+              <span className="sr-only">Nexus 4K IPTV Footer Logo</span>
             </Link>
             <p className={styles.description}>
               Stream 30,000+ Channels in 4K — Zero Buffering. Ever.

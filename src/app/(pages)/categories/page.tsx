@@ -7,8 +7,8 @@ import { Breadcrumb } from '@/components/ui/Breadcrumb'
 import styles from './page.module.css'
 
 export const metadata: Metadata = genMeta({
-  // Final: "Nexus4kTV Channels – Live TV & VOD | Nexus4kTV" = 56 chars
-  title: 'Nexus4kTV Channels – Live TV & VOD',
+  // Final: "Nexus 4K IPTV Channels – Live TV & VOD | Nexus 4K IPTV" = 60 chars
+  title: 'Nexus 4K IPTV Channels – Live TV & VOD',
   description: 'Explore our massive IPTV channel categories including Live Sports, 4K Movies, Top Series, and Anime. Browse over 30,000 HD channels available for streaming.',
   canonical: '/categories',
 })

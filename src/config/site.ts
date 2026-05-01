@@ -1,17 +1,17 @@
 // ─── Site Configuration ─────────────────────────────────────────────────────
 
 export const siteConfig = {
-  name: 'Nexus4kTV',
+  name: 'Nexus 4K IPTV',
   tagline: 'Stream Everything. Anywhere. Anytime.',
   description:
-    'Nexus4kTV : Premium IPTV Subscription with Free Trial. Stream 30,000+ live channels, sports & movies in 4K/UHD. Trusted by 20,000+ users worldwide.',
+    'Nexus 4K IPTV delivers 20,000+ live TV channels, sports, PPV, movies and VODs in 4K/UHD quality with 99% uptime. Start your free trial today at nexus4ktv.pro.',
   url: process.env.NEXT_PUBLIC_SITE_URL || 'https://nexus4ktv.pro',
   ogImage: '/og-image.png',
   twitterHandle: '@Nexus4KIPTV',
   email: 'support@nexus4ktv.pro',
   phone: '+44 747 660 3520',
   whatsappNumber: '447476603520',
-  defaultWhatsappMessage: 'Hi! I am interested in the Nexus4kTV subscription',
+  defaultWhatsappMessage: 'Hi! I am interested in the Nexus 4K IPTV subscription',
   telegramUrl: 'https://t.me/nexus4kiptv',
 } as const
 
@@ -55,7 +55,7 @@ export const pricingPlans = [
       '24/7 Active support',
     ],
     cta: 'Start 3 Months',
-    href: 'https://wa.me/447476603520?text=Hi!%20I%20am%20interested%20in%20the%20Nexus4kTV%203%20Months%20subscription',
+    href: 'https://wa.me/447476603520?text=Hi!%20I%20am%20interested%20in%20the%20Nexus%204K%20IPTV%203%20Months%20subscription',
   },
   {
     id: '6-months',
@@ -74,7 +74,7 @@ export const pricingPlans = [
       '24/7 Active support',
     ],
     cta: 'Choose 6 Months',
-    href: 'https://wa.me/447476603520?text=Hi!%20I%20am%20interested%20in%20the%20Nexus4kTV%206%20Months%20subscription',
+    href: 'https://wa.me/447476603520?text=Hi!%20I%20am%20interested%20in%20the%20Nexus%204K%20IPTV%206%20Months%20subscription',
   },
   {
     id: '12-months',
@@ -93,7 +93,7 @@ export const pricingPlans = [
       '24/7 Active support',
     ],
     cta: 'Get Yearly Plan',
-    href: 'https://wa.me/447476603520?text=Hi!%20I%20am%20interested%20in%20the%20Nexus4kTV%2012%20Months%20subscription',
+    href: 'https://wa.me/447476603520?text=Hi!%20I%20am%20interested%20in%20the%20Nexus%204K%20IPTV%2012%20Months%20subscription',
   },
 ] as const
 

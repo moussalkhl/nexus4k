@@ -25,12 +25,12 @@ import { CTASection } from '@/components/sections/CTASection'
 
 // Title: 56/60 chars | Desc: 147/160 | Keywords score: 94/100
 export const metadata: Metadata = genMeta({
-  title: 'Premium IPTV – 30,000+ Channels & Free Trial',
-  description: 'Nexus4kTV : Premium IPTV Subscription with Free Trial. Stream 30,000+ live channels, sports & movies in 4K/UHD. Trusted by 20,000+ users worldwide.',
+  title: 'Nexus 4K IPTV – 20K+ Channels | Free Trial',
+  description: 'Nexus 4K IPTV delivers 20,000+ live TV channels, sports, PPV, movies and VODs in 4K/UHD quality with 99% uptime. Start your free trial today at nexus4ktv.pro.',
   canonical: '/',
   keywords: [
-    'Nexus4kTV',
-    'Nexus4k',
+    'Nexus 4K IPTV',
+    'Nexus IPTV',
     'IPTV subscription',
     '4K streaming',
     'Best IPTV',
@@ -46,7 +46,7 @@ export default function HomePage() {
     '@context': 'https://schema.org',
     '@graph': pricingPlans.map((plan) =>
       generateProductJsonLd({
-        name: `Nexus4kTV ${plan.name} Plan`,
+        name: `Nexus 4K IPTV ${plan.name} Plan`,
         description: plan.features.join(', '),
         price: plan.price,
       })

@@ -15,7 +15,7 @@ export function PricingSection() {
         <header className={styles.header}>
           <span className="section-label">Pricing Plans</span>
           <h2 className="section-title" id="pricing-heading">
-            <span className="text-gradient">Nexus4kTV</span> Pricing Plans
+            <span className="text-gradient">Nexus 4K IPTV</span> Pricing Plans
           </h2>
           <p className="section-subtitle">
             All plans include instant activation, 24/7 uptime monitoring, and

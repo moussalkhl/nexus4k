@@ -4,7 +4,7 @@ const REVIEWS = [
   {
     name: 'Marcus T.',
     role: 'Sports Enthusiast',
-    text: "I've tried 4 different IPTV providers before finding Nexus4kTV. The difference is night and day. Every single Premier League game in 4K with literally zero buffering. Incredible service.",
+    text: "I've tried 4 different IPTV providers before finding Nexus 4K IPTV. The difference is night and day. Every single Premier League game in 4K with literally zero buffering. Incredible service.",
     initials: 'MT'
   },
   {

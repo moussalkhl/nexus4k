@@ -5,9 +5,9 @@ import { siteConfig } from '@/config/site'
 import styles from './page.module.css'
 
 export const metadata: Metadata = genMeta({
-  // Final: "Legal & Privacy Policy – Nexus4kTV | Nexus4kTV" = 56 chars
-  title: 'Legal & Privacy Policy – Nexus4kTV',
-  description: 'Read the Terms of Service, Privacy Policy, and legal information for Nexus4kTV. Understand your rights and our commitment to your privacy and security.',
+  // Final: "Legal & Privacy Policy – Nexus 4K IPTV | Nexus 4K IPTV" = 60 chars
+  title: 'Legal & Privacy Policy – Nexus 4K IPTV',
+  description: 'Read the Terms of Service, Privacy Policy, and legal information for Nexus 4K IPTV. Understand your rights and our commitment to your privacy and security.',
   canonical: '/legal',
 })
 
@@ -52,7 +52,7 @@ export default function LegalPage() {
 
             <h2>3. Privacy Policy & Data Collection</h2>
             <p>
-              We value your privacy. Nexus4kTV operates with a strict no-logs policy regarding your streaming activity.
+              We value your privacy. Nexus 4K IPTV operates with a strict no-logs policy regarding your streaming activity.
             </p>
             <ul>
               <li><strong>What we collect:</strong> Email address for account management, payment information (processed securely via third-party gateways), and basic technical logs necessary for service delivery.</li>
@@ -67,7 +67,7 @@ export default function LegalPage() {
 
             <h2>5. Content Availability & Copyright</h2>
             <p>
-              Nexus4kTV acts as an indexer and directory of links available publicly on the internet. We do not host, upload, or own the rights to any of the broadcast streams. If you hold copyright to any content and wish to have it removed from our directory, please contact our abuse team.
+              Nexus 4K IPTV acts as an indexer and directory of links available publicly on the internet. We do not host, upload, or own the rights to any of the broadcast streams. If you hold copyright to any content and wish to have it removed from our directory, please contact our abuse team.
             </p>
 
             <div className={styles.contact}>

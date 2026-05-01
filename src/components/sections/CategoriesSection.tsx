@@ -68,7 +68,7 @@ export function CategoriesSection() {
           </h2>
           <p className="section-subtitle" style={{ margin: '0 auto' }}>
             From live sports and Hollywood blockbusters to anime and documentaries —
-            Nexus4kTV has every category covered in stunning HD quality.
+            Nexus 4K IPTV has every category covered in stunning HD quality.
           </p>
         </header>
 

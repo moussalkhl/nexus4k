@@ -50,9 +50,9 @@ export function Header() {
     >
       <div className={`container ${styles.inner}`}>
         {/* Logo */}
-        <Link href="/" className={styles.logo} aria-label="Nexus4kTV home" title="Nexus4kTV - Back to Home">
-          <Image src="/logo.png" alt="Nexus4kTV" width={180} height={45} className={styles.logoImage} />
-          <span className="sr-only">Nexus4kTV</span>
+        <Link href="/" className={styles.logo} aria-label="Nexus 4K IPTV home" title="Nexus 4K IPTV - Back to Home">
+          <Image src="/logo.png" alt="Nexus 4K IPTV logo" width={180} height={45} className={styles.logoImage} />
+          <span className="sr-only">Nexus 4K IPTV</span>
         </Link>
 
         {/* Desktop Navigation */}
@@ -166,7 +166,7 @@ export function Header() {
           onClick={() => setMobileOpen(false)}
           title="Contact us on WhatsApp to get started"
         >
-          Join Nexus Today
+          Join Nexus 4K IPTV Today
         </Link>
       </nav>
     </header>

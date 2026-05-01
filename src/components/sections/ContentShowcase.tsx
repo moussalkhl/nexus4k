@@ -54,7 +54,7 @@ export function ContentShowcase() {
         {/* ── Sports Row ─────────────────────────────────────── */}
         <div className={styles.rowContainer}>
           <h2 className={styles.rowTitle}>
-            {"DON'T MISS OUT OUR BEST"} <span className={styles.highlight}>SPORT LIVE</span> CHANNELS
+            {"DON'T MISS THE BEST"} <span className={styles.highlight}>NEXUS 4K IPTV</span> SPORTS
           </h2>
           <div className={styles.carouselWrapper}>
             <div className={`${styles.carouselTrack} ${styles.scrollLeft}`}>
@@ -68,7 +68,7 @@ export function ContentShowcase() {
                   <div className={styles.logoImgWrap}>
                     <img
                       src={item.img}
-                      alt={`${item.name} on Nexus4kTV`}
+                      alt={`${item.name} on Nexus 4K IPTV`}
                       loading="lazy"
                       className={styles.logoImg}
                     />
@@ -83,14 +83,14 @@ export function ContentShowcase() {
         {/* ── Movies Row ─────────────────────────────────────── */}
         <div className={styles.rowContainer}>
           <h2 className={styles.rowTitle}>
-            THE MOST <span className={styles.highlight}>POPULAR</span> MOVIES
+            POPULAR MOVIES ON <span className={styles.highlight}>NEXUS 4K IPTV</span>
           </h2>
           <div className={styles.carouselWrapper}>
             <div className={`${styles.carouselTrack} ${styles.scrollRight}`}>
               {[...MOVIE_ITEMS, ...MOVIE_ITEMS].map((item, i) => (
                 <div key={i} className={styles.card}>
                   <div className={styles.imageWrapper}>
-                    <img src={item.img} alt={`${item.name} on Nexus4kTV`} loading="lazy" className={styles.cardImage} />
+                    <img src={item.img} alt={`${item.name} on Nexus 4K IPTV`} loading="lazy" className={styles.cardImage} />
                     <div className={styles.cardOverlay}>
                       <span className={styles.cardTitle}>{item.name}</span>
                     </div>
@@ -111,7 +111,7 @@ export function ContentShowcase() {
               {[...KIDS_ITEMS, ...KIDS_ITEMS].map((item, i) => (
                 <div key={i} className={styles.card}>
                   <div className={styles.imageWrapper}>
-                    <img src={item.img} alt={`${item.name} on Nexus4kTV`} loading="lazy" className={styles.cardImage} />
+                    <img src={item.img} alt={`${item.name} on Nexus 4K IPTV`} loading="lazy" className={styles.cardImage} />
                     <div className={styles.cardOverlay}>
                       <span className={styles.cardTitle}>{item.name}</span>
                     </div>
