@@ -337,25 +337,25 @@ const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: 'mag-box-setup-2026',
-    title: 'How to Set Up IPTV on a MAG Box — 2026 Step-by-Step Guide',
-    excerpt: 'Set up Nexus4kTV IPTV on any MAG box in under 10 minutes. Portal URL, MAC address, and troubleshooting — works on all models.',
+    title: 'Setup IPTV on MAG Box: 2026 Step-by-Step Guide',
+    excerpt: 'Set up Nexus4kTV IPTV on any MAG box in under 10 minutes. Portal URL, MAC address, and troubleshooting — works on all models. Best 4K streaming experience now!',
     publishedAt: '2026-04-20T10:00:00Z',
     author: 'Tech Review Team',
     category: 'Setup',
     readTime: 10,
     coverImage: '/images/blog/mag-box-setup-2026.png',
-    tags: ['MAG Box', 'Setup', 'Portal URL', 'IPTV'],
+    tags: ['MAG Box', 'IPTV Setup', 'Portal URL', 'MAC Address', '2026 Guide', '4K Streaming', 'Nexus4kTV', 'MAG 524', 'Troubleshooting'],
     content: `
       <script type="application/ld+json">
       {
         "@context": "https://schema.org",
         "@type": "BlogPosting",
-        "headline": "How to Set Up IPTV on a MAG Box — 2026 Guide",
-        "description": "Step-by-step guide to configuring your MAG set-top box for Nexus4kTV IPTV services in 2026.",
+        "headline": "Setup IPTV on MAG Box: 2026 Step-by-Step Guide",
+        "description": "Set up Nexus4kTV IPTV on any MAG box in under 10 minutes. Portal URL, MAC address, and troubleshooting — works on all models. Best 4K streaming experience now!",
         "image": "https://nexus4ktv.pro/images/blog/mag-box-setup-hero.webp",
         "author": { "@type": "Person", "name": "Tech Review Team" },
         "datePublished": "2026-04-20T10:00:00Z",
-        "dateModified": "2026-04-30T22:00:00Z"
+        "dateModified": "2026-05-01T12:00:00Z"
       }
       </script>
 
