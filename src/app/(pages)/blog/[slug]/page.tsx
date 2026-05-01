@@ -22,7 +22,7 @@ export async function generateMetadata({ params }: BlogPostPageProps): Promise<M
     post.title.length > 36 ? post.title.slice(0, 33).trimEnd() + '...' : post.title
 
   return genMeta({
-    title: truncatedTitle,
+    title: { absolute: post.title },
     description: post.excerpt,
     canonical: `/blog/${post.slug}`,
     ogType: 'article',

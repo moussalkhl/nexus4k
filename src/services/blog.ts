@@ -652,20 +652,20 @@ const BLOG_POSTS: BlogPost[] = [
   {
     slug: 'android-tv-players-2026',
     title: 'Best IPTV Players for Android TV in 2026 (Ranked & Tested)',
-    excerpt: 'Discover the best IPTV players for Android TV in 2026. We ranked and tested top apps like Tivimate and Sparkle TV for 4K streaming, EPG quality, and performance!',
+    excerpt: 'Best IPTV players for Android TV in 2026. We tested top apps like Tivimate and Sparkle TV for 4K streaming, EPG quality, and performance. Get your free trial now!',
     publishedAt: '2026-04-17T10:00:00Z',
     author: 'Tech Review Team',
     category: 'Guide',
     readTime: 13,
     coverImage: '/images/blog/android-tv-players-2026.png',
-    tags: ['Android TV', 'Nvidia Shield', 'IPTV Players', 'Guide', 'Tivimate', 'Sparkle TV', 'OTT Navigator', '4K Streaming', 'Smart TV', 'IPTV Service', 'Best IPTV 2026', 'Chromecast', 'Sony TV', 'Live TV', 'M3U Player', 'Xtream Codes', 'IPTV App', 'Streaming Box', 'Free Trial', 'Nexus4kTV', 'Best IPTV Player', 'Android Box', 'Google TV', 'Firestick IPTV', 'Live Sports', 'VOD Streaming', 'EPG Speed', 'IPTV Reviews'],
+    tags: ['Android TV', 'IPTV Players', 'Guide', 'Tivimate', 'Sparkle TV', '4K Streaming', 'Best IPTV 2026', 'Nexus4kTV'],
     content: `
       <script type="application/ld+json">
       {
         "@context": "https://schema.org",
         "@type": "BlogPosting",
         "headline": "Best IPTV Players for Android TV in 2026 (Ranked & Tested)",
-        "description": "Discover the best IPTV players for Android TV in 2026. We ranked and tested top apps like Tivimate and Sparkle TV for 4K streaming, EPG quality, and performance!",
+        "description": "Best IPTV players for Android TV in 2026. We tested top apps like Tivimate and Sparkle TV for 4K streaming, EPG quality, and performance. Get your free trial now!",
         "image": "https://nexus4ktv.pro/images/blog/android-tv-players-2026.png",
         "author": { "@type": "Person", "name": "Tech Review Team" },
         "datePublished": "2026-04-17T10:00:00Z",

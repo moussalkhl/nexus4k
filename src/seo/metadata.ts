@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import { siteConfig } from '@/config/site'
 
 interface GenerateMetadataOptions {
-  title: string
+  title: string | { absolute: string }
   description?: string
   canonical?: string
   noindex?: boolean
@@ -24,7 +24,11 @@ export function generateMetadata({
   ogType = 'website',
   keywords = [],
 }: GenerateMetadataOptions): Metadata {
-  const fullTitle = title === siteConfig.name ? title : `${title} | ${siteConfig.name}`
+  const isTitleObject = typeof title === 'object'
+  const titleText = isTitleObject ? title.absolute : title
+  const fullTitle = isTitleObject 
+    ? title.absolute 
+    : (title === siteConfig.name ? title : `${title} | ${siteConfig.name}`)
   const canonicalUrl = canonical
     ? `${siteConfig.url}${canonical}`
     : siteConfig.url
