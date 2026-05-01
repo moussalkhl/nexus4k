@@ -651,21 +651,21 @@ const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: 'android-tv-players-2026',
-    title: 'Best IPTV Players for Android TV in 2026 (Ranked & Tested)',
-    excerpt: 'Best IPTV players for Android TV in 2026. We tested top apps like Tivimate and Sparkle TV for 4K streaming, EPG quality, and performance. Get your free trial now!',
+    title: 'Best IPTV Players for Android TV (2026 Ranked & Tested)',
+    excerpt: 'Top IPTV players for Android TV in 2026. We tested apps like Tivimate and Sparkle TV for 4K streaming, EPG quality, and performance. Get your free trial today!',
     publishedAt: '2026-04-17T10:00:00Z',
     author: 'Tech Review Team',
     category: 'Guide',
     readTime: 13,
     coverImage: '/images/blog/android-tv-players-2026.png',
-    tags: ['Android TV', 'IPTV Players', 'Guide', 'Tivimate', 'Sparkle TV', '4K Streaming', 'Best IPTV 2026', 'Nexus4kTV'],
+    tags: ['Android TV', 'IPTV Players', 'Guide', 'Tivimate', 'Sparkle TV', '4K Streaming', 'Best IPTV 2026'],
     content: `
       <script type="application/ld+json">
       {
         "@context": "https://schema.org",
         "@type": "BlogPosting",
-        "headline": "Best IPTV Players for Android TV in 2026 (Ranked & Tested)",
-        "description": "Best IPTV players for Android TV in 2026. We tested top apps like Tivimate and Sparkle TV for 4K streaming, EPG quality, and performance. Get your free trial now!",
+        "headline": "Best IPTV Players for Android TV (2026 Ranked & Tested)",
+        "description": "Top IPTV players for Android TV in 2026. We tested apps like Tivimate and Sparkle TV for 4K streaming, EPG quality, and performance. Get your free trial today!",
         "image": "https://nexus4ktv.pro/images/blog/android-tv-players-2026.png",
         "author": { "@type": "Person", "name": "Tech Review Team" },
         "datePublished": "2026-04-17T10:00:00Z",

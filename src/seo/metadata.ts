@@ -24,8 +24,7 @@ export function generateMetadata({
   ogType = 'website',
   keywords = [],
 }: GenerateMetadataOptions): Metadata {
-  const isTitleObject = typeof title === 'object'
-  const fullTitle = isTitleObject 
+  const metaTitle = typeof title === 'object' 
     ? title.absolute 
     : (title === siteConfig.name ? title : `${title} | ${siteConfig.name}`)
   const canonicalUrl = canonical
@@ -33,7 +32,7 @@ export function generateMetadata({
     : siteConfig.url
 
   return {
-    title: fullTitle,
+    title,
     description,
     keywords: keywords.join(', '),
     authors: [{ name: siteConfig.name }],
@@ -56,7 +55,7 @@ export function generateMetadata({
     },
     openGraph: {
       type: ogType,
-      title: fullTitle,
+      title: metaTitle,
       description,
       url: canonicalUrl,
       siteName: siteConfig.name,
@@ -65,14 +64,14 @@ export function generateMetadata({
           url: ogImage,
           width: 1200,
           height: 630,
-          alt: fullTitle,
+          alt: metaTitle,
         },
       ],
       locale: 'en_US',
     },
     twitter: {
       card: 'summary_large_image',
-      title: fullTitle,
+      title: metaTitle,
       description,
       images: [{ url: '/logo.png' }],
       creator: siteConfig.twitterHandle,
