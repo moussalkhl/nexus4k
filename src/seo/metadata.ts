@@ -25,7 +25,6 @@ export function generateMetadata({
   keywords = [],
 }: GenerateMetadataOptions): Metadata {
   const isTitleObject = typeof title === 'object'
-  const titleText = isTitleObject ? title.absolute : title
   const fullTitle = isTitleObject 
     ? title.absolute 
     : (title === siteConfig.name ? title : `${title} | ${siteConfig.name}`)
