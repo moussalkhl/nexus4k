@@ -4,6 +4,7 @@ import type { BlogPost } from '@/types'
 // In production, replace with CMS/API calls (Contentful, Sanity, etc.)
 
 const BLOG_POSTS: BlogPost[] = [
+  {
     slug: 'best-iptv-players-4k-streaming-2026',
     title: 'Best IPTV Players for 4K Streaming in 2026: Top 5 Picks',
     excerpt: 'Best IPTV players for 4K streaming in 2026. Discover the top apps for buffer-free UHD playback on Smart TVs and Firestick. Get your free trial now!',
