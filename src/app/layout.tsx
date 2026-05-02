@@ -22,7 +22,7 @@ const outfit = Outfit({
 
 export const metadata: Metadata = {
   title: {
-    default: 'Nexus 4K IPTV – Best IPTV Subscription with Free Trial & 4K Streams',
+    default: 'Nexus 4K IPTV – Best IPTV Subscription | Free Trial',
     template: '%s | Nexus 4K IPTV',
   },
   description: siteConfig.description,
