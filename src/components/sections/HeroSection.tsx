@@ -1,37 +1,8 @@
-'use client';
-
-import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { siteConfig } from '@/config/site';
 import styles from './HeroSection.module.css';
 
 export function HeroSection() {
-  const [timeLeft, setTimeLeft] = useState({ hours: 22, minutes: 19, seconds: 39 });
-
-  // Live countdown timer for extra creativity & conversion urgency
-  useEffect(() => {
-    const timer = setInterval(() => {
-      setTimeLeft(prev => {
-        let { hours, minutes, seconds } = prev;
-        seconds--;
-        if (seconds < 0) {
-          seconds = 59;
-          minutes--;
-          if (minutes < 0) {
-            minutes = 59;
-            hours--;
-            if (hours < 0) {
-              hours = 24; // loop back for infinite urgency
-            }
-          }
-        }
-        return { hours, minutes, seconds };
-      });
-    }, 1000);
-    return () => clearInterval(timer);
-  }, []);
-
-  const formatTime = (time: number) => time.toString().padStart(2, '0');
 
   return (
     <section className={styles.hero} aria-label="Hero">
@@ -64,17 +35,17 @@ export function HeroSection() {
           <p className={styles.timerLabel}>LIMITED TIME OFFER ENDS IN:</p>
           <div className={styles.timerBox}>
             <div className={styles.timeBlock}>
-              <span className={styles.timeNum}>{formatTime(timeLeft.hours)}</span>
+              <span className={styles.timeNum}>11</span>
               <span className={styles.timeText}>HRS</span>
             </div>
             <span className={styles.timeColon}>:</span>
             <div className={styles.timeBlock}>
-              <span className={styles.timeNum}>{formatTime(timeLeft.minutes)}</span>
+              <span className={styles.timeNum}>59</span>
               <span className={styles.timeText}>MIN</span>
             </div>
             <span className={styles.timeColon}>:</span>
             <div className={styles.timeBlock}>
-              <span className={styles.timeNum} style={{ color: 'var(--color-primary)' }}>{formatTime(timeLeft.seconds)}</span>
+              <span className={styles.timeNum} style={{ color: 'var(--color-primary)' }}>59</span>
               <span className={styles.timeText}>SEC</span>
             </div>
           </div>
