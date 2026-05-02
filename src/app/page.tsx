@@ -25,18 +25,19 @@ import { CTASection } from '@/components/sections/CTASection'
 
 // Title: 60/60 chars | Desc: 158/160 | Keywords score: 100/100
 export const metadata: Metadata = genMeta({
-  title: 'Nexus 4K IPTV – Best IPTV Subscription with Free Trial | 4K Streams & Live TV.',
-  description: 'Nexus 4K IPTV: Premium IPTV subscription with free trial. Stream 30,000+ live TV channels, sports, movies & series in 4K/UHD. Trusted by 20,000+ users worldwide.',
+  title: 'Nexus 4K IPTV – Best IPTV Subscription with Free Trial & 4K Streams',
+  description: 'Nexus 4K IPTV: Premium IPTV subscription with free trial. Stream 30,000+ live TV channels, sports, movies & series in 4K/UHD. Trusted by 20,000+ users worldwide',
   canonical: '/',
   keywords: [
     'Nexus 4K IPTV',
     'Nexus IPTV',
     'IPTV subscription',
-    '4K Streams',
     'Best IPTV',
-    'Free Trial',
-    'nexus4ktv.pro',
-    'VODs',
+    'Free IPTV trial',
+    '4K streams',
+    'live TV streaming',
+    'VOD IPTV',
+    'nexus4ktv',
   ],
 })
 
