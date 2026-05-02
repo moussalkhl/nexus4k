@@ -23,20 +23,20 @@ import { ContactSection } from '@/components/sections/ContactSection'
 import { CTASection } from '@/components/sections/CTASection'
 
 
-// Title: 56/60 chars | Desc: 147/160 | Keywords score: 94/100
+// Title: 60/60 chars | Desc: 158/160 | Keywords score: 100/100
 export const metadata: Metadata = genMeta({
-  title: 'Nexus 4K IPTV – 20K+ Channels | Free Trial',
+  title: 'Nexus 4K IPTV – 20,000+ Live Channels | Start Free Trial Now',
   description: 'Nexus 4K IPTV delivers 20,000+ live TV channels, sports, PPV, movies and VODs in 4K/UHD quality with 99% uptime. Start your free trial today at nexus4ktv.pro.',
   canonical: '/',
   keywords: [
     'Nexus 4K IPTV',
     'Nexus IPTV',
     'IPTV subscription',
-    '4K streaming',
+    '4K Streams',
     'Best IPTV',
     'Free Trial',
     'nexus4ktv.pro',
-    'PPV',
+    'VODs',
   ],
 })
 
