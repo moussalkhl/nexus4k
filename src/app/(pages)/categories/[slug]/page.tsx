@@ -20,10 +20,18 @@ export async function generateMetadata({ params }: CategoryPageProps): Promise<M
   // Pattern: "[Name] on Nexus4kTV – Live & HD | Nexus4kTV"
   // Range: 51–59 chars across all categories (Sports → Documentaries)
   return genMeta({
-    title: `${category.name} on Nexus 4K IPTV – Live & HD`,
-    description: `Stream ${category.channelCount} live ${category.name} channels in HD, FHD, and 4K. ${category.description}`,
+    title: `${category.name} IPTV Subscription | Free Trial`,
+    description: `Get the best ${category.name} IPTV subscription with a free trial. Stream ${category.channelCount} live ${category.name.toLowerCase()} channels in 4K/UHD. Trusted by 20,000+ users worldwide.`,
     canonical: category.href,
-    keywords: [`${category.name.toLowerCase()} iptv`, `live ${category.name.toLowerCase()}`, `stream ${category.name.toLowerCase()}`, 'iptv channels'],
+    keywords: [
+      'Nexus 4K IPTV',
+      `${category.name.toLowerCase()} iptv`,
+      'IPTV subscription',
+      'Best IPTV',
+      'Free trial',
+      '4K streams',
+      'nexus4ktv',
+    ],
   })
 }
 
