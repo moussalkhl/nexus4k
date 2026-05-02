@@ -31,8 +31,15 @@
   border: 1px solid rgba(255, 255, 255, 0.05);
 }
 
-.card.active {
-  flex: 4;
+.accordionContainer:hover .card {
+  flex: 1;
+  border-color: rgba(255, 255, 255, 0.05);
+  box-shadow: none;
+}
+
+.accordionContainer:not(:hover) .card:first-child,
+.card:hover {
+  flex: 4 !important;
   border-color: rgba(255, 255, 255, 0.15);
   box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
 }
@@ -45,7 +52,13 @@
   transition: opacity 0.5s ease;
 }
 
-.card:not(.active) .cardOverlay {
+.accordionContainer:not(:hover) .card:first-child .cardOverlay,
+.card:hover .cardOverlay {
+  background: linear-gradient(to top, rgba(0,0,0,0.95) 0%, rgba(0,0,0,0.3) 50%, rgba(0,0,0,0.4) 100%);
+}
+
+.accordionContainer:not(:hover) .card:not(:first-child) .cardOverlay,
+.accordionContainer:hover .card:not(:hover) .cardOverlay {
   background: rgba(0,0,0,0.7);
 }
 
@@ -69,7 +82,8 @@
   border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-.card.active .iconWrap {
+.accordionContainer:not(:hover) .card:first-child .iconWrap,
+.card:hover .iconWrap {
   top: 2rem;
   left: 2rem;
   transform: none;
@@ -80,7 +94,8 @@
   border-color: rgba(255, 255, 255, 0.3);
 }
 
-.card.active .iconWrap svg {
+.accordionContainer:not(:hover) .card:first-child .iconWrap svg,
+.card:hover .iconWrap svg {
   width: 32px;
   height: 32px;
 }
@@ -97,7 +112,8 @@
   flex-direction: column;
 }
 
-.card.active .content {
+.accordionContainer:not(:hover) .card:first-child .content,
+.card:hover .content {
   opacity: 1;
   transform: translateY(0);
   visibility: visible;
@@ -180,7 +196,8 @@
   white-space: nowrap;
 }
 
-.card.active .verticalTitle {
+.accordionContainer:not(:hover) .card:first-child .verticalTitle,
+.card:hover .verticalTitle {
   opacity: 0;
   pointer-events: none;
 }
@@ -196,15 +213,17 @@
     flex-direction: column;
     height: 800px;
   }
-  .card.active {
-    flex: 3;
+  .accordionContainer:not(:hover) .card:first-child,
+  .card:hover {
+    flex: 3 !important;
   }
   .iconWrap {
     top: 50%;
     left: 2rem;
     transform: translateY(-50%);
   }
-  .card.active .iconWrap {
+  .accordionContainer:not(:hover) .card:first-child .iconWrap,
+  .card:hover .iconWrap {
     top: 2rem;
     transform: none;
   }

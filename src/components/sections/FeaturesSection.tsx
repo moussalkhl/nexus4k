@@ -1,6 +1,3 @@
-'use client';
-
-import { useRef, useState } from 'react';
 import styles from './FeaturesSection.module.css';
 
 const FEATURES = [
@@ -77,46 +74,17 @@ const FEATURES = [
 ];
 
 function BentoCard({ feature }: { feature: typeof FEATURES[0] }) {
-  const cardRef = useRef<HTMLDivElement>(null);
-  const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
-  const [isHovering, setIsHovering] = useState(false);
-
-  const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
-    if (!cardRef.current) return;
-    const rect = cardRef.current.getBoundingClientRect();
-    setMousePosition({
-      x: e.clientX - rect.left,
-      y: e.clientY - rect.top,
-    });
-  };
-
   return (
-    <div
-      ref={cardRef}
-      className={`${styles.card} ${styles[`span${feature.span}`]}`}
-      onMouseMove={handleMouseMove}
-      onMouseEnter={() => setIsHovering(true)}
-      onMouseLeave={() => setIsHovering(false)}
-      style={{
-        '--mouse-x': `${mousePosition.x}px`,
-        '--mouse-y': `${mousePosition.y}px`,
-      } as React.CSSProperties}
-    >
+    <div className={`${styles.card} ${styles[`span${feature.span}`]}`}>
       {/* Background image for specific cards */}
       {feature.id === 'channels' && <div className={styles.galaxyImage} />}
       {feature.id === 'uptime' && <div className={styles.gridOverlay} />}
       
       {/* Interactive spotlight glow */}
-      <div 
-        className={styles.spotlight} 
-        style={{ opacity: isHovering ? 1 : 0 }} 
-      />
+      <div className={styles.spotlight} />
       
       {/* Glow border overlay */}
-      <div 
-        className={styles.borderGlow} 
-        style={{ opacity: isHovering ? 1 : 0 }} 
-      />
+      <div className={styles.borderGlow} />
       
       <div className={styles.content}>
         <div className={styles.iconWrap}>

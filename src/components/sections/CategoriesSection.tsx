@@ -1,6 +1,3 @@
-'use client';
-
-import { useState } from 'react';
 import Link from 'next/link';
 import { categories } from '@/config/site';
 import styles from './CategoriesSection.module.css';
@@ -56,7 +53,6 @@ const categoryIcons: Record<string, React.ReactNode> = {
 };
 
 export function CategoriesSection() {
-  const [activeIndex, setActiveIndex] = useState(0);
 
   return (
     <section className={`section ${styles.section}`} aria-labelledby="categories-heading">
@@ -74,12 +70,10 @@ export function CategoriesSection() {
 
         <div className={styles.accordionContainer}>
           {categories.map((cat, index) => {
-            const isActive = activeIndex === index;
             return (
               <div 
                 key={cat.id}
-                className={`${styles.card} ${isActive ? styles.active : ''}`}
-                onMouseEnter={() => setActiveIndex(index)}
+                className={styles.card}
                 style={{ background: bgGradients[index] }}
               >
                 <div className={styles.cardOverlay} />

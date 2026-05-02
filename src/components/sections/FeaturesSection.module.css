@@ -47,30 +47,35 @@
   box-shadow: 0 10px 40px -10px rgba(0, 212, 255, 0.15);
 }
 
-/* Mouse tracking spotlight effect inside */
+/* Static spotlight effect inside */
 .spotlight {
   position: absolute;
   top: 0; left: 0; width: 100%; height: 100%;
   background: radial-gradient(
-    800px circle at var(--mouse-x) var(--mouse-y),
-    rgba(0, 212, 255, 0.06), /* Cyan spotlight */
-    transparent 40%
+    800px circle at 50% 50%,
+    rgba(0, 212, 255, 0.08), /* Cyan spotlight */
+    transparent 50%
   );
   pointer-events: none;
   z-index: 0;
-  transition: opacity 0.3s ease;
+  opacity: 0;
+  transition: opacity 0.4s ease;
 }
 
-/* Mouse tracking glowing border overlay */
+.card:hover .spotlight {
+  opacity: 1;
+}
+
+/* Static glowing border overlay */
 .borderGlow {
   position: absolute;
   inset: 0;
   border-radius: 24px;
   padding: 2px;
   background: radial-gradient(
-    400px circle at var(--mouse-x) var(--mouse-y),
+    400px circle at 50% 50%,
     var(--color-primary), /* Cyan */
-    transparent 40%
+    transparent 50%
   );
   -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
   -webkit-mask-composite: xor;
