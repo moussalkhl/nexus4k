@@ -392,7 +392,7 @@ const BLOG_POSTS: BlogPost[] = [
         <h3>How much can I save by switching to IPTV?</h3>
         <p>The average household saves between $1,200 and $1,800 annually by switching from cable to a premium IPTV service.</p>
 
-        <p>Stop overpaying for limited television. <a href="/#pricing">Join the future of streaming today</a> and see why Nexus 4K IPTV is the #1 choice for cord-cutters.</p>
+        <p>Stop overpaying for limited television. Visit the <a href="/">Nexus 4K IPTV homepage</a> to discover why thousands have already made the switch, and <a href="/#pricing">check our pricing plans</a> to find the perfect subscription for your budget.</p>
       </div>
     `
   },
@@ -499,7 +499,7 @@ const BLOG_POSTS: BlogPost[] = [
         <h3>How do I fix the 'Authentication Failed' error?</h3>
         <p>This usually means your MAC address hasn't been activated on the provider's end or there is a typo in the portal URL.</p>
 
-        <p>Ready to experience true stability? <a href="/contact">Activate your MAG box now</a> and enjoy the best 4K IPTV service in 2026.</p>
+        <p>Ready to experience true stability? <a href="/contact">Activate your MAG box now</a> and enjoy the best 4K IPTV service in 2026. Head to the <a href="/">Nexus 4K IPTV homepage</a> to learn more about our features, or <a href="/#pricing">view our subscription plans</a> and pick the one that suits you best.</p>
       </div>
     `
   },
@@ -606,7 +606,7 @@ const BLOG_POSTS: BlogPost[] = [
         <h3>Can Apple TV play 4K IPTV streams?</h3>
         <p>Absolutely. The Apple TV 4K is one of the best devices for handling high-bitrate 4K IPTV streams without lag.</p>
 
-        <p>Unlock the full potential of your Apple TV 4K today. <a href="/contact">Subscribe to Nexus 4K IPTV</a> and experience 4K streaming as it was meant to be.</p>
+        <p>Unlock the full potential of your Apple TV 4K today. <a href="/contact">Subscribe to Nexus 4K IPTV</a> and experience 4K streaming as it was meant to be. Explore everything we offer on the <a href="/">Nexus 4K IPTV homepage</a>, or go straight to our <a href="/#pricing">pricing page</a> to get started.</p>
       </div>
     `
   },
@@ -706,7 +706,7 @@ const BLOG_POSTS: BlogPost[] = [
         <h3>Will a factory reset hide Developer Options again?</h3>
         <p>Yes, a factory reset will return your Firestick to its original state, hiding the menu again.</p>
 
-        <p>Now that you've unlocked your Firestick, it's time to install the world's best IPTV service. <a href="/">Explore Nexus 4K IPTV's features</a> and start streaming in 4K today.</p>
+        <p>Now that you've unlocked your Firestick, it's time to install the world's best IPTV service. <a href="/">Explore Nexus 4K IPTV's features</a> on our homepage and <a href="/#pricing">choose a pricing plan</a> that fits your needs — start streaming in 4K today.</p>
       </div>
     `
   },
@@ -835,7 +835,7 @@ const BLOG_POSTS: BlogPost[] = [
         <h3>How do I get 4K streaming on Android TV?</h3>
         <p>To achieve 4K streaming, you need a high-speed internet connection, a 4K-capable device, and a premium service provider like Nexus 4K IPTV.</p>
 
-        <p>Get the most out of your Android TV device today. Pair it with the world's most reliable 4K streaming service for a buffer-free experience. <a href="/contact">Get your Nexus 4K IPTV trial today</a> and see the difference.</p>
+        <p>Get the most out of your Android TV device today. Pair it with the world's most reliable 4K streaming service for a buffer-free experience. Visit the <a href="/">Nexus 4K IPTV homepage</a> to learn more, <a href="/#pricing">browse our pricing plans</a>, or <a href="/contact">get your free trial today</a> and see the difference yourself.</p>
       </div>
     `
   }
