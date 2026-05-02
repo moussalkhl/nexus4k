@@ -1,5 +1,3 @@
-'use client';
-
 import Link from 'next/link';
 import Image from 'next/image';
 import styles from './GuidesSection.module.css';
@@ -127,7 +125,7 @@ export function GuidesSection() {
                 </h3>
                 <p className={styles.cardExcerpt}>{post.excerpt}</p>
                 <div className={styles.readMore}>
-                  <Link href={post.href} title={`Read guide: ${post.title}`}>Read Full Guide <span className={styles.arrow}>→</span></Link>
+                  <Link href={post.href} title={`Read guide: ${post.title}`}>Read Full Guide<span className="sr-only"> on {post.title}</span> <span className={styles.arrow}>→</span></Link>
                 </div>
               </div>
             </div>
@@ -188,7 +186,7 @@ export function GuidesSection() {
                       <span>{post.readTime}</span>
                     </div>
                     <div className={styles.readMore}>
-                      <Link href={post.href} title={`Read article: ${post.title}`}>Read More <span className={styles.arrow}>→</span></Link>
+                      <Link href={post.href} title={`Read article: ${post.title}`}>Read More<span className="sr-only"> on {post.title}</span> <span className={styles.arrow}>→</span></Link>
                     </div>
                   </div>
                 </div>

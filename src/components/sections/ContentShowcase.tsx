@@ -1,5 +1,3 @@
-'use client';
-
 import type { CSSProperties } from 'react';
 import styles from './ContentShowcase.module.css';
 
