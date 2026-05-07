@@ -238,3 +238,99 @@
     font-size: 2rem;
   }
 }
+
+@media (max-width: 768px) {
+  .section {
+    padding: 5rem 0;
+  }
+
+  .accordionContainer {
+    flex-direction: column;
+    height: auto;
+    gap: 1rem;
+  }
+
+  .accordionContainer:not(:hover) .card:first-child,
+  .card:hover {
+    flex: unset !important;
+  }
+
+  /* On mobile every card is a fixed-height row */
+  .card {
+    flex: unset !important;
+    height: 72px;
+    border-radius: 16px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    overflow: hidden;
+    transition: height 0.5s cubic-bezier(0.25, 1, 0.5, 1);
+  }
+
+  /* Expanded card (first by default, or hovered) */
+  .accordionContainer:not(:hover) .card:first-child,
+  .card:hover {
+    height: 280px !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    justify-content: flex-end !important;
+  }
+
+  /* Icon: inline left for collapsed, top-left for expanded */
+  .iconWrap {
+    position: relative;
+    top: auto;
+    left: auto;
+    transform: none;
+    margin: 0 1rem;
+    width: 42px;
+    height: 42px;
+    flex-shrink: 0;
+    z-index: 2;
+  }
+
+  .accordionContainer:not(:hover) .card:first-child .iconWrap,
+  .card:hover .iconWrap {
+    position: absolute;
+    top: 1.25rem;
+    left: 1.25rem;
+    margin: 0;
+    width: 48px;
+    height: 48px;
+    transform: none;
+  }
+
+  /* Vertical label shown in collapsed rows */
+  .verticalTitle {
+    writing-mode: horizontal-tb;
+    position: relative;
+    bottom: auto;
+    left: auto;
+    top: auto;
+    transform: none;
+    font-size: 1rem;
+    letter-spacing: 0.15em;
+    opacity: 1;
+  }
+
+  .accordionContainer:not(:hover) .card:first-child .verticalTitle,
+  .card:hover .verticalTitle {
+    opacity: 0;
+    position: absolute;
+    pointer-events: none;
+  }
+
+  /* Content: hidden in collapsed, visible in expanded */
+  .content {
+    padding: 1.25rem 1.25rem 1.5rem;
+  }
+
+  .name {
+    font-size: 1.75rem;
+  }
+
+  .description {
+    font-size: 0.95rem;
+    margin-bottom: 1rem;
+  }
+}
