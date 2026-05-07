@@ -42,7 +42,7 @@ const nextConfig: NextConfig = {
               "script-src 'self' 'unsafe-inline' 'unsafe-eval' https://va.vercel-scripts.com",
               "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com",
               "font-src 'self' https://fonts.gstatic.com",
-              "img-src 'self' data: blob: https://nexus4ktv.pro",
+              "img-src 'self' data: blob: https://nexus4ktv.pro https://*.vercel.app https://*.vercel-storage.com *",
               "connect-src 'self' https://va.vercel-scripts.com /_vercel/insights /_vercel/speed-insights",
             ].join('; '),
           },
