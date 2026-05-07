@@ -2,6 +2,33 @@
   padding-bottom: var(--space-5xl);
 }
 
+/* ── Full-width cover hero image ── */
+.coverWrap {
+  position: relative;
+  width: 100%;
+  height: 480px;
+  overflow: hidden;
+  margin-bottom: var(--space-4xl);
+}
+
+.coverOverlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(2, 4, 8, 0.15) 0%,
+    rgba(2, 4, 8, 0.55) 100%
+  );
+  z-index: 1;
+}
+
+@media (max-width: 768px) {
+  .coverWrap {
+    height: 240px;
+    margin-bottom: var(--space-2xl);
+  }
+}
+
 .header {
   background: var(--bg-surface);
   border-bottom: 1px solid var(--border-subtle);
@@ -135,15 +162,16 @@
   border-radius: var(--radius-xl);
   overflow: hidden;
   border: 1px solid var(--border-subtle);
-  background: var(--bg-elevated);
 }
 
 .body figure img {
   width: 100%;
   height: auto;
+  min-height: 220px;
   display: block;
-  border-radius: var(--radius-xl) var(--radius-xl) 0 0;
   object-fit: cover;
+  border-radius: var(--radius-xl) var(--radius-xl) 0 0;
+  background: transparent;
 }
 
 .body figcaption {

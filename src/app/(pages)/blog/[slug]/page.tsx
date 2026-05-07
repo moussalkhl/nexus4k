@@ -5,6 +5,7 @@ import { getBlogPostBySlug, getAllBlogSlugs } from '@/services/blog'
 import { Breadcrumb } from '@/components/ui/Breadcrumb'
 import { CTASection } from '@/components/sections/CTASection'
 import styles from './post.module.css'
+import Image from 'next/image'
 
 interface BlogPostPageProps {
   params: Promise<{ slug: string }>
@@ -96,10 +97,24 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
           </div>
         </header>
 
-        {/* Content Placeholder */}
+        {/* Hero Cover Image */}
+        {post.coverImage && (
+          <div className={styles.coverWrap}>
+            <Image
+              src={post.coverImage}
+              alt={post.title}
+              fill
+              style={{ objectFit: 'cover', objectPosition: 'center' }}
+              sizes="100vw"
+              priority
+            />
+            <div className={styles.coverOverlay} />
+          </div>
+        )}
+
+        {/* Content */}
         <div className="container">
           <div className={styles.content}>
-            <p className={styles.lead}>{post.excerpt}</p>
             <div className={styles.body}>
               {post.content ? (
                 <div dangerouslySetInnerHTML={{ __html: post.content }} />
