@@ -1598,8 +1598,8 @@ const BLOG_POSTS: BlogPost[] = [
         <h1>How to Watch UFC Freedom 250 at the White House Live: Full Event Guide (June 14)</h1>
 
         <figure>
-          <img src="/images/blog/ufc-freedom-250-white-house-2026.png" alt="UFC Freedom 250 White House event promotional artwork featuring Topuria vs Gaethje and Pereira vs Gane on June 14 2026" width="1200" height="630" loading="lazy" />
-          <figcaption>UFC Freedom 250 is set to be the most historically significant sporting event ever held on US soil — streaming live on June 14.</figcaption>
+          <img src="/images/blog/ufc-freedom-250-white-house-2026.png" alt="UFC Freedom 250 at the White House — two MMA world champions facing off with the White House glowing at golden sunset, patriotic stars and championship belts" width="1200" height="630" loading="lazy" />
+          <figcaption>UFC Freedom 250 at the White House South Lawn — the most historic sporting event ever held on American soil, live June 14.</figcaption>
         </figure>
 
         <p class="lead"><strong>UFC Freedom 250</strong> takes place on Sunday, June 14, 2026, at the White House South Lawn — marking the first time in history that a major combat sports championship event has been held at the seat of the United States government. The main card features two world championship fights: Ilia Topuria defending the Lightweight belt against Justin Gaethje, and Alex Pereira taking on Ciryl Gane for the Interim Heavyweight Championship. The event is officially billed as "The Most Historic Sporting Event of All Time." For American fight fans who want to watch every second in 4K without cable restrictions, a <a href="/">premium IPTV subscription</a> is the most reliable solution available.</p>
@@ -1742,6 +1742,12 @@ const BLOG_POSTS: BlogPost[] = [
         <p>The key tactical question is whether Topuria's lateral movement and counter-punching can neutralize Gaethje's pressure-heavy style before the American's gas tank becomes a factor in the later rounds. Both fighters have shown the ability to finish at any point in a fight — making this a genuine 50-50 main event by every objective metric.</p>
 
         <h2>Pereira vs Gane: The Heavyweight Future on the Line</h2>
+
+        <figure>
+          <img src="/images/blog/ufc-freedom-250-pereira-gane.png" alt="UFC Interim Heavyweight Championship co-main event — powerful striker vs elite technical heavyweight inside the UFC octagon" width="1200" height="630" loading="lazy" />
+          <figcaption>The Interim Heavyweight Championship co-main event is a clash of two elite title-level fighters with radically different but equally dangerous styles.</figcaption>
+        </figure>
+
         <p>Alex Pereira's move to Heavyweight is one of the most anticipated transitions in recent UFC history. At Light Heavyweight he was a destructive force — at Heavyweight, facing elite-level kickboxing and grappling specialists like Ciryl Gane, the question of his ceiling becomes genuinely fascinating. Gane's technical precision, footwork, and ability to mix levels effectively makes him the most stylistically challenging opponent Pereira has faced at any weight class.</p>
         <p>The interim title is on the line, meaning the winner will be positioned as the mandatory challenger for the undisputed Heavyweight Championship. This is not a stepping-stone fight for either man — it is a career-defining moment that will reshape the division regardless of outcome.</p>
 
