@@ -98,14 +98,130 @@
   margin-bottom: var(--space-lg);
 }
 
-.body ul {
-  list-style: disc;
+.body ul,
+.body ol {
   padding-left: var(--space-xl);
   margin-bottom: var(--space-lg);
 }
 
+.body ul {
+  list-style: disc;
+}
+
+.body ol {
+  list-style: decimal;
+}
+
 .body li {
-  margin-bottom: var(--space-xs);
+  margin-bottom: var(--space-sm);
+  line-height: 1.7;
+}
+
+/* ── Links ── */
+.body a {
+  color: var(--color-primary);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  transition: opacity 0.2s ease;
+}
+
+.body a:hover {
+  opacity: 0.8;
+}
+
+/* ── Figures & Images ── */
+.body figure {
+  margin: var(--space-2xl) 0;
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  border: 1px solid var(--border-subtle);
+  background: var(--bg-elevated);
+}
+
+.body figure img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: var(--radius-xl) var(--radius-xl) 0 0;
+  object-fit: cover;
+}
+
+.body figcaption {
+  font-size: var(--fs-sm);
+  color: var(--text-muted);
+  padding: var(--space-sm) var(--space-md);
+  text-align: center;
+  font-style: italic;
+  border-top: 1px solid var(--border-subtle);
+}
+
+/* ── Tables ── */
+.body table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: var(--space-2xl) 0;
+  font-size: var(--fs-sm);
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  border: 1px solid var(--border-subtle);
+}
+
+.body thead {
+  background: rgba(0, 212, 255, 0.08);
+}
+
+.body th {
+  padding: var(--space-md) var(--space-lg);
+  text-align: left;
+  font-weight: 700;
+  font-size: var(--fs-xs);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-primary);
+  border-bottom: 1px solid var(--border-subtle);
+  white-space: nowrap;
+}
+
+.body td {
+  padding: var(--space-md) var(--space-lg);
+  color: var(--text-secondary);
+  border-bottom: 1px solid var(--border-subtle);
+  vertical-align: top;
+  line-height: 1.5;
+}
+
+.body tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.body tbody tr:nth-child(even) {
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.body tbody tr:hover {
+  background: rgba(0, 212, 255, 0.04);
+  transition: background 0.2s ease;
+}
+
+/* ── Strong / lead ── */
+.body strong {
+  color: var(--text-primary);
+  font-weight: 700;
+}
+
+/* Responsive table scroll on mobile */
+@media (max-width: 640px) {
+  .body table {
+    display: block;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .body th,
+  .body td {
+    padding: var(--space-sm) var(--space-md);
+    white-space: nowrap;
+  }
 }
 
 .tags {
