@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { siteConfig } from '@/config/site';
 import styles from './HeroSection.module.css';
+import { HeroTimer } from './HeroTimer';
 
 export function HeroSection() {
 
@@ -31,30 +32,12 @@ export function HeroSection() {
         </p>
 
         {/* Urgency Timer Box */}
-        <div className={styles.timerSection}>
-          <p className={styles.timerLabel}>LIMITED TIME OFFER ENDS IN:</p>
-          <div className={styles.timerBox}>
-            <div className={styles.timeBlock}>
-              <span className={styles.timeNum}>11</span>
-              <span className={styles.timeText}>HRS</span>
-            </div>
-            <span className={styles.timeColon}>:</span>
-            <div className={styles.timeBlock}>
-              <span className={styles.timeNum}>59</span>
-              <span className={styles.timeText}>MIN</span>
-            </div>
-            <span className={styles.timeColon}>:</span>
-            <div className={styles.timeBlock}>
-              <span className={styles.timeNum} style={{ color: 'var(--color-primary)' }}>59</span>
-              <span className={styles.timeText}>SEC</span>
-            </div>
-          </div>
-        </div>
+        <HeroTimer />
 
         {/* CTA Buttons */}
         <div className={styles.ctas}>
           <Link href={`https://wa.me/${siteConfig.whatsappNumber}?text=${encodeURIComponent(siteConfig.defaultWhatsappMessage)}`} target="_blank" rel="noopener noreferrer" className={styles.primaryBtn} title="Contact us on WhatsApp for premium IPTV access">
-            Get Premium Access
+            Get Free Trial
           </Link>
           <Link href="/#pricing" className={styles.secondaryBtn} title="View our competitive IPTV pricing plans">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
