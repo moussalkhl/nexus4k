@@ -10,7 +10,7 @@ export const siteConfig = {
   twitterHandle: '@Nexus4KIPTV',
   email: 'support@nexus4ktv.pro',
   phone: '+44 747 660 3520',
-  whatsappNumber: '447476603520',
+  whatsappNumber: '447828708540',
   defaultWhatsappMessage: 'Hi! I am interested in the Nexus 4K IPTV subscription',
   telegramUrl: 'https://t.me/nexus4kiptv',
 } as const
