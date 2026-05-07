@@ -1551,7 +1551,7 @@ const BLOG_POSTS: BlogPost[] = [
     author: 'Tech Review Team',
     category: 'Sports',
     readTime: 11,
-    coverImage: '/images/blog/ufc-freedom-250-white-house-2026.png',
+    coverImage: '/images/blog/ufc-freedom-250-white-house-2026.jpg',
     tags: ['UFC Freedom 250', 'UFC White House', 'Topuria vs Gaethje', 'Pereira vs Gane', 'Watch UFC Live', 'UFC IPTV', 'Nexus 4K IPTV', 'UFC June 14 2026', 'UFC Live Stream'],
     content: `
       <script type="application/ld+json">
@@ -1560,7 +1560,7 @@ const BLOG_POSTS: BlogPost[] = [
         "@type": "BlogPosting",
         "headline": "How to Watch UFC Freedom 250 at the White House Live: Full Event Guide (June 14)",
         "description": "UFC Freedom 250 at the White House on June 14 features Topuria vs Gaethje and Pereira vs Gane. Here's how to watch every fight live in 4K without Paramount+ blackouts.",
-        "image": "https://nexus4ktv.pro/images/blog/ufc-freedom-250-white-house-2026.png",
+        "image": "https://nexus4ktv.pro/images/blog/ufc-freedom-250-white-house-2026.jpg",
         "author": { "@type": "Person", "name": "Tech Review Team" },
         "datePublished": "2026-05-07T16:00:00Z",
         "dateModified": "2026-05-07T16:00:00Z",
@@ -1598,8 +1598,8 @@ const BLOG_POSTS: BlogPost[] = [
         <h1>How to Watch UFC Freedom 250 at the White House Live: Full Event Guide (June 14)</h1>
 
         <figure>
-          <img src="/images/blog/ufc-freedom-250-white-house-2026.png" alt="UFC Freedom 250 at the White House — two MMA world champions facing off with the White House glowing at golden sunset, patriotic stars and championship belts" width="1200" height="630" loading="lazy" />
-          <figcaption>UFC Freedom 250 at the White House South Lawn — the most historic sporting event ever held on American soil, live June 14.</figcaption>
+          <img src="/images/blog/ufc-freedom-250-white-house-2026.jpg" alt="UFC Freedom 250 official event poster — Topuria vs Gaethje and Pereira vs Gane at the White House, June 14 2026" width="1200" height="630" loading="lazy" />
+          <figcaption>UFC Freedom 250 — the most historic sporting event of all time. Live at the White House South Lawn, June 14.</figcaption>
         </figure>
 
         <p class="lead"><strong>UFC Freedom 250</strong> takes place on Sunday, June 14, 2026, at the White House South Lawn — marking the first time in history that a major combat sports championship event has been held at the seat of the United States government. The main card features two world championship fights: Ilia Topuria defending the Lightweight belt against Justin Gaethje, and Alex Pereira taking on Ciryl Gane for the Interim Heavyweight Championship. The event is officially billed as "The Most Historic Sporting Event of All Time." For American fight fans who want to watch every second in 4K without cable restrictions, a <a href="/">premium IPTV subscription</a> is the most reliable solution available.</p>
@@ -1744,8 +1744,8 @@ const BLOG_POSTS: BlogPost[] = [
         <h2>Pereira vs Gane: The Heavyweight Future on the Line</h2>
 
         <figure>
-          <img src="/images/blog/ufc-freedom-250-pereira-gane.png" alt="UFC Interim Heavyweight Championship co-main event — powerful striker vs elite technical heavyweight inside the UFC octagon" width="1200" height="630" loading="lazy" />
-          <figcaption>The Interim Heavyweight Championship co-main event is a clash of two elite title-level fighters with radically different but equally dangerous styles.</figcaption>
+          <img src="/images/blog/ufc-freedom-250-venue-octagon.png" alt="Empty UFC octagon cage illuminated by floodlights on the White House South Lawn at sunset — UFC Freedom 250 venue" width="1200" height="630" loading="lazy" />
+          <figcaption>The White House South Lawn transforms into a world-class fight venue for UFC Freedom 250 on June 14 — a setting never seen before in combat sports history.</figcaption>
         </figure>
 
         <p>Alex Pereira's move to Heavyweight is one of the most anticipated transitions in recent UFC history. At Light Heavyweight he was a destructive force — at Heavyweight, facing elite-level kickboxing and grappling specialists like Ciryl Gane, the question of his ceiling becomes genuinely fascinating. Gane's technical precision, footwork, and ability to mix levels effectively makes him the most stylistically challenging opponent Pereira has faced at any weight class.</p>
