@@ -1896,7 +1896,7 @@ const BLOG_POSTS: BlogPost[] = [
         <p>Before clicking Play, adjust VLC's network caching setting for a dramatically smoother live stream experience. Go to <strong>Tools &gt; Preferences &gt; Show All Settings &gt; Input / Codecs</strong>. Set "Network Caching (ms)" to <strong>1000–2000 milliseconds</strong> for live TV. Lower values (300–500ms) reduce delay but increase the risk of buffering during peak network congestion. For sports events where real-time viewing matters, 1000ms is the recommended balance. Click Save, then return to your network stream and click Play.</p>
 
         <figure>
-          <img src="/images/blog/vlc-network-cache-settings.webp" alt="VLC Media Player advanced preferences showing network caching setting adjusted to 1500ms for IPTV streaming" width="1200" height="630" loading="lazy" />
+          <img src="/images/blog/vlc-network-cache-settings.png" alt="VLC Media Player advanced preferences showing network caching setting adjusted to 1500ms for IPTV streaming" width="1200" height="630" loading="lazy" />
           <figcaption>Adjusting VLC's network caching setting is the single most impactful change you can make for buffer-free live IPTV playback.</figcaption>
         </figure>
 
