@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import styles from './GuidesSection.module.css';
+import { getAllBlogPosts } from '@/services/blog';
 
 const FEATURED_GUIDES = [
   {
@@ -35,54 +36,21 @@ const FEATURED_GUIDES = [
   },
 ];
 
-const RECENT_POSTS = [
-  {
-    id: 4,
-    type: 'SETUP',
+export async function GuidesSection() {
+  const allPosts = await getAllBlogPosts();
+  const sortedPosts = allPosts.sort((a, b) => new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime());
+  const recentPostsData = sortedPosts.slice(0, 4).map(post => ({
+    id: post.slug,
+    type: post.category.toUpperCase(),
     isNew: true,
-    title: 'How to Set Up IPTV on a MAG Box — 2026 Step-by-Step Guide',
-    excerpt: 'Set up Nexus 4K IPTV on any MAG box in under 10 minutes. Portal URL, MAC address, and troubleshooting — works on all models.',
-    date: 'Apr 20, 2026',
-    readTime: '10 min read',
-    href: '/blog/mag-box-setup-2026',
-    image: '/images/blog/mag-box-setup-2026.png',
-  },
-  {
-    id: 5,
-    type: 'SETUP',
-    isNew: true,
-    title: 'How to Watch IPTV on Apple TV: Best Apps & Setup Guide',
-    excerpt: 'Watch Nexus 4K IPTV on Apple TV in minutes. We cover the best tvOS apps — iPlayTV, GSE Smart IPTV, Smarters — with a full guide.',
-    date: 'Apr 20, 2026',
-    readTime: '12 min read',
-    href: '/blog/apple-tv-iptv-2026',
-    image: '/images/blog/apple-tv-iptv-2026.png',
-  },
-  {
-    id: 6,
-    type: 'TROUBLESHOOTING',
-    isNew: true,
-    title: 'Developer Options Disappeared on Fire TV — Here\'s What Happened',
-    excerpt: 'Fire TV Developer Options missing after an update? There are two completely different causes — one is fixable in 30 seconds.',
-    date: 'Apr 20, 2026',
-    readTime: '9 min read',
-    href: '/blog/firetv-developer-options-2026',
-    image: '/images/blog/firetv-developer-options-2026.png',
-  },
-  {
-    id: 7,
-    type: 'GUIDE',
-    isNew: true,
-    title: 'Best IPTV Players for Android TV in 2026 (Ranked & Tested)',
-    excerpt: 'We tested every major IPTV player with Nexus 4K IPTV 4K streams. Here are the top 7 apps ranked by performance and EPG quality.',
-    date: 'Apr 17, 2026',
-    readTime: '13 min read',
-    href: '/blog/android-tv-players-2026',
-    image: '/images/blog/android-tv-players-2026.png',
-  },
-];
+    title: post.title,
+    excerpt: post.excerpt,
+    date: new Date(post.publishedAt).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' }),
+    readTime: `${post.readTime} min read`,
+    href: `/blog/${post.slug}`,
+    image: post.coverImage,
+  }));
 
-export function GuidesSection() {
   return (
     <section className={styles.section} aria-labelledby="guides-heading">
       
@@ -156,7 +124,7 @@ export function GuidesSection() {
           </header>
 
           <div className={styles.recentGrid}>
-            {RECENT_POSTS.map((post) => (
+            {recentPostsData.map((post) => (
               <div key={post.id} className={styles.recentCard}>
                 {post.image && (
                   <div className={styles.recentImageWrapper}>
