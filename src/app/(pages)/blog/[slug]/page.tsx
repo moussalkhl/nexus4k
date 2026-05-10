@@ -22,7 +22,6 @@ export async function generateMetadata({ params }: BlogPostPageProps): Promise<M
     description: post.excerpt,
     canonical: `/blog/${post.slug}`,
     ogType: 'article',
-    keywords: post.tags,
     ogImage: post.coverImage,
   })
 }

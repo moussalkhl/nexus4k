@@ -23,15 +23,6 @@ export async function generateMetadata({ params }: CategoryPageProps): Promise<M
     title: `${category.name} IPTV Subscription | Free Trial`,
     description: `Get the best ${category.name} IPTV subscription with a free trial. Stream ${category.channelCount} live ${category.name.toLowerCase()} channels in 4K/UHD. Trusted by 20,000+ users worldwide.`,
     canonical: category.href,
-    keywords: [
-      'Nexus 4K IPTV',
-      `${category.name.toLowerCase()} iptv`,
-      'IPTV subscription',
-      'Best IPTV',
-      'Free trial',
-      '4K streams',
-      'nexus4ktv',
-    ],
   })
 }
 
