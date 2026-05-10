@@ -28,7 +28,7 @@ export function HeroSection() {
         
         {/* SEO Required Subtitle (First 100 words focus keyword) */}
         <p className={styles.subtitle} style={{ fontSize: '1.2rem', color: 'rgba(255,255,255,0.8)', marginBottom: '2rem', maxWidth: '600px', marginLeft: 'auto', marginRight: 'auto' }}>
-          Experience the ultimate entertainment with <strong>Nexus 4K IPTV</strong>. Stream over 30,000+ live TV channels, sports, movies, and VODs in breathtaking 4K UHD quality with zero buffering.
+          <strong>Nexus 4K IPTV</strong>: Premium subscription with free trial. Stream 30,000+ live channels, sports, movies & series in 4K/UHD. Trusted by 20k+ users worldwide
         </p>
 
         {/* Urgency Timer Box */}

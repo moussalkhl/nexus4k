@@ -87,7 +87,7 @@ export function FAQSection() {
 
           {/* Right: FAQ list */}
           <div className={styles.right}>
-            <dl className={styles.list}>
+            <dl className={styles.list} data-nosnippet>
               {FAQ_ITEMS.map((item, i) => (
                 <div key={i} className={styles.item}>
                   <dt className={styles.question}>{item.question}</dt>
