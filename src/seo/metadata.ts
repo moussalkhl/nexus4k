@@ -34,7 +34,7 @@ export function generateMetadata({
   return {
     title,
     description,
-    keywords: keywords.join(', '),
+    keywords: keywords.length > 0 ? keywords.join(', ') : null,
     authors: [{ name: siteConfig.name }],
     creator: siteConfig.name,
     publisher: siteConfig.name,

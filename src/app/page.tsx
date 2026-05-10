@@ -28,16 +28,7 @@ export const metadata: Metadata = genMeta({
   title: 'Nexus 4K IPTV – Best Subscription | Free Trial',
   description: 'Nexus 4K IPTV: Premium subscription with free trial. Stream 30,000+ live channels, sports, movies & series in 4K/UHD. Trusted by 20k+ users worldwide',
   canonical: '/',
-  keywords: [
-    'Nexus 4K IPTV',
-    'Nexus IPTV',
-    'IPTV subscription',
-    'Best IPTV',
-    'Free trial',
-    '4K streams',
-    'live TV',
-    'nexus4ktv',
-  ],
+  keywords: [],
 })
 
 export default function HomePage() {
