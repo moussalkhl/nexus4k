@@ -4,37 +4,37 @@ const REVIEWS = [
   {
     name: 'Marcus T.',
     role: 'Sports Enthusiast',
-    text: "I've tried 4 different IPTV providers before finding Nexus 4K IPTV. The difference is night and day. Every single Premier League game in 4K with literally zero buffering. Incredible service.",
+    text: "I've tried 4 different providers before finding Nexus 4K IPTV. The difference is night and day. Every single Premier League game streams perfectly in 4K with literally zero buffering. Best IPTV service on the market.",
     initials: 'MT'
   },
   {
     name: 'Sarah L.',
     role: 'Cord Cutter',
-    text: "Setting it up on my LG Smart TV took less than 5 minutes. The VOD library is massive and updated faster than Netflix. My whole family uses it across 3 devices without a hitch.",
+    text: "Setting up Nexus 4K IPTV on my LG Smart TV took less than 5 minutes. The VOD library is massive and updated daily. My whole family uses this premium IPTV service across 3 devices without a single hitch.",
     initials: 'SL'
   },
   {
     name: 'Omar K.',
     role: 'Tech Savvy User',
-    text: "The stability is unmatched. Even during huge PPV events with heavy traffic, the server holds up perfectly. The support team on WhatsApp is also fantastic.",
+    text: "The stability of Nexus 4K IPTV is simply unmatched. Even during massive UFC and PPV events, the anti-freeze servers hold up perfectly. The 24/7 WhatsApp support team is also incredibly fast and helpful.",
     initials: 'OK'
   },
   {
     name: 'Emma R.',
     role: 'Movie Buff',
-    text: "The 4K movie selection is simply mind-blowing. I dropped all my other streaming subscriptions. Highly recommend to anyone on the fence.",
+    text: "The 4K movie and series selection on Nexus 4K IPTV is mind-blowing. I dropped all my expensive cable subscriptions. I highly recommend this premium IPTV subscription to anyone looking to cut the cord.",
     initials: 'ER'
   },
   {
     name: 'David W.',
     role: 'Expat',
-    text: "Finally I can watch my local channels from back home in crystal clear quality. The catch-up feature has been an absolute lifesaver.",
+    text: "Thanks to Nexus 4K IPTV, I can finally watch all my local international channels in crystal clear HD and 4K quality. The 7-day catch-up TV feature has been an absolute lifesaver for my family.",
     initials: 'DW'
   },
   {
     name: 'Alex J.',
     role: 'Binge Watcher',
-    text: "From the slick interface to the massive anime collection, everything is polished. The EPG is incredibly accurate too. 10/10.",
+    text: "From the slick live TV interface to the massive anime collection, everything about Nexus 4K IPTV is perfectly polished. The TV guide (EPG) is incredibly accurate. Easily a 10/10 streaming experience.",
     initials: 'AJ'
   }
 ];
@@ -78,7 +78,7 @@ export function TestimonialsSection() {
       <div className={styles.headerContainer}>
         <div className={styles.header}>
           <h2 className={styles.title} id="testimonials-heading">
-            What Our <span className={styles.highlight}>Nexus IPTV Customers Say</span>
+            What Our <span className={styles.highlight}>Nexus 4K IPTV Customers Say</span>
           </h2>
           <p className={styles.subtitle}>
             Don't just take our word for it. See what our community has to say about their streaming experience.
