@@ -2119,7 +2119,7 @@ const BLOG_POSTS: BlogPost[] = [
         <p>iPlayTV earns its place as the premium choice for users who watch on both iPhone and Apple TV. Its seamless iCloud sync means a playlist loaded on your iPhone appears automatically on your Apple TV 4K, maintaining watch history and channel favorites across both devices without any manual configuration. The interface is the most native-feeling of the three — it aligns closely with Apple's own design language, making navigation with Touch ID or Face ID-secured accounts feel natural. For households that use Apple devices exclusively, iPlayTV provides the most cohesive multi-device experience available on iOS. You can see how it performs on Apple TV specifically in our <a href="/blog/apple-tv-iptv-2026">Apple TV IPTV setup guide</a>.</p>
 
         <figure>
-          <img src="/images/blog/ios-iptv-app-comparison.webp" alt="Side-by-side screenshots of IPTV Smarters Pro, GSE Smart IPTV, and iPlayTV running on iPhone 16 Pro in 2026" width="1200" height="630" loading="lazy" />
+          <img src="/images/blog/ios-iptv-app-comparison.png" alt="Side-by-side screenshots of IPTV Smarters Pro, GSE Smart IPTV, and iPlayTV running on iPhone 16 Pro in 2026" width="1200" height="630" loading="lazy" />
           <figcaption>All three top iOS IPTV apps support M3U and Xtream Codes — your choice depends on how much control you want over your setup.</figcaption>
         </figure>
 
