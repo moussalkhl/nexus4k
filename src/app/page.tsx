@@ -9,18 +9,20 @@
 import type { Metadata } from 'next'
 import { generateMetadata as genMeta, generateProductJsonLd } from '@/seo/metadata'
 import { pricingPlans } from '@/config/site'
+import dynamic from 'next/dynamic'
 import { HeroSection } from '@/components/sections/HeroSection'
-import { CategoriesSection } from '@/components/sections/CategoriesSection'
-import { ContentShowcase } from '@/components/sections/ContentShowcase'
-import { FeaturesSection } from '@/components/sections/FeaturesSection'
-import { DevicesSection } from '@/components/sections/DevicesSection'
-import { TestimonialsSection } from '@/components/sections/TestimonialsSection'
-import { PricingSection } from '@/components/sections/PricingSection'
-import { GuidesSection } from '@/components/sections/GuidesSection'
-import { StatsSection } from '@/components/sections/StatsSection'
-import { FAQSection } from '@/components/sections/FAQSection'
-import { ContactSection } from '@/components/sections/ContactSection'
-import { CTASection } from '@/components/sections/CTASection'
+
+const CategoriesSection = dynamic(() => import('@/components/sections/CategoriesSection').then(mod => mod.CategoriesSection))
+const ContentShowcase = dynamic(() => import('@/components/sections/ContentShowcase').then(mod => mod.ContentShowcase))
+const FeaturesSection = dynamic(() => import('@/components/sections/FeaturesSection').then(mod => mod.FeaturesSection))
+const DevicesSection = dynamic(() => import('@/components/sections/DevicesSection').then(mod => mod.DevicesSection))
+const TestimonialsSection = dynamic(() => import('@/components/sections/TestimonialsSection').then(mod => mod.TestimonialsSection))
+const PricingSection = dynamic(() => import('@/components/sections/PricingSection').then(mod => mod.PricingSection))
+const GuidesSection = dynamic(() => import('@/components/sections/GuidesSection').then(mod => mod.GuidesSection))
+const StatsSection = dynamic(() => import('@/components/sections/StatsSection').then(mod => mod.StatsSection))
+const FAQSection = dynamic(() => import('@/components/sections/FAQSection').then(mod => mod.FAQSection))
+const ContactSection = dynamic(() => import('@/components/sections/ContactSection').then(mod => mod.ContactSection))
+const CTASection = dynamic(() => import('@/components/sections/CTASection').then(mod => mod.CTASection))
 
 
 // Title: 51/60 chars | Desc: 160/160 | Keywords score: 99/100
