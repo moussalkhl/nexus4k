@@ -1,4 +1,5 @@
 import type { CSSProperties } from 'react';
+import Image from 'next/image';
 import styles from './ContentShowcase.module.css';
 
 // ── Sports logo data — mapped to your uploaded images ────────────────────────
@@ -64,7 +65,7 @@ export function ContentShowcase() {
                 >
                   <div className={styles.logoGlow} style={{ background: item.accent }} />
                   <div className={styles.logoImgWrap}>
-                    <img
+                    <Image
                       src={item.img}
                       alt={`${item.name} on Nexus 4K IPTV`}
                       loading="lazy"
@@ -90,7 +91,7 @@ export function ContentShowcase() {
               {[...MOVIE_ITEMS, ...MOVIE_ITEMS].map((item, i) => (
                 <div key={i} className={styles.card}>
                   <div className={styles.imageWrapper}>
-                    <img src={item.img} alt={`${item.name} on Nexus 4K IPTV`} loading="lazy" className={styles.cardImage} width={280} height={420} />
+                    <Image src={item.img} alt={`${item.name} on Nexus 4K IPTV`} loading="lazy" className={styles.cardImage} width={280} height={420} />
                     <div className={styles.cardOverlay}>
                       <span className={styles.cardTitle}>{item.name}</span>
                     </div>
@@ -111,7 +112,7 @@ export function ContentShowcase() {
               {[...KIDS_ITEMS, ...KIDS_ITEMS].map((item, i) => (
                 <div key={i} className={styles.card}>
                   <div className={styles.imageWrapper}>
-                    <img src={item.img} alt={`${item.name} on Nexus 4K IPTV`} loading="lazy" className={styles.cardImage} width={280} height={420} />
+                    <Image src={item.img} alt={`${item.name} on Nexus 4K IPTV`} loading="lazy" className={styles.cardImage} width={280} height={420} />
                     <div className={styles.cardOverlay}>
                       <span className={styles.cardTitle}>{item.name}</span>
                     </div>
