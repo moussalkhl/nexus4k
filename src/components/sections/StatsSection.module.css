@@ -97,4 +97,7 @@
   .grid {
     grid-template-columns: 1fr;
   }
+  .galaxyBackground {
+    display: none;
+  }
 }

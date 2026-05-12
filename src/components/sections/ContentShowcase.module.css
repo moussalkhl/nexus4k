@@ -237,6 +237,12 @@
   .card {
     width: 200px;
   }
+  .glowBg {
+    display: none;
+  }
+  .logoGlow {
+    display: none;
+  }
 }
 
 @media (max-width: 480px) {
