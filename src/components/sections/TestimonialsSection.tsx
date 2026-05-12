@@ -4,13 +4,13 @@ const REVIEWS = [
   {
     name: 'Marcus T.',
     role: 'Sports Enthusiast',
-    text: "I've tried 4 different providers before finding Nexus 4K IPTV. The difference is night and day. Every single Premier League game streams perfectly in 4K with literally zero buffering. Best IPTV service on the market.",
+    text: "I've tried 4 different providers before finding Nexus4kTv. The difference is night and day. Every single Premier League game streams perfectly in 4K with literally zero buffering on their Nexus 4K IPTV service. Best IPTV service on the market.",
     initials: 'MT'
   },
   {
     name: 'Sarah L.',
     role: 'Cord Cutter',
-    text: "Setting up Nexus 4K IPTV on my LG Smart TV took less than 5 minutes. The VOD library is massive and updated daily. My whole family uses this premium IPTV service across 3 devices without a single hitch.",
+    text: "Setting up the Nexus4kTv streaming experience on my LG Smart TV took less than 5 minutes. The VOD library is massive and updated daily. My whole family uses this premium Nexus 4K IPTV service across 3 devices without a single hitch.",
     initials: 'SL'
   },
   {
@@ -78,7 +78,7 @@ export function TestimonialsSection() {
       <div className={styles.headerContainer}>
         <div className={styles.header}>
           <h2 className={styles.title} id="testimonials-heading">
-            What Our <span className={styles.highlight}>Nexus 4K IPTV Customers Say</span>
+            What Our <span className={styles.highlight}>Nexus4kTv Customers Say</span>
           </h2>
           <p className={styles.subtitle}>
             Don't just take our word for it. See what our community has to say about their streaming experience.

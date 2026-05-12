@@ -22,8 +22,8 @@ const outfit = Outfit({
 
 export const metadata: Metadata = {
   title: {
-    default: 'Nexus 4K IPTV – Best Subscription | Free Trial',
-    template: '%s | Nexus 4K IPTV',
+    default: 'Nexus4kTv – Nexus 4K IPTV Subscription | Free Trial',
+    template: '%s | Nexus4kTv',
   },
   description: siteConfig.description,
   metadataBase: new URL(siteConfig.url),
