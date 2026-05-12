@@ -7,9 +7,8 @@ import { Breadcrumb } from '@/components/ui/Breadcrumb'
 import styles from './page.module.css'
 
 export const metadata: Metadata = genMeta({
-  // Final: "Nexus 4K IPTV Channels – Live TV & VOD | Nexus 4K IPTV" = 60 chars
-  title: 'Nexus 4K IPTV Channels – Live TV & VOD',
-  description: 'Explore our massive IPTV channel categories including Live Sports, 4K Movies, Top Series, and Anime. Browse over 30,000 HD channels available for streaming.',
+  title: 'Nexus4kTv – Nexus 4K IPTV Channels | Live TV & VOD',
+  description: 'Explore the Nexus4kTv channel library. Browse our massive Nexus 4K IPTV categories including Live Sports, 4K Movies, and Top Series with 30,000+ channels.',
   canonical: '/categories',
 })
 
@@ -32,7 +31,7 @@ export default function CategoriesIndexPage() {
         <div className="container">
           <header className={styles.header}>
             <h1 className="section-title">
-              Explore Our <span className="text-gradient">Categories</span>
+              Nexus4kTv – Explore Our <span className="text-gradient">Nexus 4K IPTV Categories</span>
             </h1>
             <p className="section-subtitle">
               Find exactly what you want to watch across our massive library of 30,000+ live channels.

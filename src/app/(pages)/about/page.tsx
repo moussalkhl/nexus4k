@@ -5,9 +5,8 @@ import { CTASection } from '@/components/sections/CTASection'
 import styles from './page.module.css'
 
 export const metadata: Metadata = genMeta({
-  // Final: "About Nexus 4K IPTV – Our Story & Mission | Nexus 4K IPTV" = 63 chars
-  title: 'About Nexus 4K IPTV – Our Story & Mission',
-  description: 'Learn about Nexus 4K IPTV, the premier global provider delivering top-tier streaming since 2020. Discover our mission, technology, and global infrastructure.',
+  title: 'About Nexus4kTv – Premium Nexus 4K IPTV Story & Mission',
+  description: 'Learn about Nexus4kTv, the premier provider of Nexus 4K IPTV subscriptions since 2020. Discover our mission, 4K technology, and global infrastructure.',
   canonical: '/about',
 })
 
@@ -27,10 +26,10 @@ export default function AboutPage() {
         <div className="container">
           <div className={styles.heroContent}>
             <h1 className="section-title">
-              Redefining How the World <span className="text-gradient">Watches TV</span>
+              Nexus4kTv – The Story Behind <span className="text-gradient">Nexus 4K IPTV</span>
             </h1>
             <p className="section-subtitle">
-              We built Nexus 4K IPTV because we were tired of expensive cable bills and unreliable streams. Now, we serve over 20,000 customers globally with the highest quality IPTV infrastructure available.
+              We built the Nexus4kTv platform because we were tired of expensive cable bills and unreliable streams. Now, we serve over 20,000 customers globally with our high-quality Nexus 4K IPTV infrastructure.
             </p>
           </div>
         </div>

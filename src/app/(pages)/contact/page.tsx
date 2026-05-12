@@ -6,9 +6,8 @@ import { ContactForm } from './ContactForm'
 import styles from './page.module.css'
 
 export const metadata: Metadata = genMeta({
-  // Final: "Contact Nexus 4K IPTV – 24/7 Live Support | Nexus 4K IPTV" = 63 chars
-  title: 'Contact Nexus 4K IPTV – 24/7 Live Support',
-  description: 'Need help with your Nexus 4K IPTV subscription? Contact our 24/7 support team for immediate assistance with setup, billing, or technical issues anytime.',
+  title: 'Contact Nexus4kTv – Nexus 4K IPTV Support | 24/7 Live Support',
+  description: 'Need help with your Nexus4kTv or Nexus 4K IPTV subscription? Contact our 24/7 support team for setup, billing, or technical assistance anytime.',
   canonical: '/contact',
 })
 
@@ -28,7 +27,7 @@ export default function ContactPage() {
         <div className="container">
           <header className={styles.header}>
             <h1 className="section-title">
-              We're Here to <span className="text-gradient">Help</span>
+              Nexus4kTv – Contact <span className="text-gradient">Nexus 4K IPTV Support</span>
             </h1>
             <p className="section-subtitle">
               Our support team operates 24/7/365 to ensure your streaming experience is flawless.
