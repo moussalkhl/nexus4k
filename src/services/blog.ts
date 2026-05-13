@@ -198,7 +198,7 @@ const BLOG_POSTS: BlogPost[] = [
         <p>Internet Service Providers (ISPs) frequently throttle bandwidth when they detect heavy video streaming traffic, especially during live sports events. A Virtual Private Network (VPN) encrypts your data, masking your activity so your ISP cannot target your connection for slowdowns.</p>
 
         <figure>
-          <img src="/images/blog/vpn-isp-throttling-fix.webp" alt="Diagram illustrating how a VPN bypasses ISP throttling for uninterrupted IPTV streaming" width="800" height="500" loading="lazy" />
+          <img src="/images/blog/iptv-buffering-fix-2026.png" alt="Diagram illustrating how a VPN bypasses ISP throttling for uninterrupted IPTV streaming" width="800" height="500" loading="lazy" />
           <figcaption>A VPN hides your streaming traffic, preventing artificial speed limits set by your ISP.</figcaption>
         </figure>
 
@@ -244,7 +244,7 @@ const BLOG_POSTS: BlogPost[] = [
         </table>
 
         <figure>
-          <img src="/images/blog/iptv-device-upgrade-comparison.webp" alt="Comparison chart of modern 4K streaming TV boxes side-by-side" width="800" height="500" loading="lazy" />
+          <img src="/images/blog/smarters-pro-device-comparison-v2.webp" alt="Comparison chart of modern 4K streaming TV boxes side-by-side" width="800" height="500" loading="lazy" />
           <figcaption>Investing in a high-quality streaming box is crucial for uncompressed 4K video.</figcaption>
         </figure>
 
