@@ -145,7 +145,7 @@ const BLOG_POSTS: BlogPost[] = [
 
         <p>Tired of endless freezing during the biggest matches? Stop fighting with poor servers. Upgrade to <a href="/#pricing">Nexus 4K IPTV</a> today for buffer-free, anti-freeze technology. Contact us now to request a <a href="/contact">free trial</a> and experience the difference yourself.</p>
       </div>
-    \`
+    `
   },
   {
     slug: 'best-iptv-players-4k-streaming-2026',
