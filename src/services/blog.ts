@@ -12,7 +12,7 @@ const BLOG_POSTS: BlogPost[] = [
     author: 'Tech Review Team',
     category: 'Tutorial',
     readTime: 7,
-    coverImage: '/images/blog/iptv-smarters-pro-setup-hero.webp',
+    coverImage: '/images/blog/iptv-smarters-pro-setup-hero-v2.webp',
     tags: ['IPTV Smarters Pro', 'Setup Guide', 'Tutorial', 'Xtream Codes', 'Nexus4kTV'],
     content: `
       <script type="application/ld+json">
@@ -21,7 +21,7 @@ const BLOG_POSTS: BlogPost[] = [
         "@type": "BlogPosting",
         "headline": "IPTV Smarters Pro Setup: 2026 Complete Guide",
         "description": "Learn the complete IPTV Smarters Pro setup process in 2026. Follow our expert guide to configure your Nexus4kTV subscription and start streaming in minutes.",
-        "image": "https://nexus4ktv.pro/images/blog/iptv-smarters-pro-setup-hero.webp",
+        "image": "https://nexus4ktv.pro/images/blog/iptv-smarters-pro-setup-hero-v2.webp",
         "author": { "@type": "Person", "name": "Tech Review Team" },
         "datePublished": "2026-05-13T11:00:00Z",
         "dateModified": "2026-05-13T11:00:00Z",
@@ -40,7 +40,7 @@ const BLOG_POSTS: BlogPost[] = [
         <h1>IPTV Smarters Pro Setup: 2026 Complete Guide</h1>
 
         <figure>
-          <img src="/images/blog/iptv-smarters-pro-setup-hero.webp" alt="IPTV Smarters Pro login screen displayed on a modern smart TV" width="1200" height="630" loading="lazy" />
+          <img src="/images/blog/iptv-smarters-pro-setup-hero-v2.webp" alt="IPTV Smarters Pro login screen displayed on a modern smart TV" width="1200" height="630" loading="lazy" />
           <figcaption>IPTV Smarters Pro is the most popular streaming application in 2026.</figcaption>
         </figure>
 
@@ -53,7 +53,7 @@ const BLOG_POSTS: BlogPost[] = [
         <p>Once installed, open the app and select the <strong>Login with Xtream Codes API</strong> option. This is the most stable and feature-rich method for connecting to your provider, far superior to traditional M3U files. You will need to enter four pieces of information provided in your welcome email: a Name (e.g., Nexus4kTV), your Username, your Password, and the Portal URL.</p>
 
         <figure>
-          <img src="/images/blog/xtream-codes-api-login.webp" alt="Diagram showing the Xtream Codes API login process for IPTV applications" width="800" height="500" loading="lazy" />
+          <img src="/images/blog/xtream-codes-api-login-v2.webp" alt="Diagram showing the Xtream Codes API login process for IPTV applications" width="800" height="500" loading="lazy" />
           <figcaption>Using the Xtream Codes API ensures your Electronic Program Guide (EPG) loads instantly.</figcaption>
         </figure>
 
@@ -101,7 +101,7 @@ const BLOG_POSTS: BlogPost[] = [
         </table>
 
         <figure>
-          <img src="/images/blog/smarters-pro-device-comparison.webp" alt="Comparison of streaming devices running IPTV Smarters Pro seamlessly" width="800" height="500" loading="lazy" />
+          <img src="/images/blog/smarters-pro-device-comparison-v2.webp" alt="Comparison of streaming devices running IPTV Smarters Pro seamlessly" width="800" height="500" loading="lazy" />
           <figcaption>Dedicated Android boxes offer the best performance for IPTV Smarters Pro.</figcaption>
         </figure>
 
