@@ -70,8 +70,8 @@ export function ContentShowcase() {
                       alt={`${item.name} on Nexus 4K IPTV`}
                       loading="lazy"
                       className={styles.logoImg}
-                      width={280}
-                      height={373}
+                      fill
+                      sizes="200px"
                     />
                   </div>
                   <span className={styles.logoLabel}>{item.name}</span>
