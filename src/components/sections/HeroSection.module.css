@@ -13,22 +13,16 @@
 .hero::before {
   content: '';
   position: absolute;
-  top: -5%;
-  left: -5%;
-  width: 110%;
-  height: 110%;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   background-image: url('/images/fifa-neon-bg.png');
   background-size: cover;
   background-position: center;
   z-index: 0;
   opacity: 0.45; /* Darken a bit for text readability */
-  animation: bgZoom 25s infinite alternate ease-in-out;
   pointer-events: none;
-}
-
-@keyframes bgZoom {
-  0% { transform: scale(1); }
-  100% { transform: scale(1.08); }
 }
 
 
