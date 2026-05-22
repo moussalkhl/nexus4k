@@ -19,9 +19,9 @@
   height: 100%;
   background-image: url('/images/players-bg.png');
   background-size: cover;
-  background-position: center;
+  background-position: center top;
   z-index: 0;
-  opacity: 0.45; /* Darken a bit for text readability */
+  opacity: 0.55;
   pointer-events: none;
 }
 
