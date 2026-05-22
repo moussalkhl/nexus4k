@@ -12,7 +12,7 @@ const BLOG_POSTS: BlogPost[] = [
     author: 'Tech Review Team',
     category: 'Guide',
     readTime: 8,
-    coverImage: '/images/blog/best-vpn-iptv-hero.webp',
+    coverImage: '/images/blog/best-vpn-iptv-hero.png',
     tags: ['Best VPN', 'IPTV Buffering', 'Security', 'Nexus 4k IPTV'],
     content: `
       <script type="application/ld+json">
@@ -21,7 +21,7 @@ const BLOG_POSTS: BlogPost[] = [
         "@type": "BlogPosting",
         "headline": "Best VPN for IPTV in 2026: Stop Buffering & Throttling",
         "description": "Discover the best VPN for IPTV in 2026. Stop ISP throttling, fix buffering, and secure your Nexus 4K IPTV streaming with our top-rated VPN picks.",
-        "image": "https://nexus4ktv.pro/images/blog/best-vpn-iptv-hero.webp",
+        "image": "https://nexus4ktv.pro/images/blog/best-vpn-iptv-hero.png",
         "author": { "@type": "Person", "name": "Tech Review Team" },
         "datePublished": "2026-05-23T10:00:00Z",
         "dateModified": "2026-05-23T10:00:00Z",
@@ -40,7 +40,7 @@ const BLOG_POSTS: BlogPost[] = [
         <h1>Best VPN for IPTV in 2026: Stop Buffering & Throttling</h1>
 
         <figure>
-          <img src="/images/blog/best-vpn-iptv-hero.webp" alt="Person securing their IPTV connection with a modern VPN app on a smart TV" width="1200" height="630" loading="lazy" />
+          <img src="/images/blog/best-vpn-iptv-hero.png" alt="Person securing their IPTV connection with a modern VPN app on a smart TV" width="1200" height="630" loading="lazy" />
           <figcaption>Using a VPN is the most effective way to guarantee buffer-free IPTV.</figcaption>
         </figure>
 
@@ -50,7 +50,7 @@ const BLOG_POSTS: BlogPost[] = [
         <p>Internet Service Providers (ISPs) actively monitor high-bandwidth activities. According to a 2026 report by <em>CyberSecurity News</em>, over 40% of ISPs automatically throttle video streams during peak evening hours. A Virtual Private Network encrypts your connection, masking your activity so you can watch <a href="/#pricing">Nexus 4k IPTV</a> without sudden drops in resolution or endless loading circles.</p>
 
         <figure>
-          <img src="/images/blog/isp-throttling-diagram.webp" alt="Diagram showing how a VPN encrypts traffic to bypass ISP throttling for IPTV" width="800" height="500" loading="lazy" />
+          <img src="/images/blog/isp-throttling-diagram.png" alt="Diagram showing how a VPN encrypts traffic to bypass ISP throttling for IPTV" width="800" height="500" loading="lazy" />
           <figcaption>A VPN tunnel hides your streaming traffic from your ISP.</figcaption>
         </figure>
 
@@ -88,7 +88,7 @@ const BLOG_POSTS: BlogPost[] = [
         </table>
 
         <figure>
-          <img src="/images/blog/vpn-speed-comparison-chart.webp" alt="Chart comparing the speed retention of top VPNs for 4K streaming" width="800" height="500" loading="lazy" />
+          <img src="/images/blog/vpn-speed-comparison-chart.png" alt="Chart comparing the speed retention of top VPNs for 4K streaming" width="800" height="500" loading="lazy" />
           <figcaption>Top-tier VPNs maintain the bandwidth required for flawless UHD playback.</figcaption>
         </figure>
 
