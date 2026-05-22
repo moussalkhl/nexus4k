@@ -10,51 +10,39 @@
   background-color: #020408; /* Deepest space */
 }
 
-/* Creative Background Effects */
-.bgGlowMain {
+.hero::before {
+  content: '';
   position: absolute;
-  top: 30%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 80vw;
-  height: 80vw;
-  max-width: 1000px;
-  max-height: 1000px;
-  background: radial-gradient(circle, rgba(0, 212, 255, 0.08) 0%, transparent 60%);
+  top: -5%;
+  left: -5%;
+  width: 110%;
+  height: 110%;
+  background-image: url('/images/fifa-neon-bg.png');
+  background-size: cover;
+  background-position: center;
   z-index: 0;
+  opacity: 0.45; /* Darken a bit for text readability */
+  animation: bgZoom 25s infinite alternate ease-in-out;
   pointer-events: none;
-  will-change: transform;
+}
+
+@keyframes bgZoom {
+  0% { transform: scale(1); }
+  100% { transform: scale(1.08); }
+}
+
+
+/* Creative Background Effects - Hidden to feature the new dynamic background perfectly */
+.bgGlowMain {
+  display: none;
 }
 
 .bgGlowAccent {
-  position: absolute;
-  top: 60%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 100vw;
-  height: 400px;
-  background: radial-gradient(ellipse at center, rgba(168, 85, 247, 0.05) 0%, transparent 60%);
-  z-index: 0;
-  pointer-events: none;
+  display: none;
 }
 
 .gridFloor {
-  position: absolute;
-  bottom: 0;
-  left: -50vw;
-  width: 200vw;
-  height: 60vh;
-  background-image: 
-    linear-gradient(to top, rgba(0, 212, 255, 0.1) 1px, transparent 1px),
-    linear-gradient(to right, rgba(0, 212, 255, 0.05) 1px, transparent 1px);
-  background-size: 80px 80px;
-  transform: perspective(600px) rotateX(75deg);
-  transform-origin: top;
-  z-index: 0;
-  opacity: 0.8;
-  pointer-events: none;
-  /* Removed heavy background-position animation to drastically improve FCP/LCP */
-  will-change: transform;
+  display: none;
 }
 
 .content {
