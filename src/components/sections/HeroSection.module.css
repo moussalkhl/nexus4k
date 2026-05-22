@@ -17,11 +17,11 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url('/images/hero-collage-bg.png');
+  background-image: linear-gradient(to bottom, rgba(2, 4, 8, 0.85) 0%, rgba(2, 4, 8, 0.65) 40%, rgba(2, 4, 8, 0.65) 60%, rgba(2, 4, 8, 0.95) 100%), url('/images/hero-collage-bg.png');
   background-size: cover;
   background-position: center top;
   z-index: 0;
-  opacity: 0.55;
+  opacity: 0.8;
   pointer-events: none;
 }
 
@@ -91,6 +91,7 @@
   margin-bottom: 3.5rem;
   letter-spacing: -0.02em;
   max-width: 1200px;
+  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.8), 0 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .gradientText {

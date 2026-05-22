@@ -27,7 +27,7 @@ export function HeroSection() {
         </h1>
         
         {/* SEO Required Subtitle (First 100 words focus keyword) */}
-        <p className={styles.subtitle} style={{ fontSize: '1.2rem', color: 'rgba(255,255,255,0.8)', marginBottom: '2rem', maxWidth: '600px', marginLeft: 'auto', marginRight: 'auto' }}>
+        <p className={styles.subtitle} style={{ fontSize: '1.2rem', color: 'rgba(255,255,255,0.9)', marginBottom: '2rem', maxWidth: '600px', marginLeft: 'auto', marginRight: 'auto', textShadow: '0 2px 8px rgba(0,0,0,0.8)' }}>
           <strong>Nexus4kTv</strong> provides the ultimate <strong>Nexus 4K IPTV</strong> subscription with a free trial. Stream 30,000+ live channels, sports, movies & series in 4K/UHD. Trusted by 20k+ users worldwide.
         </p>
 
