@@ -34,14 +34,30 @@ export function Footer() {
               <li><Link href="/#pricing" title="View our pricing plans">Pricing Plans</Link></li>
               <li><Link href="/blog" title="Read our latest blog posts">Streaming Blog</Link></li>
               <li><Link href="/contact" title="Get in touch with our support team">Help Center</Link></li>
+              <li><Link href="/legal" title="Privacy Policy and Terms of Service">Privacy & Terms</Link></li>
+            </ul>
+          </div>
+
+          {/* Categories Column */}
+          <div className={styles.linkCol}>
+            <div className={styles.colTitle}>IPTV Channels</div>
+            <ul className={styles.linkList}>
+              <li><Link href="/categories" title="Browse all channel categories">All Categories</Link></li>
+              <li><Link href="/categories/sports" title="Live sports streaming channels">Sports IPTV</Link></li>
+              <li><Link href="/categories/movies" title="UHD movies on demand">Movies IPTV</Link></li>
+              <li><Link href="/categories/series" title="Premium series and TV shows">Series IPTV</Link></li>
+              <li><Link href="/categories/documentaries" title="Documentaries and science channels">Docs IPTV</Link></li>
+              <li><Link href="/categories/anime" title="Anime channels and libraries">Anime IPTV</Link></li>
             </ul>
           </div>
 
           {/* Resources Column */}
           <div className={styles.linkCol}>
-            <div className={styles.colTitle}>Resources</div>
+            <div className={styles.colTitle}>Setup & Help</div>
             <ul className={styles.linkList}>
-              <li><Link href="/blog/setup" title="How to set up your IPTV service">Setup Guides</Link></li>
+              <li><Link href="/blog/tivimate-premium-setup-guide-2026" title="TiviMate Premium complete setup guide">TiviMate Setup</Link></li>
+              <li><Link href="/blog/firestick-iptv-setup-2026" title="How to setup IPTV on Amazon Firestick">Firestick Setup</Link></li>
+              <li><Link href="/blog/iptv-smarters-pro-setup-2026" title="IPTV Smarters Pro installation guide">Smarters Setup</Link></li>
               <li><Link href="/#faq" title="Frequently asked questions">View FAQs</Link></li>
             </ul>
           </div>

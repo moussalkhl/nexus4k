@@ -1,7 +1,8 @@
 import type { Metadata } from 'next'
 import { notFound } from 'next/navigation'
+import Link from 'next/link'
 import { generateMetadata as genMeta } from '@/seo/metadata'
-import { getBlogPostBySlug, getAllBlogSlugs } from '@/services/blog'
+import { getBlogPostBySlug, getAllBlogSlugs, getAllBlogPosts } from '@/services/blog'
 import { Breadcrumb } from '@/components/ui/Breadcrumb'
 import { CTASection } from '@/components/sections/CTASection'
 import styles from './post.module.css'
@@ -43,6 +44,21 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
   if (!post) {
     notFound()
   }
+
+  // Get 3 related posts (excluding current post)
+  const allPosts = await getAllBlogPosts()
+  const relatedPosts = allPosts
+    .filter((p) => p.slug !== post.slug)
+    .map((p) => {
+      let score = 0
+      if (p.category === post.category) score += 5
+      const matchingTags = p.tags.filter((t) => post.tags.includes(t))
+      score += matchingTags.length * 2
+      return { post: p, score }
+    })
+    .sort((a, b) => b.score - a.score || new Date(b.post.publishedAt).getTime() - new Date(a.post.publishedAt).getTime())
+    .slice(0, 3)
+    .map((item) => item.post)
 
   const breadcrumbs = [
     { label: 'Home', href: '/' },
@@ -141,6 +157,44 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
             </div>
           </div>
         </div>
+
+        {/* Related Articles */}
+        {relatedPosts.length > 0 && (
+          <section className={styles.related} aria-labelledby="related-heading">
+            <div className="container">
+              <h2 className={styles.relatedTitle} id="related-heading">
+                Related Articles & Guides
+              </h2>
+              <div className={styles.relatedGrid}>
+                {relatedPosts.map((rPost) => (
+                  <article key={rPost.slug} className={styles.relatedCard}>
+                    {rPost.coverImage && (
+                      <div className={styles.relatedImageWrap}>
+                        <Image
+                          src={rPost.coverImage}
+                          alt={rPost.title}
+                          fill
+                          style={{ objectFit: 'cover' }}
+                          sizes="(max-width: 768px) 100vw, 33vw"
+                        />
+                      </div>
+                    )}
+                    <div className={styles.relatedContent}>
+                      <span className={styles.relatedMeta}>
+                        {rPost.category} · {rPost.readTime} Min Read
+                      </span>
+                      <h3 className={styles.relatedCardTitle}>
+                        <Link href={`/blog/${rPost.slug}`} title={`Read article: ${rPost.title}`}>
+                          {rPost.title}
+                        </Link>
+                      </h3>
+                    </div>
+                  </article>
+                ))}
+              </div>
+            </div>
+          </section>
+        )}
       </article>
 
       <CTASection />

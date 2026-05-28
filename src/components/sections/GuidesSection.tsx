@@ -21,7 +21,7 @@ const FEATURED_GUIDES = [
     readTime: '15 min read',
     title: 'How to Setup IPTV on Firestick: Complete Guide 2026',
     excerpt: 'A complete step-by-step guide to setting up IPTV on any Firestick model — from enabling developer options to installation...',
-    href: '/blog/how-to-setup-iptv-on-firestick-complete-guide-2026',
+    href: '/blog/firestick-iptv-setup-2026',
     image: '/images/blog/firestick-setup-2026.png',
   },
   {
@@ -117,7 +117,7 @@ export async function GuidesSection() {
               Updated weekly with new guides, fixes, and comparisons to keep your streaming experience optimized.
             </p>
             <div className={styles.centerBtnTop}>
-              <Link href="/blog/recent" className={styles.outlineBtn} title="Browse all our recently published articles">
+              <Link href="/blog" className={styles.outlineBtn} title="Browse all our published articles">
                 All Articles <span className={styles.arrow}>→</span>
               </Link>
             </div>
