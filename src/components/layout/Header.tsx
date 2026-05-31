@@ -48,6 +48,15 @@ export function Header() {
       className={`${styles.header} ${scrolled ? styles.scrolled : ''}`}
       role="banner"
     >
+      {/* CRO Urgency Banner */}
+      <div className={styles.urgencyBanner}>
+        <div className="container">
+          <Link href="/#pricing" className={styles.urgencyLink}>
+            ⚡ FLASH SALE: 20% Off 12-Month Plans! Ends Soon ➔
+          </Link>
+        </div>
+      </div>
+
       <div className={`container ${styles.inner}`}>
         {/* Logo */}
         <Link href="/" className={styles.logo} aria-label="Nexus 4K IPTV home" title="Nexus 4K IPTV - Back to Home">

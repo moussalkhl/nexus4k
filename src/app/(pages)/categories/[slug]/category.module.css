@@ -173,6 +173,18 @@
   text-align: center;
 }
 
+.internalLink {
+  color: #00d4ff;
+  text-decoration: underline;
+  text-decoration-color: transparent;
+  transition: text-decoration-color 0.3s ease;
+  font-weight: 700;
+}
+
+.internalLink:hover {
+  text-decoration-color: #00d4ff;
+}
+
 @media (max-width: 768px) {
   .features { grid-template-columns: 1fr; }
   .content { padding: 3rem 1.5rem; border-radius: 24px; margin: 4rem 1rem; }
