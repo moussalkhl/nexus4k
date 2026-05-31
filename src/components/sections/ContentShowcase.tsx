@@ -16,16 +16,16 @@ const SPORT_LOGOS = [
 ];
 
 const MOVIE_ITEMS = [
-  { name: 'Chicago Fire',        img: '/movie-posters/M1.png' },
-  { name: 'Bridget Jones',       img: '/movie-posters/M2.png' },
-  { name: 'The Wild Robot',      img: '/movie-posters/M3.png' },
-  { name: 'Nosferatu',           img: '/movie-posters/M4.png' },
-  { name: 'The Year Between',    img: '/movie-posters/M5.png' },
-  { name: 'Love Hurts',          img: '/movie-posters/M6.png' },
-  { name: 'Hypnotic',            img: '/movie-posters/M7.png' },
-  { name: 'Brooklyn Nine-Nine',  img: '/movie-posters/M8.png' },
-  { name: 'State of Consciousness',img: '/movie-posters/M9.png' },
-  { name: 'The Vampire Diaries', img: '/movie-posters/M10.png' },
+  { name: 'Dune: Part Two',        img: '/movie-posters/N1.jpg' },
+  { name: 'Deadpool & Wolverine',  img: '/movie-posters/N2.jpg' },
+  { name: 'Inside Out 2',          img: '/movie-posters/N3.jpg' },
+  { name: 'Shōgun',                img: '/movie-posters/N4.jpg' },
+  { name: 'Fallout',               img: '/movie-posters/N5.jpg' },
+  { name: 'Oppenheimer',           img: '/movie-posters/N6.jpg' },
+  { name: 'The Last of Us',        img: '/movie-posters/N7.jpg' },
+  { name: 'The Boys',              img: '/movie-posters/N8.jpg' },
+  { name: 'House of the Dragon',   img: '/movie-posters/N9.jpg' },
+  { name: 'Godzilla x Kong',       img: '/movie-posters/N10.jpg' },
 ];
 
 const KIDS_ITEMS = [
