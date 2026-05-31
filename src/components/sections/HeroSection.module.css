@@ -7,7 +7,7 @@
   overflow: hidden;
   padding-top: 10rem;
   padding-bottom: 8rem;
-  background-color: #020408; /* Deepest space */
+  background-color: transparent;
 }
 
 .hero::before {
@@ -17,11 +17,11 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: linear-gradient(to bottom, rgba(2, 4, 8, 0.85) 0%, rgba(2, 4, 8, 0.65) 40%, rgba(2, 4, 8, 0.65) 60%, rgba(2, 4, 8, 0.95) 100%), url('/images/hero-collage-bg.png');
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.6) 40%, rgba(255, 255, 255, 0.4) 60%, rgba(255, 255, 255, 0.95) 100%), url('/images/hero-collage-bg.png');
   background-size: cover;
   background-position: center top;
   z-index: 0;
-  opacity: 0.8;
+  opacity: 0.6;
   pointer-events: none;
   animation: subtleZoom 25s infinite alternate ease-in-out;
 }
@@ -97,11 +97,11 @@
   font-size: clamp(2.5rem, 6vw, 5rem);
   font-weight: 900;
   line-height: 1.1;
-  color: #ffffff;
+  color: var(--text-primary);
   margin-bottom: 3.5rem;
   letter-spacing: -0.02em;
   max-width: 1200px;
-  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.8), 0 2px 4px rgba(0, 0, 0, 0.5);
+  text-shadow: 0 4px 20px rgba(255, 255, 255, 0.8), 0 2px 4px rgba(255, 255, 255, 0.5);
 }
 
 .gradientText {
@@ -131,8 +131,8 @@
   display: flex;
   align-items: center;
   gap: 1.5rem;
-  background: rgba(255, 255, 255, 0.03);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: var(--bg-glass);
+  border: 1px solid var(--border-default);
   padding: 1rem 2.5rem;
   border-radius: 16px;
   backdrop-filter: blur(10px);
@@ -150,14 +150,14 @@
   font-family: monospace;
   font-size: 3rem;
   font-weight: 700;
-  color: #fff;
+  color: var(--text-primary);
   line-height: 1;
 }
 
 .timeText {
   font-size: 0.75rem;
   font-weight: 600;
-  color: #888;
+  color: var(--text-muted);
   margin-top: 0.5rem;
   letter-spacing: 0.1em;
 }
@@ -165,7 +165,7 @@
 .timeColon {
   font-size: 2.5rem;
   font-weight: 700;
-  color: rgba(255, 255, 255, 0.2);
+  color: var(--text-secondary);
   margin-top: -15px;
 }
 
@@ -206,9 +206,9 @@
   padding: 1.125rem 3rem;
   font-size: 1.125rem;
   font-weight: 600;
-  color: #fff;
+  color: var(--text-primary);
   background: transparent;
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  border: 1px solid var(--border-default);
   border-radius: 99px;
   text-decoration: none;
   transition: all 0.3s ease;
@@ -216,8 +216,8 @@
 }
 
 .secondaryBtn:hover {
-  background: rgba(255, 255, 255, 0.05);
-  border-color: #fff;
+  background: var(--bg-glass-light);
+  border-color: var(--border-accent);
 }
 
 .secondaryBtn svg {
@@ -229,8 +229,8 @@
 /* Trust Bar */
 .trustBarWrapper {
   width: 100%;
-  border-top: 1px solid rgba(255, 255, 255, 0.05);
-  background: rgba(0, 0, 0, 0.3);
+  border-top: 1px solid var(--border-subtle);
+  background: var(--bg-glass);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   position: absolute;
@@ -253,21 +253,21 @@
 .trustNumber {
   font-size: 1.85rem;
   font-weight: 800;
-  color: #fff;
+  color: var(--text-primary);
   margin-bottom: 0.25rem;
 }
 
 .trustItem p {
   font-size: 0.75rem;
   font-weight: 700;
-  color: #64748b;
+  color: var(--text-secondary);
   letter-spacing: 0.15em;
 }
 
 .trustDivider {
   width: 1px;
   height: 40px;
-  background: rgba(255, 255, 255, 0.1);
+  background: var(--border-subtle);
 }
 
 @media (max-width: 1024px) {

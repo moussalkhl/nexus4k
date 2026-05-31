@@ -1,7 +1,7 @@
 .footer {
-  background-color: #050505; /* Solid dark background matching image */
+  background-color: var(--bg-surface);
   padding: 5rem 0 2rem;
-  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  border-top: 1px solid var(--border-subtle);
   position: relative;
   overflow: hidden;
 }
@@ -33,14 +33,14 @@
 }
 
 .description {
-  color: #94a3b8;
+  color: var(--text-secondary);
   font-size: 0.9rem;
   line-height: 1.6;
   max-width: 300px;
 }
 
 .copyright {
-  color: #475569;
+  color: var(--text-muted);
   font-size: 0.75rem;
   margin-top: 1rem;
 }
@@ -53,7 +53,7 @@
 }
 
 .colTitle {
-  color: #fff;
+  color: var(--text-primary);
   font-size: 1rem;
   font-weight: 700;
   margin: 0;
@@ -69,7 +69,7 @@
 }
 
 .linkList a {
-  color: #94a3b8;
+  color: var(--text-secondary);
   text-decoration: none;
   font-size: 0.9rem;
   transition: color 0.3s ease;
@@ -96,7 +96,7 @@
 }
 
 .contactList a {
-  color: #94a3b8;
+  color: var(--text-secondary);
   text-decoration: none;
   font-size: 0.9rem;
   display: flex;
@@ -106,7 +106,7 @@
 }
 
 .contactList a:hover {
-  color: #fff;
+  color: var(--text-primary);
 }
 
 .contactList a svg {
