@@ -1,22 +1,23 @@
 .showcaseSection {
   position: relative;
-  padding: var(--space-4xl) 0;
+  padding: 8rem 0;
   background-color: var(--bg-surface);
   overflow: hidden;
-  border-top: 1px solid var(--border-subtle);
-  border-bottom: 1px solid var(--border-subtle);
 }
 
-.glowBg {
+/* Ambient glow */
+.showcaseSection::before {
+  content: "";
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 100%;
-  height: 100%;
+  width: 120%;
+  height: 120%;
   transform: translate(-50%, -50%);
-  background: radial-gradient(circle at center, rgba(168, 85, 247, 0.05) 0%, transparent 60%);
+  background: radial-gradient(ellipse at center, rgba(0, 212, 255, 0.05) 0%, rgba(168, 85, 247, 0.03) 40%, transparent 70%);
   z-index: 0;
   pointer-events: none;
+  filter: blur(80px);
 }
 
 .container {
@@ -24,7 +25,7 @@
   z-index: 1;
   display: flex;
   flex-direction: column;
-  gap: var(--space-5xl);
+  gap: 6rem;
   max-width: 100%;
   overflow: hidden;
 }
@@ -32,24 +33,24 @@
 .rowContainer {
   display: flex;
   flex-direction: column;
-  gap: var(--space-2xl);
+  gap: 2rem;
 }
 
 .rowTitle {
-  font-family: var(--font-display);
-  font-size: clamp(2rem, 4vw, 3rem);
-  font-weight: 800;
-  color: var(--text-primary);
+  font-family: var(--font-display, sans-serif);
+  font-size: clamp(2.5rem, 4vw, 3.5rem);
+  font-weight: 900;
+  color: #fff;
   text-transform: uppercase;
-  letter-spacing: 0.05em;
+  letter-spacing: -0.02em;
   text-align: center;
-  margin-bottom: var(--space-md);
+  margin-bottom: 1rem;
 }
 
 .highlight {
-  color: transparent;
-  background: var(--gradient-primary);
+  background: linear-gradient(135deg, #00d4ff, #a855f7);
   -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   background-clip: text;
 }
 
@@ -58,34 +59,33 @@
   width: 100%;
   overflow: hidden;
   position: relative;
-  padding: var(--space-lg) 0;
+  padding: 2rem 0;
 }
 
-/* Fades on left/right to blend into dark background */
+/* Fades on left/right */
 .carouselWrapper::before,
 .carouselWrapper::after {
   content: '';
   position: absolute;
   top: 0;
   bottom: 0;
-  width: 150px;
+  width: 200px;
   z-index: 2;
   pointer-events: none;
 }
 .carouselWrapper::before {
   left: 0;
-  background: linear-gradient(to right, #050505, transparent);
+  background: linear-gradient(to right, var(--bg-surface), transparent);
 }
 .carouselWrapper::after {
   right: 0;
-  background: linear-gradient(to left, #050505, transparent);
+  background: linear-gradient(to left, var(--bg-surface), transparent);
 }
 
 .carouselTrack {
   display: flex;
-  gap: var(--space-xl);
+  gap: 2.5rem;
   width: max-content;
-  /* Pause animation on hover */
 }
 
 .carouselTrack:hover {
@@ -95,42 +95,42 @@
 /* Animations */
 @keyframes scrollLeft {
   0% { transform: translateX(0); }
-  100% { transform: translateX(calc(-50% - (var(--space-xl) / 2))); }
+  100% { transform: translateX(calc(-50% - 1.25rem)); }
 }
 @keyframes scrollRight {
-  0% { transform: translateX(calc(-50% - (var(--space-xl) / 2))); }
+  0% { transform: translateX(calc(-50% - 1.25rem)); }
   100% { transform: translateX(0); }
 }
 
 .scrollLeft {
-  animation: scrollLeft 40s linear infinite;
+  animation: scrollLeft 45s linear infinite;
 }
 .scrollRight {
-  animation: scrollRight 40s linear infinite;
+  animation: scrollRight 45s linear infinite;
 }
 
 /* ── Cards ── */
 .card {
   flex-shrink: 0;
   position: relative;
-  border-radius: var(--radius-xl);
+  border-radius: 24px;
   overflow: hidden;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  background: rgba(10, 10, 15, 0.4);
-  backdrop-filter: blur(8px);
+  transition: all 0.4s cubic-bezier(0.2, 0.8, 0.2, 1);
+  background: rgba(20, 20, 25, 0.4);
+  backdrop-filter: blur(12px);
   border: 1px solid rgba(255, 255, 255, 0.05);
 }
 
 .card:hover {
-  transform: translateY(-8px) scale(1.02);
+  transform: translateY(-12px) scale(1.02);
   z-index: 10;
-  box-shadow: 0 15px 35px rgba(0,0,0,0.5);
-  border-color: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5), 0 0 20px rgba(0, 212, 255, 0.2);
+  border-color: rgba(0, 212, 255, 0.3);
 }
 
 .imageWrapper {
   position: relative;
-  width: 280px;
+  width: 300px;
   aspect-ratio: 2 / 3;
 }
 
@@ -138,20 +138,20 @@
   object-fit: cover;
   width: 100%;
   height: 100%;
-  transition: transform 0.5s ease;
+  transition: transform 0.6s ease;
 }
 
 .card:hover .cardImage {
-  transform: scale(1.05);
+  transform: scale(1.08);
 }
 
 .cardOverlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(to top, rgba(5,5,5,0.9) 0%, rgba(5,5,5,0) 50%);
+  background: linear-gradient(to top, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0) 50%);
   display: flex;
   align-items: flex-end;
-  padding: var(--space-lg);
+  padding: 2rem;
   opacity: 0;
   transition: opacity 0.3s ease;
 }
@@ -162,51 +162,65 @@
 
 .cardTitle {
   color: #fff;
-  font-weight: 700;
-  font-size: var(--fs-lg);
-  text-shadow: 0 2px 4px rgba(0,0,0,0.8);
+  font-weight: 800;
+  font-size: 1.25rem;
+  text-shadow: 0 4px 10px rgba(0,0,0,0.8);
 }
 
 /* ── Sports Logo Specifics ── */
 .logoCard {
-  width: 240px;
+  width: 260px;
   height: 160px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: var(--space-sm);
-  padding: var(--space-md);
-  background: #ffffff;
-  border-radius: var(--radius-xl);
+  gap: 1rem;
+  padding: 1.5rem;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 24px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  transition: all 0.4s ease;
+  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .logoGlow {
   position: absolute;
   inset: 0;
   opacity: 0;
-  transition: opacity 0.3s ease;
+  transition: opacity 0.4s ease;
+  background: radial-gradient(circle at center, rgba(0, 212, 255, 0.4) 0%, transparent 70%);
   filter: blur(20px);
   z-index: -1;
 }
 
+.logoCard:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 30px rgba(0, 212, 255, 0.2);
+}
+
 .logoCard:hover .logoGlow {
-  opacity: 0.3;
+  opacity: 1;
 }
 
 .logoImgWrap {
   position: relative;
-  width: 140px;
-  height: 90px;
+  width: 150px;
+  height: 80px;
 }
 
 .logoImg {
   object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.logoCard:hover .logoImg {
+  transform: scale(1.1);
 }
 
 .logoLabel {
-  font-weight: 800;
-  font-size: 0.85rem;
+  font-weight: 900;
+  font-size: 0.9rem;
   color: #111111;
   text-transform: uppercase;
   letter-spacing: 0.05em;
@@ -216,16 +230,16 @@
 @media (max-width: 768px) {
   .carouselWrapper::before,
   .carouselWrapper::after {
-    width: 60px;
+    width: 80px;
   }
   .imageWrapper {
-    width: 200px;
+    width: 240px;
   }
   .logoCard {
-    width: 200px;
+    width: 220px;
     height: 140px;
   }
   .rowTitle {
-    font-size: 1.75rem;
+    font-size: 2rem;
   }
 }
