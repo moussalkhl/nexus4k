@@ -14,7 +14,7 @@
   width: 100%;
   height: 100%;
   transform: translate(-50%, -50%);
-  background: radial-gradient(circle at center, var(--color-primary-glow) 0%, transparent 60%);
+  background: radial-gradient(circle at center, rgba(168, 85, 247, 0.05) 0%, transparent 60%);
   z-index: 0;
   pointer-events: none;
 }
@@ -24,24 +24,26 @@
   z-index: 1;
   display: flex;
   flex-direction: column;
-  gap: var(--space-4xl);
+  gap: var(--space-5xl);
+  max-width: 100%;
+  overflow: hidden;
 }
 
-.block {
+.rowContainer {
   display: flex;
   flex-direction: column;
-  gap: var(--space-lg);
-  align-items: center;
-  text-align: center;
+  gap: var(--space-2xl);
 }
 
-.title {
+.rowTitle {
   font-family: var(--font-display);
   font-size: clamp(2rem, 4vw, 3rem);
   font-weight: 800;
   color: var(--text-primary);
   text-transform: uppercase;
   letter-spacing: 0.05em;
+  text-align: center;
+  margin-bottom: var(--space-md);
 }
 
 .highlight {
@@ -51,49 +53,177 @@
   background-clip: text;
 }
 
-.subtitle {
-  font-size: var(--fs-lg);
-  color: var(--text-secondary);
-  max-width: 600px;
-}
-
-.imageWrapper {
+/* ── Carousels ── */
+.carouselWrapper {
   width: 100%;
-  max-width: 1200px;
-  position: relative;
-  border-radius: var(--radius-xl);
   overflow: hidden;
-  box-shadow: var(--shadow-card), 0 20px 40px rgba(0, 0, 0, 0.4);
-  border: 1px solid var(--border-subtle);
+  position: relative;
+  padding: var(--space-lg) 0;
 }
 
-.imageWrapper::after {
+/* Fades on left/right to blend into dark background */
+.carouselWrapper::before,
+.carouselWrapper::after {
   content: '';
   position: absolute;
   top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(to top, rgba(10, 10, 10, 0.8) 0%, transparent 40%);
+  bottom: 0;
+  width: 150px;
+  z-index: 2;
   pointer-events: none;
 }
-
-.collage {
-  width: 100%;
-  height: auto;
-  display: block;
-  transition: transform 10s ease;
+.carouselWrapper::before {
+  left: 0;
+  background: linear-gradient(to right, #050505, transparent);
+}
+.carouselWrapper::after {
+  right: 0;
+  background: linear-gradient(to left, #050505, transparent);
 }
 
-.imageWrapper:hover .collage {
+.carouselTrack {
+  display: flex;
+  gap: var(--space-xl);
+  width: max-content;
+  /* Pause animation on hover */
+}
+
+.carouselTrack:hover {
+  animation-play-state: paused;
+}
+
+/* Animations */
+@keyframes scrollLeft {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(calc(-50% - (var(--space-xl) / 2))); }
+}
+@keyframes scrollRight {
+  0% { transform: translateX(calc(-50% - (var(--space-xl) / 2))); }
+  100% { transform: translateX(0); }
+}
+
+.scrollLeft {
+  animation: scrollLeft 40s linear infinite;
+}
+.scrollRight {
+  animation: scrollRight 40s linear infinite;
+}
+
+/* ── Cards ── */
+.card {
+  flex-shrink: 0;
+  position: relative;
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background: rgba(10, 10, 15, 0.4);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.card:hover {
+  transform: translateY(-8px) scale(1.02);
+  z-index: 10;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.5);
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+.imageWrapper {
+  position: relative;
+  width: 280px;
+  aspect-ratio: 2 / 3;
+}
+
+.cardImage {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.5s ease;
+}
+
+.card:hover .cardImage {
   transform: scale(1.05);
 }
 
+.cardOverlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(5,5,5,0.9) 0%, rgba(5,5,5,0) 50%);
+  display: flex;
+  align-items: flex-end;
+  padding: var(--space-lg);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.card:hover .cardOverlay {
+  opacity: 1;
+}
+
+.cardTitle {
+  color: #fff;
+  font-weight: 700;
+  font-size: var(--fs-lg);
+  text-shadow: 0 2px 4px rgba(0,0,0,0.8);
+}
+
+/* ── Sports Logo Specifics ── */
+.logoCard {
+  width: 240px;
+  height: 160px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-md);
+  padding: var(--space-lg);
+  background: rgba(15, 15, 20, 0.6);
+}
+
+.logoGlow {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  filter: blur(20px);
+  z-index: -1;
+}
+
+.logoCard:hover .logoGlow {
+  opacity: 0.15;
+}
+
+.logoImgWrap {
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+
+.logoImg {
+  object-fit: contain;
+}
+
+.logoLabel {
+  font-weight: 700;
+  font-size: var(--fs-md);
+  color: var(--text-primary);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
 @media (max-width: 768px) {
-  .showcaseSection {
-    padding: var(--space-2xl) 0;
+  .carouselWrapper::before,
+  .carouselWrapper::after {
+    width: 60px;
   }
   .imageWrapper {
-    border-radius: var(--radius-md);
+    width: 200px;
+  }
+  .logoCard {
+    width: 200px;
+    height: 140px;
+  }
+  .rowTitle {
+    font-size: 1.75rem;
   }
 }
