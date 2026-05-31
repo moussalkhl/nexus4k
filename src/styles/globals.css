@@ -8,42 +8,42 @@
 /* ─── CSS Custom Properties ─────────────────────────────────── */
 :root {
   /* Brand Colors */
-  --color-primary:        #00d4ff;
-  --color-primary-dark:   #0098b8;
-  --color-primary-glow:   rgba(0, 212, 255, 0.25);
-  --color-secondary:      #a855f7;
-  --color-secondary-dark: #7c3aed;
+  --color-primary:        #0ea5e9;
+  --color-primary-dark:   #0284c7;
+  --color-primary-glow:   rgba(14, 165, 233, 0.25);
+  --color-secondary:      #8b5cf6;
+  --color-secondary-dark: #6d28d9;
   --color-accent:         #f59e0b;
   --color-danger:         #ef4444;
   --color-success:        #10b981;
 
   /* Backgrounds */
-  --bg-base:        #020408;
-  --bg-surface:     #080f1a;
-  --bg-elevated:    #0d1829;
-  --bg-card:        #0f1f35;
-  --bg-card-hover:  #162540;
-  --bg-glass:       rgba(8, 15, 26, 0.7);
-  --bg-glass-light: rgba(255, 255, 255, 0.04);
+  --bg-base:        #ffffff;
+  --bg-surface:     #f8fafc;
+  --bg-elevated:    #f1f5f9;
+  --bg-card:        #ffffff;
+  --bg-card-hover:  #f8fafc;
+  --bg-glass:       rgba(255, 255, 255, 0.8);
+  --bg-glass-light: rgba(0, 0, 0, 0.04);
 
   /* Text */
-  --text-primary:   #f0f6ff;
-  --text-secondary: #94a3b8;
-  --text-muted:     #475569;
-  --text-accent:    #00d4ff;
+  --text-primary:   #0f172a;
+  --text-secondary: #475569;
+  --text-muted:     #64748b;
+  --text-accent:    #0ea5e9;
 
   /* Borders */
-  --border-subtle:  rgba(255, 255, 255, 0.06);
-  --border-default: rgba(255, 255, 255, 0.10);
-  --border-accent:  rgba(0, 212, 255, 0.30);
+  --border-subtle:  rgba(0, 0, 0, 0.06);
+  --border-default: rgba(0, 0, 0, 0.10);
+  --border-accent:  rgba(14, 165, 233, 0.30);
 
   /* Gradients */
-  --gradient-primary: linear-gradient(135deg, #00d4ff 0%, #a855f7 100%);
-  --gradient-hero:    radial-gradient(ellipse at 50% 0%, rgba(0, 212, 255, 0.15) 0%, transparent 70%),
-                      radial-gradient(ellipse at 80% 50%, rgba(168, 85, 247, 0.10) 0%, transparent 60%),
-                      linear-gradient(180deg, #020408 0%, #080f1a 100%);
-  --gradient-card:    linear-gradient(135deg, rgba(15, 31, 53, 0.9) 0%, rgba(13, 24, 41, 0.9) 100%);
-  --gradient-glow:    radial-gradient(circle, rgba(0, 212, 255, 0.15) 0%, transparent 70%);
+  --gradient-primary: linear-gradient(135deg, #0ea5e9 0%, #8b5cf6 100%);
+  --gradient-hero:    radial-gradient(ellipse at 50% 0%, rgba(14, 165, 233, 0.15) 0%, transparent 70%),
+                      radial-gradient(ellipse at 80% 50%, rgba(139, 92, 246, 0.10) 0%, transparent 60%),
+                      linear-gradient(180deg, #f8fafc 0%, #ffffff 100%);
+  --gradient-card:    linear-gradient(135deg, rgba(255, 255, 255, 0.9) 0%, rgba(248, 250, 252, 0.9) 100%);
+  --gradient-glow:    radial-gradient(circle, rgba(14, 165, 233, 0.15) 0%, transparent 70%);
 
   /* Spacing */
   --space-xs:  0.25rem;

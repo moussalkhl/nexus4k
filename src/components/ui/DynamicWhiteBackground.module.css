@@ -1,0 +1,72 @@
+.container {
+  position: fixed;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  overflow: hidden;
+  background-color: var(--bg-base);
+}
+
+.blob1, .blob2, .blob3 {
+  position: absolute;
+  filter: blur(100px);
+  border-radius: 50%;
+  animation: floatBlobs 20s ease-in-out infinite alternate;
+  opacity: 0.6;
+}
+
+.blob1 {
+  width: 60vw;
+  height: 60vw;
+  background: radial-gradient(circle, rgba(14, 165, 233, 0.3) 0%, transparent 70%);
+  top: -10%;
+  left: -10%;
+  animation-delay: 0s;
+}
+
+.blob2 {
+  width: 50vw;
+  height: 50vw;
+  background: radial-gradient(circle, rgba(139, 92, 246, 0.25) 0%, transparent 70%);
+  bottom: -20%;
+  right: -10%;
+  animation-delay: -5s;
+}
+
+.blob3 {
+  width: 40vw;
+  height: 40vw;
+  background: radial-gradient(circle, rgba(245, 158, 11, 0.2) 0%, transparent 70%);
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation-delay: -10s;
+}
+
+.grid {
+  position: absolute;
+  inset: 0;
+  background-image: 
+    linear-gradient(rgba(0, 0, 0, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 0, 0, 0.03) 1px, transparent 1px);
+  background-size: 40px 40px;
+  mask-image: radial-gradient(ellipse at center, transparent 20%, black 100%);
+  -webkit-mask-image: radial-gradient(ellipse at center, transparent 20%, black 100%);
+  opacity: 0.8;
+}
+
+@keyframes floatBlobs {
+  0% {
+    transform: translate(0, 0) scale(1);
+  }
+  33% {
+    transform: translate(5%, 5%) scale(1.05);
+  }
+  66% {
+    transform: translate(-5%, 10%) scale(0.95);
+  }
+  100% {
+    transform: translate(0, -5%) scale(1);
+  }
+}

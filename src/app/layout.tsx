@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import '@/styles/globals.css'
 import { Header } from '@/components/layout/Header'
 import { Footer } from '@/components/layout/Footer'
-import { GalaxyBackground } from '@/components/ui/GalaxyBackground'
+import { DynamicWhiteBackground } from '@/components/ui/DynamicWhiteBackground'
 import { generateOrganizationJsonLd, generateWebSiteJsonLd } from '@/seo/metadata'
 import { siteConfig } from '@/config/site'
 
@@ -42,7 +42,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <meta charSet="utf-8" />
 
         <link rel="manifest" href="/manifest.json" />
-        <meta name="theme-color" content="#020408" />
+        <meta name="theme-color" content="#ffffff" />
         
         {/* SEO Required Tags */}
         <link rel="alternate" hrefLang="en" href="https://nexus4ktv.pro/" />
@@ -58,7 +58,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         />
       </head>
       <body className={`${inter.variable} ${outfit.variable}`}>
-        <GalaxyBackground />
+        <DynamicWhiteBackground />
         <a href="#main-content" className="sr-only" title="Skip to main content">
           Skip to main content
         </a>
@@ -71,3 +71,4 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     </html>
   )
 }
+
