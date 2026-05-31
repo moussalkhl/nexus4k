@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
-import styles from './FaqSection.module.css';
+import styles from './FAQSection.module.css';
 import { generateFAQJsonLd } from '@/seo/metadata';
 
 const FAQ_ITEMS = [

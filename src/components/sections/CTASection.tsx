@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { siteConfig } from '@/config/site';
-import styles from './CtaSection.module.css';
+import styles from './CTASection.module.css';
 
 const features = [
   {
