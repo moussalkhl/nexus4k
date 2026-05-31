@@ -1,101 +1,126 @@
-import Link from 'next/link'
-import Image from 'next/image'
-import { siteConfig } from '@/config/site'
-import styles from './Footer.module.css'
+import Link from 'next/link';
+import Image from 'next/image';
+import { siteConfig } from '@/config/site';
+import styles from './Footer.module.css';
 
 export function Footer() {
-  const year = new Date().getFullYear()
-  const whatsappMsg = encodeURIComponent(siteConfig.defaultWhatsappMessage)
+  const year = new Date().getFullYear();
+  const whatsappMsg = encodeURIComponent(siteConfig.defaultWhatsappMessage);
 
   return (
     <footer className={styles.footer} role="contentinfo">
-      <div className="container">
-        <div className={styles.grid}>
-          {/* Brand Column */}
-          <div className={styles.brandCol}>
-            <Link href="/" className={styles.logo} aria-label="Nexus 4K IPTV home" title="Nexus 4K IPTV - Back to Home">
-              <Image src="/logo.png" alt="Nexus 4K IPTV logo" width={220} height={55} className={styles.logoImage} />
-              <span className="sr-only">Nexus 4K IPTV Footer Logo</span>
-            </Link>
-            <p className={styles.description}>
-              Stream 30,000+ Channels in 4K — Zero Buffering. Ever.
-            </p>
-            <p className={styles.copyright}>
-              © {year} {siteConfig.name}. All rights reserved.
-            </p>
-          </div>
+      {/* Massive bottom-edge glowing orb */}
+      <div className={styles.footerGlow} aria-hidden="true" />
 
-          {/* Pages Column */}
-          <div className={styles.linkCol}>
-            <div className={styles.colTitle}>Pages</div>
-            <ul className={styles.linkList}>
-              <li><Link href="/" title="Back to Home Page">Nexus Home</Link></li>
-              <li><Link href="/#features" title="Learn about our IPTV features">Our Features</Link></li>
-              <li><Link href="/#pricing" title="View our pricing plans">Pricing Plans</Link></li>
-              <li><Link href="/blog" title="Read our latest blog posts">Streaming Blog</Link></li>
-              <li><Link href="/contact" title="Get in touch with our support team">Help Center</Link></li>
-              <li><Link href="/legal" title="Privacy Policy and Terms of Service">Privacy & Terms</Link></li>
-            </ul>
-          </div>
+      {/* Optional Top Divider */}
+      <div className={styles.topDivider} aria-hidden="true" />
 
-          {/* Categories Column */}
-          <div className={styles.linkCol}>
-            <div className={styles.colTitle}>IPTV Channels</div>
-            <ul className={styles.linkList}>
-              <li><Link href="/categories" title="Browse all channel categories">All Categories</Link></li>
-              <li><Link href="/categories/sports" title="Live sports streaming channels">Sports IPTV</Link></li>
-              <li><Link href="/categories/movies" title="UHD movies on demand">Movies IPTV</Link></li>
-              <li><Link href="/categories/series" title="Premium series and TV shows">Series IPTV</Link></li>
-              <li><Link href="/categories/documentaries" title="Documentaries and science channels">Docs IPTV</Link></li>
-              <li><Link href="/categories/anime" title="Anime channels and libraries">Anime IPTV</Link></li>
-            </ul>
-          </div>
+      <div className={`container ${styles.container}`}>
+        
+        {/* Main Grid inside a subtle glass wrapper */}
+        <div className={styles.glassWrapper}>
+          <div className={styles.grid}>
+            {/* Brand Column */}
+            <div className={styles.brandCol}>
+              <Link href="/" className={styles.logo} aria-label="Nexus 4K IPTV home" title="Nexus 4K IPTV - Back to Home">
+                <Image src="/logo.png" alt="Nexus 4K IPTV logo" width={220} height={55} className={styles.logoImage} />
+                <span className="sr-only">Nexus 4K IPTV Footer Logo</span>
+              </Link>
+              <p className={styles.description}>
+                Stream 30,000+ Channels in 4K — Zero Buffering. Ever. The ultimate entertainment portal.
+              </p>
+              
+            </div>
 
-          {/* Resources Column */}
-          <div className={styles.linkCol}>
-            <div className={styles.colTitle}>Setup & Help</div>
-            <ul className={styles.linkList}>
-              <li><Link href="/blog/tivimate-premium-setup-guide-2026" title="TiviMate Premium complete setup guide">TiviMate Setup</Link></li>
-              <li><Link href="/blog/firestick-iptv-setup-2026" title="How to setup IPTV on Amazon Firestick">Firestick Setup</Link></li>
-              <li><Link href="/blog/iptv-smarters-pro-setup-2026" title="IPTV Smarters Pro installation guide">Smarters Setup</Link></li>
-              <li><Link href="/#faq" title="Frequently asked questions">View FAQs</Link></li>
-            </ul>
-          </div>
+            {/* Pages Column */}
+            <div className={styles.linkCol}>
+              <h3 className={styles.colTitle}>Pages</h3>
+              <ul className={styles.linkList}>
+                <li><Link href="/" title="Back to Home Page">Nexus Home</Link></li>
+                <li><Link href="/#features" title="Learn about our IPTV features">Our Features</Link></li>
+                <li><Link href="/#pricing" title="View our pricing plans">Pricing Plans</Link></li>
+                <li><Link href="/blog" title="Read our latest blog posts">Streaming Blog</Link></li>
+                <li><Link href="/contact" title="Get in touch with our support team">Help Center</Link></li>
+              </ul>
+            </div>
 
-          {/* Contact Column */}
-          <div className={styles.contactCol}>
-            <div className={styles.colTitle}>Contact</div>
-            <ul className={styles.contactList}>
-              <li>
-                <a href={`https://wa.me/${siteConfig.whatsappNumber}?text=${whatsappMsg}`} target="_blank" rel="noopener noreferrer" title="Contact our support on WhatsApp">
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#25D366" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                    <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
-                  </svg>
-                  WhatsApp: {siteConfig.phone}
-                </a>
-              </li>
-              <li>
-                <a href={siteConfig.telegramUrl} target="_blank" rel="noopener noreferrer" title="Join our Telegram channel">
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0088cc" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                    <line x1="22" y1="2" x2="11" y2="13"></line>
-                    <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
-                  </svg>
-                  Telegram
-                </a>
-              </li>
-              <li>
-                <a href={`mailto:${siteConfig.email}`} title="Send an email to our support team">
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#94a3b8" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
-                    <polyline points="22,6 12,13 2,6"></polyline>
-                  </svg>
-                  Email Support
-                </a>
-              </li>
-            </ul>
-          </div>
+            {/* Categories Column */}
+            <div className={styles.linkCol}>
+              <h3 className={styles.colTitle}>IPTV Channels</h3>
+              <ul className={styles.linkList}>
+                <li><Link href="/categories" title="Browse all channel categories">All Categories</Link></li>
+                <li><Link href="/categories/sports" title="Live sports streaming channels">Sports IPTV</Link></li>
+                <li><Link href="/categories/movies" title="UHD movies on demand">Movies IPTV</Link></li>
+                <li><Link href="/categories/series" title="Premium series and TV shows">Series IPTV</Link></li>
+                <li><Link href="/categories/anime" title="Anime channels and libraries">Anime IPTV</Link></li>
+              </ul>
+            </div>
 
+            {/* Resources Column */}
+            <div className={styles.linkCol}>
+              <h3 className={styles.colTitle}>Setup & Help</h3>
+              <ul className={styles.linkList}>
+                <li><Link href="/blog/tivimate-premium-setup-guide-2026" title="TiviMate Premium complete setup guide">TiviMate Setup</Link></li>
+                <li><Link href="/blog/firestick-iptv-setup-2026" title="How to setup IPTV on Amazon Firestick">Firestick Setup</Link></li>
+                <li><Link href="/#faq" title="Frequently asked questions">View FAQs</Link></li>
+                <li><Link href="/legal" title="Privacy Policy and Terms of Service">Privacy & Terms</Link></li>
+              </ul>
+            </div>
+
+            {/* Contact Column */}
+            <div className={styles.contactCol}>
+              <h3 className={styles.colTitle}>Contact</h3>
+              <ul className={styles.contactList}>
+                <li>
+                  <a href={`https://wa.me/${siteConfig.whatsappNumber}?text=${whatsappMsg}`} target="_blank" rel="noopener noreferrer" className={styles.contactLink} title="Contact our support on WhatsApp">
+                    <div className={styles.iconWrap}>
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                        <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+                      </svg>
+                    </div>
+                    WhatsApp: {siteConfig.phone}
+                  </a>
+                </li>
+                <li>
+                  <a href={siteConfig.telegramUrl} target="_blank" rel="noopener noreferrer" className={styles.contactLink} title="Join our Telegram channel">
+                    <div className={styles.iconWrap}>
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                        <line x1="22" y1="2" x2="11" y2="13"></line>
+                        <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                      </svg>
+                    </div>
+                    Telegram
+                  </a>
+                </li>
+                <li>
+                  <a href={`mailto:${siteConfig.email}`} className={styles.contactLink} title="Send an email to our support team">
+                    <div className={styles.iconWrap}>
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                        <polyline points="22,6 12,13 2,6"></polyline>
+                      </svg>
+                    </div>
+                    Email Support
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
+
+        {/* Bottom Bar */}
+        <div className={styles.bottomBar}>
+          <p className={styles.copyright}>
+            © {year} {siteConfig.name}. All rights reserved.
+          </p>
+          <div className={styles.paymentIcons}>
+            {/* Simulated Payment Icons */}
+            <div className={styles.payIcon}>Visa</div>
+            <div className={styles.payIcon}>Mastercard</div>
+            <div className={styles.payIcon}>Crypto</div>
+          </div>
+        </div>
+
       </div>
 
       {/* Floating WhatsApp Button */}
@@ -113,5 +138,5 @@ export function Footer() {
         <span className="sr-only">Chat with us on WhatsApp</span>
       </a>
     </footer>
-  )
+  );
 }
