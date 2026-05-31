@@ -86,7 +86,7 @@ export function ContentShowcase() {
               {[...MOVIE_ITEMS, ...MOVIE_ITEMS].map((item, i) => (
                 <div key={i} className={styles.card}>
                   <div className={styles.imageWrapper}>
-                    <Image src={item.img} alt={`${item.name} on Nexus 4K IPTV`} loading="lazy" className={styles.cardImage} width={280} height={420} unoptimized />
+                    <Image src={item.img} alt={`${item.name} on Nexus 4K IPTV`} loading="lazy" className={styles.cardImage} width={280} height={420} unoptimized referrerPolicy="no-referrer" />
                     <div className={styles.cardOverlay}>
                       <span className={styles.cardTitle}>{item.name}</span>
                     </div>
