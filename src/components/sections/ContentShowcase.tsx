@@ -3,16 +3,16 @@ import Image from 'next/image';
 import styles from './ContentShowcase.module.css';
 
 const SPORT_LOGOS = [
-  { name: 'Champions League', img: 'https://upload.wikimedia.org/wikipedia/en/b/bf/UEFA_Champions_League_logo_2.svg',  accent: '#c9a227' },
+  { name: 'Champions League', img: 'https://upload.wikimedia.org/wikipedia/commons/0/0a/UEFA_Champions_League_logo.svg',  accent: '#c9a227' },
   { name: 'NBA',              img: 'https://upload.wikimedia.org/wikipedia/en/0/03/National_Basketball_Association_logo.svg',  accent: '#c9082a' },
-  { name: 'Eurosport',        img: 'https://upload.wikimedia.org/wikipedia/commons/e/ee/Eurosport_1_logo.svg',  accent: '#0057a8' },
+  { name: 'Eurosport',        img: 'https://upload.wikimedia.org/wikipedia/commons/1/17/Eurosport_Logo_2015.svg',  accent: '#0057a8' },
   { name: 'Premier League',   img: 'https://upload.wikimedia.org/wikipedia/en/f/f2/Premier_League_Logo.svg',  accent: '#3d195b' },
-  { name: 'Sport1',           img: 'https://upload.wikimedia.org/wikipedia/commons/7/75/Sport1_logo.svg',  accent: '#e30613' },
+  { name: 'Sport1',           img: 'https://upload.wikimedia.org/wikipedia/commons/4/47/Sport1_Logo_2024.svg',  accent: '#e30613' },
   { name: 'MLB',              img: 'https://upload.wikimedia.org/wikipedia/commons/a/a6/Major_League_Baseball_logo.svg',  accent: '#002d72' },
   { name: 'NFL',              img: 'https://upload.wikimedia.org/wikipedia/en/a/a2/National_Football_League_logo.svg',  accent: '#013369' },
   { name: 'LaLiga',           img: 'https://upload.wikimedia.org/wikipedia/commons/0/0f/LaLiga_logo_2023.svg',  accent: '#fe4b44' },
   { name: 'Bundesliga',       img: 'https://upload.wikimedia.org/wikipedia/en/d/df/Bundesliga_logo_%282017%29.svg',  accent: '#d9000d' },
-  { name: 'Ligue 1',          img: 'https://upload.wikimedia.org/wikipedia/en/b/ba/Ligue_1_Uber_Eats.svg', accent: '#5f7eb3' },
+  { name: 'Ligue 1',          img: 'https://upload.wikimedia.org/wikipedia/commons/c/cd/Ligue_1_Uber_Eats_logo.svg', accent: '#5f7eb3' },
 ];
 
 const MOVIE_ITEMS = [
