@@ -16,16 +16,16 @@ const SPORT_LOGOS = [
 ];
 
 const MOVIE_ITEMS = [
-  { name: 'Dune: Part Two', img: 'https://upload.wikimedia.org/wikipedia/en/thumb/5/52/Dune_Part_Two_poster.jpeg/250px-Dune_Part_Two_poster.jpeg' },
-  { name: 'Deadpool & Wolverine', img: 'https://upload.wikimedia.org/wikipedia/en/thumb/4/4c/Deadpool_%26_Wolverine_poster.jpg/250px-Deadpool_%26_Wolverine_poster.jpg' },
-  { name: 'Inside Out 2', img: 'https://upload.wikimedia.org/wikipedia/en/thumb/f/f7/Inside_Out_2_poster.jpg/250px-Inside_Out_2_poster.jpg' },
-  { name: 'Shōgun', img: 'https://upload.wikimedia.org/wikipedia/en/thumb/b/b6/Sh%C5%8Dgun_%282024_miniseries%29_poster.jpg/250px-Sh%C5%8Dgun_%282024_miniseries%29_poster.jpg' },
-  { name: 'Fallout', img: 'https://upload.wikimedia.org/wikipedia/en/thumb/f/fa/Fallout_TV_series_poster.jpg/250px-Fallout_TV_series_poster.jpg' },
-  { name: 'Oppenheimer', img: 'https://upload.wikimedia.org/wikipedia/en/thumb/4/4a/Oppenheimer_%28film%29.jpg/250px-Oppenheimer_%28film%29.jpg' },
-  { name: 'The Last of Us', img: 'https://upload.wikimedia.org/wikipedia/en/thumb/4/46/The_Last_of_Us_season_1_poster.jpg/250px-The_Last_of_Us_season_1_poster.jpg' },
-  { name: 'The Boys', img: 'https://upload.wikimedia.org/wikipedia/en/thumb/a/a2/The_Boys_Season_4.jpg/250px-The_Boys_Season_4.jpg' },
-  { name: 'House of the Dragon', img: 'https://upload.wikimedia.org/wikipedia/en/thumb/9/98/House_of_the_Dragon_season_1_poster.jpg/250px-House_of_the_Dragon_season_1_poster.jpg' },
-  { name: 'Godzilla x Kong', img: 'https://upload.wikimedia.org/wikipedia/en/thumb/b/be/Godzilla_x_kong_the_new_empire_poster.jpg/250px-Godzilla_x_kong_the_new_empire_poster.jpg' }
+  { name: 'Dune: Part Two', img: 'https://image.tmdb.org/t/p/w500/1pdfLvkbY9ohJlCjQH2JGqq9TrU.jpg' },
+  { name: 'Deadpool & Wolverine', img: 'https://image.tmdb.org/t/p/w500/8cdWjvZQUExUUTzyp4t6EDMubfO.jpg' },
+  { name: 'Inside Out 2', img: 'https://image.tmdb.org/t/p/w500/vpnVM9B6NMmQpWeZvzRxMgG2MHe.jpg' },
+  { name: 'Shōgun', img: 'https://image.tmdb.org/t/p/w500/7O4iVfOMQmdCSxhOg1WNzG1hq1IT.jpg' },
+  { name: 'Fallout', img: 'https://image.tmdb.org/t/p/w500/xUjR384vLd7E2dI7l8qNl1hG1U6.jpg' },
+  { name: 'Oppenheimer', img: 'https://image.tmdb.org/t/p/w500/8Gxv8gSFCU0XGDykEGv7zR1n2ua.jpg' },
+  { name: 'The Last of Us', img: 'https://image.tmdb.org/t/p/w500/ndlQ2Cuc3cjTL7lTynw6I4boP4S.jpg' },
+  { name: 'The Boys', img: 'https://image.tmdb.org/t/p/w500/nxeHU7r8J7VzR1e5I9WdFqVjXgB.jpg' },
+  { name: 'House of the Dragon', img: 'https://image.tmdb.org/t/p/w500/7QVsGixIUrWuTUAJkUGBaX2eDXY.jpg' },
+  { name: 'Godzilla x Kong', img: 'https://image.tmdb.org/t/p/w500/tMefBSflR6PGQLvLuPEg0rT1K1r.jpg' }
 ];
 
 const KIDS_ITEMS = [
