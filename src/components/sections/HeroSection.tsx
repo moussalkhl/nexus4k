@@ -23,11 +23,12 @@ export function HeroSection() {
 
         {/* Massive Headline (H1 - Exactly One) */}
         <h1 className={styles.heading}>
-          Nexus4kTv – Premium Nexus 4K IPTV Subscription
+          <span className={styles.headingWhite}>Nexus4kTv – </span> 
+          <span className={styles.headingGradient}>Premium Nexus 4K IPTV Subscription</span>
         </h1>
         
         {/* SEO Required Subtitle (First 100 words focus keyword) */}
-        <p className={styles.subtitle} style={{ fontSize: '1.2rem', color: 'var(--text-secondary)', marginBottom: '2rem', maxWidth: '600px', marginLeft: 'auto', marginRight: 'auto' }}>
+        <p className={styles.subtitle}>
           <strong>Nexus4kTv</strong> provides the ultimate <strong>Nexus 4K IPTV</strong> subscription with a free trial. Stream 30,000+ live channels, sports, movies & series in 4K/UHD. Trusted by 20k+ users worldwide.
         </p>
 
