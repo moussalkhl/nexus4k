@@ -19,12 +19,12 @@ const MOVIE_ITEMS = [
   { name: 'Dune: Part Two', img: 'https://image.tmdb.org/t/p/w500/1pdfLvkbY9ohJlCjQH2JGqq9TrU.jpg' },
   { name: 'Deadpool & Wolverine', img: 'https://image.tmdb.org/t/p/w500/8cdWjvZQUExUUTzyp4t6EDMubfO.jpg' },
   { name: 'Inside Out 2', img: 'https://image.tmdb.org/t/p/w500/vpnVM9B6NMmQpWeZvzRxMgG2MHe.jpg' },
-  { name: 'Shōgun', img: 'https://image.tmdb.org/t/p/w500/7O4iVfOMQmdCSxhOg1WNzG1hq1IT.jpg' },
-  { name: 'Fallout', img: 'https://image.tmdb.org/t/p/w500/xUjR384vLd7E2dI7l8qNl1hG1U6.jpg' },
+  { name: 'Shōgun', img: 'https://static.tvmaze.com/uploads/images/original_untouched/506/1265637.jpg' },
+  { name: 'Fallout', img: 'https://static.tvmaze.com/uploads/images/original_untouched/599/1499142.jpg' },
   { name: 'Oppenheimer', img: 'https://image.tmdb.org/t/p/w500/8Gxv8gSFCU0XGDykEGv7zR1n2ua.jpg' },
-  { name: 'The Last of Us', img: 'https://image.tmdb.org/t/p/w500/ndlQ2Cuc3cjTL7lTynw6I4boP4S.jpg' },
-  { name: 'The Boys', img: 'https://image.tmdb.org/t/p/w500/nxeHU7r8J7VzR1e5I9WdFqVjXgB.jpg' },
-  { name: 'House of the Dragon', img: 'https://image.tmdb.org/t/p/w500/7QVsGixIUrWuTUAJkUGBaX2eDXY.jpg' },
+  { name: 'The Last of Us', img: 'https://static.tvmaze.com/uploads/images/original_untouched/563/1409008.jpg' },
+  { name: 'The Boys', img: 'https://static.tvmaze.com/uploads/images/original_untouched/619/1547768.jpg' },
+  { name: 'House of the Dragon', img: 'https://static.tvmaze.com/uploads/images/original_untouched/627/1567790.jpg' },
   { name: 'Godzilla x Kong', img: 'https://image.tmdb.org/t/p/w500/tMefBSflR6PGQLvLuPEg0rT1K1r.jpg' }
 ];
 
