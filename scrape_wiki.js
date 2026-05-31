@@ -1,5 +1,4 @@
 const fs = require('fs');
-const path = require('path');
 const https = require('https');
 
 const pages = [
@@ -17,7 +16,7 @@ const pages = [
 
 async function fetchHtml(urlPath) {
   const url = `https://en.wikipedia.org${urlPath}`;
-  const options = { headers: { 'User-Agent': 'NodeJS/IPTV-Script (contact@example.com)' } };
+  const options = { headers: { 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36' } };
   return new Promise((resolve, reject) => {
     https.get(url, options, (res) => {
       let data = '';
@@ -27,59 +26,26 @@ async function fetchHtml(urlPath) {
   });
 }
 
-async function downloadImage(url, dest) {
-  const options = { headers: { 'User-Agent': 'NodeJS/IPTV-Script (contact@example.com)' } };
-  return new Promise((resolve, reject) => {
-    const file = fs.createWriteStream(dest);
-    https.get(url, options, (res) => {
-      res.pipe(file);
-      file.on('finish', () => {
-        file.close(resolve);
-      });
-    }).on('error', (err) => {
-      fs.unlink(dest, () => {});
-      reject(err);
-    });
-  });
-}
-
 async function main() {
-  const destDir = path.join(__dirname, 'public', 'movie-posters');
-  if (!fs.existsSync(destDir)) fs.mkdirSync(destDir, { recursive: true });
-
   const results = [];
   for (let i = 0; i < pages.length; i++) {
     const page = pages[i];
-    console.log(`Fetching: ${page.name}`);
     try {
       const html = await fetchHtml(page.url);
-      
-      // Match the first infobox image
       const match = html.match(/class="infobox[^>]*>[\s\S]*?<img[^>]+src="([^"]+)"/i) || html.match(/<img[^>]+src="(\/\/upload\.wikimedia\.org\/wikipedia\/en\/thumb\/[^"]+)"/i);
       if (match && match[1]) {
         let imgUrl = match[1];
         if (imgUrl.startsWith('//')) imgUrl = 'https:' + imgUrl;
-        
-        // Wikipedia thumbnails can be small, try to get a larger version
-        // Usually /thumb/ is in the URL, replace the width parameter
-        // Example: /thumb/a/a1/Dune_Part_Two_poster.jpeg/220px-Dune_Part_Two_poster.jpeg
-        imgUrl = imgUrl.replace(/\/\d+px-/, '/600px-');
-        
-        const destPath = path.join(destDir, `N${i + 1}.jpg`);
-        await downloadImage(imgUrl, destPath);
-        console.log(`Downloaded ${page.name}`);
-        
-        results.push(`  { name: '${page.name}', img: '/movie-posters/N${i + 1}.jpg' }`);
-      } else {
-        console.log(`No image found for ${page.name}`);
+        results.push(`  { name: '${page.name}', img: '${imgUrl}' }`);
       }
     } catch (e) {
       console.error(`Error with ${page.name}:`, e);
     }
   }
   
-  console.log("\n--- REPLACEMENT ARRAY ---\n");
-  console.log(`const MOVIE_ITEMS = [\n${results.join(',\n')}\n];`);
+  console.log("const MOVIE_ITEMS = [");
+  console.log(results.join(',\n'));
+  console.log("];");
 }
 
 main();
