@@ -17,7 +17,7 @@ export function ContentShowcase() {
           </p>
           <div className={styles.imageWrapper}>
             <Image 
-              src="/images/sports-collage.jpg" 
+              src="/images/sports-collage.png" 
               alt="Live Sports Channels on Nexus 4K IPTV including NFL, NBA, Premier League, Champions League, F1, and NHL" 
               width={1600} 
               height={400} 
@@ -37,7 +37,7 @@ export function ContentShowcase() {
           </p>
           <div className={styles.imageWrapper}>
             <Image 
-              src="/images/movies-collage.jpg" 
+              src="/images/movies-collage.png" 
               alt="Latest VOD Movies on Nexus 4K IPTV including Oppenheimer, Spider-Man, Scream VI, and Extraction 2" 
               width={1600} 
               height={400} 
