@@ -29,14 +29,16 @@ const MOVIE_ITEMS = [
 ];
 
 const KIDS_ITEMS = [
-  { name: 'Mummies',             img: '/kids-posters/K1.png' },
-  { name: 'Finnick',             img: '/kids-posters/K2.png' },
-  { name: 'The Angry Birds Movie', img: '/kids-posters/K3.png' },
-  { name: 'Teen Titans GO!',     img: '/kids-posters/K4.png' },
-  { name: 'Kids Movie 5',        img: '/kids-posters/K5.png' },
-  { name: 'Kids Movie 6',        img: '/kids-posters/K6.png' },
-  { name: 'Kids Movie 7',        img: '/kids-posters/K7.png' },
-  { name: 'Kids Movie 8',        img: '/kids-posters/K8.png' },
+  { name: 'SpongeBob SquarePants', img: 'https://static.tvmaze.com/uploads/images/original_untouched/594/1486607.jpg' },
+  { name: 'Gravity Falls', img: 'https://static.tvmaze.com/uploads/images/original_untouched/2/6140.jpg' },
+  { name: 'Peppa Pig', img: 'https://static.tvmaze.com/uploads/images/original_untouched/569/1423757.jpg' },
+  { name: 'Miraculous Ladybug', img: 'https://static.tvmaze.com/uploads/images/original_untouched/599/1499134.jpg' },
+  { name: 'Avatar: The Last Airbender', img: 'https://static.tvmaze.com/uploads/images/original_untouched/620/1550004.jpg' },
+  { name: 'The Amazing World of Gumball', img: 'https://static.tvmaze.com/uploads/images/original_untouched/17/43096.jpg' },
+  { name: 'Bluey', img: 'https://static.tvmaze.com/uploads/images/original_untouched/512/1281879.jpg' },
+  { name: 'Adventure Time', img: 'https://static.tvmaze.com/uploads/images/original_untouched/1/4898.jpg' },
+  { name: 'Phineas and Ferb', img: 'https://static.tvmaze.com/uploads/images/original_untouched/595/1489325.jpg' },
+  { name: 'PAW Patrol', img: 'https://static.tvmaze.com/uploads/images/original_untouched/608/1521295.jpg' }
 ];
 
 export function ContentShowcase() {
