@@ -175,9 +175,10 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: var(--space-md);
-  padding: var(--space-lg);
-  background: rgba(15, 15, 20, 0.6);
+  gap: var(--space-sm);
+  padding: var(--space-md);
+  background: #ffffff;
+  border-radius: var(--radius-xl);
 }
 
 .logoGlow {
@@ -190,13 +191,13 @@
 }
 
 .logoCard:hover .logoGlow {
-  opacity: 0.15;
+  opacity: 0.3;
 }
 
 .logoImgWrap {
   position: relative;
-  width: 80px;
-  height: 80px;
+  width: 140px;
+  height: 90px;
 }
 
 .logoImg {
@@ -204,11 +205,12 @@
 }
 
 .logoLabel {
-  font-weight: 700;
-  font-size: var(--fs-md);
-  color: var(--text-primary);
+  font-weight: 800;
+  font-size: 0.85rem;
+  color: #111111;
   text-transform: uppercase;
   letter-spacing: 0.05em;
+  text-align: center;
 }
 
 @media (max-width: 768px) {

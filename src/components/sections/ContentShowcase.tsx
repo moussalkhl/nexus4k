@@ -3,16 +3,16 @@ import Image from 'next/image';
 import styles from './ContentShowcase.module.css';
 
 const SPORT_LOGOS = [
-  { name: 'Champions League', img: '/sports-logos/S2.png',  accent: '#c9a227' },
-  { name: 'NBA',              img: '/sports-logos/s1.png',  accent: '#c9082a' },
-  { name: 'Eurosport',        img: '/sports-logos/S4.png',  accent: '#0057a8' },
-  { name: 'Premier League',  img: '/sports-logos/S5.png',  accent: '#3d195b' },
-  { name: 'Sport1',           img: '/sports-logos/S3.png',  accent: '#e30613' },
-  { name: 'MLB',              img: '/sports-logos/S6.png',  accent: '#002d72' },
-  { name: 'NFL',              img: '/sports-logos/S7.png',  accent: '#013369' },
-  { name: 'LaLiga',           img: '/sports-logos/S8.png',  accent: '#fe4b44' },
-  { name: 'Bundesliga',       img: '/sports-logos/S9.png',  accent: '#d9000d' },
-  { name: 'Ligue 1',          img: '/sports-logos/S10.png', accent: '#5f7eb3' },
+  { name: 'Champions League', img: 'https://upload.wikimedia.org/wikipedia/en/b/bf/UEFA_Champions_League_logo_2.svg',  accent: '#c9a227' },
+  { name: 'NBA',              img: 'https://upload.wikimedia.org/wikipedia/en/0/03/National_Basketball_Association_logo.svg',  accent: '#c9082a' },
+  { name: 'Eurosport',        img: 'https://upload.wikimedia.org/wikipedia/commons/e/ee/Eurosport_1_logo.svg',  accent: '#0057a8' },
+  { name: 'Premier League',   img: 'https://upload.wikimedia.org/wikipedia/en/f/f2/Premier_League_Logo.svg',  accent: '#3d195b' },
+  { name: 'Sport1',           img: 'https://upload.wikimedia.org/wikipedia/commons/7/75/Sport1_logo.svg',  accent: '#e30613' },
+  { name: 'MLB',              img: 'https://upload.wikimedia.org/wikipedia/commons/a/a6/Major_League_Baseball_logo.svg',  accent: '#002d72' },
+  { name: 'NFL',              img: 'https://upload.wikimedia.org/wikipedia/en/a/a2/National_Football_League_logo.svg',  accent: '#013369' },
+  { name: 'LaLiga',           img: 'https://upload.wikimedia.org/wikipedia/commons/0/0f/LaLiga_logo_2023.svg',  accent: '#fe4b44' },
+  { name: 'Bundesliga',       img: 'https://upload.wikimedia.org/wikipedia/en/d/df/Bundesliga_logo_%282017%29.svg',  accent: '#d9000d' },
+  { name: 'Ligue 1',          img: 'https://upload.wikimedia.org/wikipedia/en/b/ba/Ligue_1_Uber_Eats.svg', accent: '#5f7eb3' },
 ];
 
 const MOVIE_ITEMS = [
