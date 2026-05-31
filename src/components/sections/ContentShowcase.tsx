@@ -16,16 +16,16 @@ const SPORT_LOGOS = [
 ];
 
 const MOVIE_ITEMS = [
-  { name: 'Dune: Part Two', img: 'https://image.tmdb.org/t/p/w500/1pdfLvkbY9ohJlCjQH2JGqq9TrU.jpg' },
-  { name: 'Deadpool & Wolverine', img: 'https://image.tmdb.org/t/p/w500/8cdWjvZQUExUUTzyp4t6EDMubfO.jpg' },
-  { name: 'Inside Out 2', img: 'https://image.tmdb.org/t/p/w500/vpnVM9B6NMmQpWeZvzRxMgG2MHe.jpg' },
+  { name: 'Dune: Part Two', img: 'https://upload.wikimedia.org/wikipedia/en/5/52/Dune_Part_Two_poster.jpeg' },
+  { name: 'Deadpool & Wolverine', img: 'https://upload.wikimedia.org/wikipedia/en/4/4c/Deadpool_%26_Wolverine_poster.jpg' },
+  { name: 'Inside Out 2', img: 'https://upload.wikimedia.org/wikipedia/en/f/f7/Inside_Out_2_poster.jpg' },
   { name: 'Shōgun', img: 'https://static.tvmaze.com/uploads/images/original_untouched/506/1265637.jpg' },
   { name: 'Fallout', img: 'https://static.tvmaze.com/uploads/images/original_untouched/599/1499142.jpg' },
-  { name: 'Oppenheimer', img: 'https://image.tmdb.org/t/p/w500/8Gxv8gSFCU0XGDykEGv7zR1n2ua.jpg' },
+  { name: 'Oppenheimer', img: 'https://upload.wikimedia.org/wikipedia/en/4/4a/Oppenheimer_%28film%29.jpg' },
   { name: 'The Last of Us', img: 'https://static.tvmaze.com/uploads/images/original_untouched/563/1409008.jpg' },
   { name: 'The Boys', img: 'https://static.tvmaze.com/uploads/images/original_untouched/619/1547768.jpg' },
   { name: 'House of the Dragon', img: 'https://static.tvmaze.com/uploads/images/original_untouched/627/1567790.jpg' },
-  { name: 'Godzilla x Kong', img: 'https://image.tmdb.org/t/p/w500/tMefBSflR6PGQLvLuPEg0rT1K1r.jpg' }
+  { name: 'Godzilla x Kong', img: 'https://upload.wikimedia.org/wikipedia/en/b/be/Godzilla_x_kong_the_new_empire_poster.jpg' }
 ];
 
 const KIDS_ITEMS = [
