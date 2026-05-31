@@ -2,8 +2,8 @@ import type { Metadata } from 'next'
 import '@/styles/globals.css'
 import { Header } from '@/components/layout/Header'
 import { Footer } from '@/components/layout/Footer'
-import { DynamicWhiteBackground } from '@/components/ui/DynamicWhiteBackground'
-import { generateOrganizationJsonLd, generateWebSiteJsonLd } from '@/seo/metadata'
+import { PremiumDarkBackground } from '@/components/ui/PremiumDarkBackground'
+import { generateOrganizationJsonLd, generateWebSiteJsonLd, generateMetadata } from '@/seo/metadata'
 import { siteConfig } from '@/config/site'
 
 import { Inter, Outfit } from 'next/font/google'
@@ -20,16 +20,15 @@ const outfit = Outfit({
   display: 'swap',
 })
 
-export const metadata: Metadata = {
+export const metadata = generateMetadata({
   title: {
-    default: 'Nexus4kTv – Nexus 4K IPTV Subscription | Free Trial',
     template: '%s | Nexus4kTv',
+    default: 'Nexus4kTv | Premium Nexus 4K IPTV Subscription',
   },
-  description: siteConfig.description,
-  metadataBase: new URL(siteConfig.url),
-  alternates: {
-    canonical: siteConfig.url,
-  },
+})
+
+export const viewport = {
+  themeColor: '#050505',
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
@@ -58,7 +57,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         />
       </head>
       <body className={`${inter.variable} ${outfit.variable}`}>
-        <DynamicWhiteBackground />
+        <PremiumDarkBackground />
         <a href="#main-content" className="sr-only" title="Skip to main content">
           Skip to main content
         </a>

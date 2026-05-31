@@ -1,0 +1,72 @@
+.container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  background-color: var(--bg-base);
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.glowTopLeft {
+  position: absolute;
+  top: -20%;
+  left: -10%;
+  width: 70vw;
+  height: 70vw;
+  background: radial-gradient(circle, rgba(14, 165, 233, 0.1) 0%, transparent 60%);
+  border-radius: 50%;
+  filter: blur(80px);
+  animation: pulseSlow 15s infinite alternate ease-in-out;
+}
+
+.glowTopRight {
+  position: absolute;
+  top: -10%;
+  right: -20%;
+  width: 60vw;
+  height: 60vw;
+  background: radial-gradient(circle, rgba(139, 92, 246, 0.08) 0%, transparent 60%);
+  border-radius: 50%;
+  filter: blur(80px);
+  animation: pulseSlow 20s infinite alternate-reverse ease-in-out;
+}
+
+.glowBottomCenter {
+  position: absolute;
+  bottom: -30%;
+  left: 20%;
+  width: 80vw;
+  height: 50vw;
+  background: radial-gradient(ellipse, rgba(56, 189, 248, 0.05) 0%, transparent 60%);
+  border-radius: 50%;
+  filter: blur(100px);
+  animation: floatSlow 25s infinite alternate ease-in-out;
+}
+
+.gridOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: 
+    linear-gradient(rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+  background-size: 50px 50px;
+  background-position: center center;
+  mask-image: radial-gradient(ellipse at center, rgba(0,0,0,0.8) 0%, transparent 70%);
+  -webkit-mask-image: radial-gradient(ellipse at center, rgba(0,0,0,0.8) 0%, transparent 70%);
+}
+
+@keyframes pulseSlow {
+  0% { opacity: 0.6; transform: scale(1); }
+  100% { opacity: 1; transform: scale(1.1); }
+}
+
+@keyframes floatSlow {
+  0% { transform: translateY(0) scale(1); }
+  100% { transform: translateY(-5%) scale(1.05); }
+}

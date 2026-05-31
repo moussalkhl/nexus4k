@@ -1,25 +1,25 @@
 .showcaseSection {
   position: relative;
   padding: var(--space-4xl) 0;
+  background-color: var(--bg-surface);
   overflow: hidden;
-  background-color: var(--bg-dark);
+  border-top: 1px solid var(--border-subtle);
+  border-bottom: 1px solid var(--border-subtle);
 }
 
 .glowBg {
   position: absolute;
-  top: 30%;
+  top: 50%;
   left: 50%;
+  width: 100%;
+  height: 100%;
   transform: translate(-50%, -50%);
-  width: 80vw;
-  height: 50vh;
-  background: radial-gradient(circle, rgba(0, 212, 255, 0.05) 0%, transparent 60%);
-  pointer-events: none;
+  background: radial-gradient(circle at center, var(--color-primary-glow) 0%, transparent 60%);
   z-index: 0;
+  pointer-events: none;
 }
 
 .container {
-  max-width: 100%;
-  margin: 0 auto;
   position: relative;
   z-index: 1;
   display: flex;
@@ -27,249 +27,73 @@
   gap: var(--space-4xl);
 }
 
-.rowContainer {
+.block {
   display: flex;
   flex-direction: column;
-  gap: var(--space-xl);
+  gap: var(--space-lg);
+  align-items: center;
+  text-align: center;
 }
 
-.rowTitle {
-  text-align: center;
+.title {
   font-family: var(--font-display);
-  font-size: clamp(var(--fs-2xl), 4vw, var(--fs-4xl));
-  font-weight: 900;
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 800;
+  color: var(--text-primary);
   text-transform: uppercase;
-  letter-spacing: 2px;
-  color: #fff;
-  margin: 0;
-  padding: 0 var(--space-md);
+  letter-spacing: 0.05em;
 }
 
 .highlight {
-  background: linear-gradient(90deg, #00FF7F, #00d4ff);
+  color: transparent;
+  background: var(--gradient-primary);
   -webkit-background-clip: text;
   background-clip: text;
-  -webkit-text-fill-color: transparent;
-  display: inline-block;
 }
 
-.carouselWrapper {
-  position: relative;
-  width: 100%;
-  overflow: hidden;
-  /* Fading edges */
-  mask-image: linear-gradient(to right, transparent, black 5%, black 95%, transparent);
-  -webkit-mask-image: linear-gradient(to right, transparent, black 5%, black 95%, transparent);
-}
-
-.carouselTrack {
-  display: flex;
-  gap: var(--space-md);
-  width: max-content;
-  padding: var(--space-md) 0;
-}
-
-.scrollLeft {
-  animation: scrollLeft 45s linear infinite;
-}
-
-.scrollRight {
-  animation: scrollRight 45s linear infinite;
-}
-
-.carouselTrack:hover {
-  animation-play-state: paused;
-}
-
-@keyframes scrollLeft {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(calc(-33.333% - (var(--space-md) / 3))); }
-}
-
-@keyframes scrollRight {
-  0% { transform: translateX(calc(-33.333% - (var(--space-md) / 3))); }
-  100% { transform: translateX(0); }
-}
-
-.card {
-  position: relative;
-  width: 280px;
-  aspect-ratio: 2 / 3;
-  border-radius: var(--radius-xl);
-  overflow: hidden;
-  cursor: pointer;
-  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
-  border: 1px solid rgba(255, 255, 255, 0.05);
-  flex-shrink: 0;
-  background: #111;
-}
-
-.card:hover {
-  transform: scale(1.05) translateY(-10px);
-  box-shadow: 0 15px 40px rgba(0, 212, 255, 0.2), 0 0 20px rgba(0, 255, 127, 0.1);
-  border-color: rgba(255, 255, 255, 0.2);
-  z-index: 10;
+.subtitle {
+  font-size: var(--fs-lg);
+  color: var(--text-secondary);
+  max-width: 600px;
 }
 
 .imageWrapper {
+  width: 100%;
+  max-width: 1200px;
   position: relative;
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  box-shadow: var(--shadow-card), 0 20px 40px rgba(0, 0, 0, 0.4);
+  border: 1px solid var(--border-subtle);
+}
+
+.imageWrapper::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
-}
-
-.cardImage {
-  object-fit: cover;
-  transition: transform 0.6s ease;
-}
-
-.card:hover .cardImage {
-  transform: scale(1.1);
-}
-
-.cardOverlay {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 60%;
-  background: linear-gradient(to top, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.4) 50%, transparent 100%);
-  display: flex;
-  align-items: flex-end;
-  padding: var(--space-lg);
-  opacity: 0;
-  transform: translateY(20px);
-  transition: all 0.3s ease;
-}
-
-.card:hover .cardOverlay {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-.cardTitle {
-  color: #fff;
-  font-weight: 700;
-  font-size: var(--fs-lg);
-  text-shadow: 0 2px 4px rgba(0,0,0,0.8);
-  font-family: var(--font-display);
-  letter-spacing: 1px;
-}
-
-/* ─── Logo Cards (Sports) ─── */
-.logoCard {
-  width: 200px;
-  height: 260px;
-  aspect-ratio: unset;
-  background: linear-gradient(160deg, #0d0d14 0%, #0a0a0f 100%) !important;
-  border-color: rgba(255, 255, 255, 0.08);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  overflow: hidden;
-  position: relative;
-  padding: 0;
-}
-
-.logoCard:hover {
-  border-color: rgba(255, 255, 255, 0.3);
-  box-shadow: 0 20px 50px rgba(0,0,0,0.8),
-              0 0 50px color-mix(in srgb, var(--accent, #fff) 35%, transparent);
-}
-
-/* Glowing accent blob behind the logo */
-.logoGlow {
-  position: absolute;
-  top: 45%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 80%;
-  height: 60%;
-  border-radius: 50%;
-  opacity: 0.1;
-  filter: blur(35px);
-  transition: opacity 0.4s ease, transform 0.4s ease;
+  background: linear-gradient(to top, rgba(10, 10, 10, 0.8) 0%, transparent 40%);
   pointer-events: none;
-  z-index: 0;
 }
 
-.logoCard:hover .logoGlow {
-  opacity: 0.22;
-  transform: translate(-50%, -50%) scale(1.4);
-}
-
-/* The image wrapper fills the top area of the card */
-.logoImgWrap {
-  position: relative;
+.collage {
   width: 100%;
-  height: 200px;
-  flex-shrink: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 1;
-  padding: 16px;
-  box-sizing: border-box;
+  height: auto;
+  display: block;
+  transition: transform 10s ease;
 }
 
-/* Use next/image fill mode — position is absolute (set by next/image),
-   object-fit: contain keeps the whole logo visible, mix-blend-mode:screen
-   blends out dark backgrounds so only the logo shows */
-.logoImg {
-  object-fit: contain !important;
-  mix-blend-mode: screen;
-  transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  padding: 12px !important;
+.imageWrapper:hover .collage {
+  transform: scale(1.05);
 }
 
-.logoCard:hover .logoImg {
-  transform: scale(1.1);
-}
-
-/* Label strip at the bottom */
-.logoLabel {
-  width: 100%;
-  padding: 8px 12px 10px;
-  color: rgba(255,255,255,0.45);
-  font-size: 0.6rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 2.5px;
-  text-align: center;
-  transition: color 0.3s;
-  flex-shrink: 0;
-  z-index: 1;
-  background: linear-gradient(to top, rgba(0,0,0,0.6), transparent);
-  border-top: 1px solid rgba(255,255,255,0.04);
-}
-
-.logoCard:hover .logoLabel {
-  color: rgba(255,255,255,0.95);
-}
-
-/* Responsive adjustments */
 @media (max-width: 768px) {
-  .card {
-    width: 200px;
+  .showcaseSection {
+    padding: var(--space-2xl) 0;
   }
-  .logoCard {
-    width: 160px;
-    height: 210px;
-  }
-  .logoImgWrap {
-    height: 160px;
-  }
-  .glowBg {
-    display: none;
-  }
-  .logoGlow {
-    display: none;
-  }
-}
-
-@media (max-width: 480px) {
-  .card {
-    width: 160px;
+  .imageWrapper {
+    border-radius: var(--radius-md);
   }
 }
