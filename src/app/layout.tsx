@@ -1,10 +1,8 @@
-import type { Metadata } from 'next'
 import '@/styles/globals.css'
 import { Header } from '@/components/layout/Header'
 import { Footer } from '@/components/layout/Footer'
 import { PremiumDarkBackground } from '@/components/ui/PremiumDarkBackground'
-import { generateOrganizationJsonLd, generateWebSiteJsonLd, generateMetadata } from '@/seo/metadata'
-import { siteConfig } from '@/config/site'
+import { generateOrganizationJsonLd, generateWebSiteJsonLd } from '@/seo/metadata'
 
 import { Inter, Outfit } from 'next/font/google'
 
@@ -20,12 +18,15 @@ const outfit = Outfit({
   display: 'swap',
 })
 
-export const metadata = generateMetadata({
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
   title: {
     template: '%s | Nexus4kTv',
     default: 'Nexus4kTv | Premium Nexus 4K IPTV Subscription',
   },
-})
+  description: 'Premium Nexus 4K IPTV subscription. Stream 30,000+ live channels, sports, movies & series in 4K/UHD.',
+}
 
 export const viewport = {
   themeColor: '#050505',
