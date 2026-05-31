@@ -20,11 +20,11 @@ const MOVIE_ITEMS = [
   { name: 'Deadpool & Wolverine', img: 'https://upload.wikimedia.org/wikipedia/en/thumb/4/4c/Deadpool_%26_Wolverine_poster.jpg/250px-Deadpool_%26_Wolverine_poster.jpg' },
   { name: 'Inside Out 2', img: 'https://upload.wikimedia.org/wikipedia/en/thumb/f/f7/Inside_Out_2_poster.jpg/250px-Inside_Out_2_poster.jpg' },
   { name: 'Shōgun', img: 'https://upload.wikimedia.org/wikipedia/en/thumb/b/b6/Sh%C5%8Dgun_%282024_miniseries%29_poster.jpg/250px-Sh%C5%8Dgun_%282024_miniseries%29_poster.jpg' },
-  { name: 'Fallout', img: 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Fallout_television_series_logo.svg/250px-Fallout_television_series_logo.svg.png' },
+  { name: 'Fallout', img: 'https://upload.wikimedia.org/wikipedia/en/thumb/f/fa/Fallout_TV_series_poster.jpg/250px-Fallout_TV_series_poster.jpg' },
   { name: 'Oppenheimer', img: 'https://upload.wikimedia.org/wikipedia/en/thumb/4/4a/Oppenheimer_%28film%29.jpg/250px-Oppenheimer_%28film%29.jpg' },
-  { name: 'The Last of Us', img: 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/The_Last_of_Us_logo.svg/250px-The_Last_of_Us_logo.svg.png' },
-  { name: 'The Boys', img: 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/The_Boys_TV_series_logo.svg/250px-The_Boys_TV_series_logo.svg.png' },
-  { name: 'House of the Dragon', img: 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/House_of_the_dragon_logo.png/250px-House_of_the_dragon_logo.png' },
+  { name: 'The Last of Us', img: 'https://upload.wikimedia.org/wikipedia/en/thumb/4/46/The_Last_of_Us_season_1_poster.jpg/250px-The_Last_of_Us_season_1_poster.jpg' },
+  { name: 'The Boys', img: 'https://upload.wikimedia.org/wikipedia/en/thumb/a/a2/The_Boys_Season_4.jpg/250px-The_Boys_Season_4.jpg' },
+  { name: 'House of the Dragon', img: 'https://upload.wikimedia.org/wikipedia/en/thumb/9/98/House_of_the_Dragon_season_1_poster.jpg/250px-House_of_the_Dragon_season_1_poster.jpg' },
   { name: 'Godzilla x Kong', img: 'https://upload.wikimedia.org/wikipedia/en/thumb/b/be/Godzilla_x_kong_the_new_empire_poster.jpg/250px-Godzilla_x_kong_the_new_empire_poster.jpg' }
 ];
 
