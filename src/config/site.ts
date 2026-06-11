@@ -9,8 +9,8 @@ export const siteConfig = {
   ogImage: '/og-image.png',
   twitterHandle: '@Nexus4KIPTV',
   email: 'support@nexus4ktv.pro',
-  phone: '+447828708540',
-  whatsappNumber: '447828708540',
+  phone: '+1 (236) 314-9469',
+  whatsappNumber: '12363149469',
   defaultWhatsappMessage: 'Hi! I am interested in the Nexus 4K IPTV subscription',
   telegramUrl: 'https://t.me/nexus4kiptv',
 } as const
@@ -55,7 +55,7 @@ export const pricingPlans = [
       '24/7 Active support',
     ],
     cta: 'Start 3 Months',
-    href: 'https://wa.me/447828708540?text=Hi!%20I%20am%20interested%20in%20the%20Nexus%204K%20IPTV%203%20Months%20subscription',
+    href: 'https://wa.me/12363149469?text=Hi!%20I%20am%20interested%20in%20the%20Nexus%204K%20IPTV%203%20Months%20subscription',
   },
   {
     id: '6-months',
@@ -74,7 +74,7 @@ export const pricingPlans = [
       '24/7 Active support',
     ],
     cta: 'Choose 6 Months',
-    href: 'https://wa.me/447828708540?text=Hi!%20I%20am%20interested%20in%20the%20Nexus%204K%20IPTV%206%20Months%20subscription',
+    href: 'https://wa.me/12363149469?text=Hi!%20I%20am%20interested%20in%20the%20Nexus%204K%20IPTV%206%20Months%20subscription',
   },
   {
     id: '12-months',
@@ -93,7 +93,7 @@ export const pricingPlans = [
       '24/7 Active support',
     ],
     cta: 'Get Yearly Plan',
-    href: 'https://wa.me/447828708540?text=Hi!%20I%20am%20interested%20in%20the%20Nexus%204K%20IPTV%2012%20Months%20subscription',
+    href: 'https://wa.me/12363149469?text=Hi!%20I%20am%20interested%20in%20the%20Nexus%204K%20IPTV%2012%20Months%20subscription',
   },
 ] as const
 
