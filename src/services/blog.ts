@@ -22,12 +22,12 @@ const BLOG_POSTS: BlogPost[] = [
         "headline": "What Internet Speed is Required for 4K IPTV Streaming in 2026?",
         "description": "Stop buffering and freezing. Discover the exact minimum internet speed required for 4K IPTV streaming and how live TV bandwidth differs from Netflix.",
         "image": "https://nexus4ktv.pro/images/blog/iptv-speed-test.png",
-        "author": { "@type": "Person", "name": "Tech Review Team" },
+        "author": { "@type": "Person", "name": "Tech Review Team", "url": "https://nexus4ktv.pro/about", "sameAs": ["https://nexus4ktv.pro"] },
         "datePublished": "2026-05-28T14:00:00Z",
         "dateModified": "2026-05-28T14:00:00Z",
         "publisher": {
           "@type": "Organization",
-          "name": "Nexus4kTV",
+          "name": "Nexus 4K IPTV",
           "logo": {
             "@type": "ImageObject",
             "url": "https://nexus4ktv.pro/logo.png"
@@ -110,12 +110,12 @@ const BLOG_POSTS: BlogPost[] = [
         "headline": "TiviMate Premium Setup Guide: 2026 Complete Walkthrough",
         "description": "The ultimate TiviMate Premium setup 2026 guide. Learn how to install TiviMate on Firestick, unlock Premium, and seamlessly connect your Nexus 4K IPTV via Xtream Codes.",
         "image": "https://nexus4ktv.pro/images/blog/tivimate-premium-setup-hero.png",
-        "author": { "@type": "Person", "name": "Tech Review Team" },
+        "author": { "@type": "Person", "name": "Tech Review Team", "url": "https://nexus4ktv.pro/about", "sameAs": ["https://nexus4ktv.pro"] },
         "datePublished": "2026-05-28T10:00:00Z",
         "dateModified": "2026-05-28T10:00:00Z",
         "publisher": {
           "@type": "Organization",
-          "name": "Nexus4kTV",
+          "name": "Nexus 4K IPTV",
           "logo": {
             "@type": "ImageObject",
             "url": "https://nexus4ktv.pro/logo.png"
@@ -188,12 +188,12 @@ const BLOG_POSTS: BlogPost[] = [
         "headline": "Best VPN for IPTV in 2026: Stop Buffering & Throttling",
         "description": "Discover the best VPN for IPTV in 2026. Stop ISP throttling, fix buffering, and secure your Nexus 4K IPTV streaming with our top-rated VPN picks.",
         "image": "https://nexus4ktv.pro/images/blog/best-vpn-iptv-hero.png",
-        "author": { "@type": "Person", "name": "Tech Review Team" },
+        "author": { "@type": "Person", "name": "Tech Review Team", "url": "https://nexus4ktv.pro/about", "sameAs": ["https://nexus4ktv.pro"] },
         "datePublished": "2026-05-23T10:00:00Z",
         "dateModified": "2026-05-23T10:00:00Z",
         "publisher": {
           "@type": "Organization",
-          "name": "Nexus4kTV",
+          "name": "Nexus 4K IPTV",
           "logo": {
             "@type": "ImageObject",
             "url": "https://nexus4ktv.pro/logo.png"
@@ -327,12 +327,12 @@ const BLOG_POSTS: BlogPost[] = [
         "headline": "IPTV Smarters Pro Setup: 2026 Complete Guide",
         "description": "Learn the complete IPTV Smarters Pro setup process in 2026. Follow our expert guide to configure your Nexus4kTV subscription and start streaming in minutes.",
         "image": "https://nexus4ktv.pro/images/blog/iptv-smarters-pro-setup-hero-v2.webp",
-        "author": { "@type": "Person", "name": "Tech Review Team" },
+        "author": { "@type": "Person", "name": "Tech Review Team", "url": "https://nexus4ktv.pro/about", "sameAs": ["https://nexus4ktv.pro"] },
         "datePublished": "2026-05-13T11:00:00Z",
         "dateModified": "2026-05-13T11:00:00Z",
         "publisher": {
           "@type": "Organization",
-          "name": "Nexus4kTV",
+          "name": "Nexus 4K IPTV",
           "logo": {
             "@type": "ImageObject",
             "url": "https://nexus4ktv.pro/logo.png"
@@ -472,7 +472,7 @@ const BLOG_POSTS: BlogPost[] = [
         "headline": "How to Fix IPTV Buffering in 2026: 5 Expert Steps",
         "description": "Learn how to fix IPTV buffering instantly in 2026. Discover expert tips on VPNs, routers, and apps to ensure a seamless Nexus 4K IPTV experience.",
         "image": "https://nexus4ktv.pro/images/blog/how-to-fix-iptv-buffering-hero.webp",
-        "author": { "@type": "Person", "name": "Tech Review Team" },
+        "author": { "@type": "Person", "name": "Tech Review Team", "url": "https://nexus4ktv.pro/about", "sameAs": ["https://nexus4ktv.pro"] },
         "datePublished": "2026-05-13T10:00:00Z",
         "dateModified": "2026-05-13T10:00:00Z",
         "publisher": {
@@ -615,7 +615,7 @@ const BLOG_POSTS: BlogPost[] = [
         "headline": "Best IPTV Players for 4K Streaming in 2026: Top 5 Picks",
         "description": "Discover the best IPTV players for 4K streaming in 2026. We ranked and tested the top apps for buffer-free UHD playback and EPG loading. Get started today!",
         "image": "https://nexus4ktv.pro/images/blog/best-iptv-players-4k-hero.webp",
-        "author": { "@type": "Person", "name": "Tech Review Team" },
+        "author": { "@type": "Person", "name": "Tech Review Team", "url": "https://nexus4ktv.pro/about", "sameAs": ["https://nexus4ktv.pro"] },
         "datePublished": "2026-04-02T10:00:00Z",
         "dateModified": "2026-05-01T12:00:00Z",
         "publisher": {
@@ -760,7 +760,7 @@ const BLOG_POSTS: BlogPost[] = [
         "headline": "How to Setup IPTV on Firestick in 2026: Step-by-Step Guide",
         "description": "Learn exactly how to setup IPTV on any Amazon Firestick model in 2026. Follow our expert 5-minute tutorial to unlock 30,000+ channels in 4K quality.",
         "image": "https://nexus4ktv.pro/images/blog/firestick-setup-hero.webp",
-        "author": { "@type": "Person", "name": "Tech Review Team" },
+        "author": { "@type": "Person", "name": "Tech Review Team", "url": "https://nexus4ktv.pro/about", "sameAs": ["https://nexus4ktv.pro"] },
         "datePublished": "2026-04-03T10:00:00Z",
         "dateModified": "2026-05-01T12:00:00Z",
         "publisher": {
@@ -899,7 +899,7 @@ const BLOG_POSTS: BlogPost[] = [
         "headline": "IPTV vs Cable TV in 2026: The Complete Comparison",
         "description": "An honest, data-driven comparison of IPTV and traditional cable TV covering real costs, channel availability, and quality in 2026.",
         "image": "https://nexus4ktv.pro/images/blog/iptv-vs-cable-hero.webp",
-        "author": { "@type": "Person", "name": "Tech Review Team" },
+        "author": { "@type": "Person", "name": "Tech Review Team", "url": "https://nexus4ktv.pro/about", "sameAs": ["https://nexus4ktv.pro"] },
         "datePublished": "2026-04-04T10:00:00Z",
         "dateModified": "2026-04-30T22:00:00Z"
       }
@@ -1007,7 +1007,7 @@ const BLOG_POSTS: BlogPost[] = [
         "headline": "Setup IPTV on MAG Box: 2026 Complete Step-by-Step Guide",
         "description": "Set up Nexus 4K IPTV on any MAG box in under 10 minutes. Portal URL, MAC address, and troubleshooting - works on all models. Get your premium 4K streaming fix now!",
         "image": "https://nexus4ktv.pro/images/blog/mag-box-setup-hero.webp",
-        "author": { "@type": "Person", "name": "Tech Review Team" },
+        "author": { "@type": "Person", "name": "Tech Review Team", "url": "https://nexus4ktv.pro/about", "sameAs": ["https://nexus4ktv.pro"] },
         "datePublished": "2026-04-20T10:00:00Z",
         "dateModified": "2026-05-01T12:00:00Z"
       }
@@ -1114,7 +1114,7 @@ const BLOG_POSTS: BlogPost[] = [
         "headline": "Watch IPTV on Apple TV: Best 4K Apps & Setup Guide 2026",
         "description": "Watch Nexus 4K IPTV on Apple TV in minutes. We cover the best tvOS apps like iPlayTV, GSE Smart IPTV, and Smarters with a full guide. Get your 4K free trial now!",
         "image": "https://nexus4ktv.pro/images/blog/apple-tv-iptv-hero.webp",
-        "author": { "@type": "Person", "name": "Tech Review Team" },
+        "author": { "@type": "Person", "name": "Tech Review Team", "url": "https://nexus4ktv.pro/about", "sameAs": ["https://nexus4ktv.pro"] },
         "datePublished": "2026-04-20T11:00:00Z",
         "dateModified": "2026-05-01T12:00:00Z"
       }
@@ -1221,7 +1221,7 @@ const BLOG_POSTS: BlogPost[] = [
         "headline": "Developer Options Missing on Fire TV: 2026 Quick Fix",
         "description": "Fire TV Developer Options missing after an update? There are two completely different causes — one is fixable in 30 seconds. Restore your advanced settings now!",
         "image": "https://nexus4ktv.pro/images/blog/firetv-developer-options-2026.png",
-        "author": { "@type": "Person", "name": "Tech Review Team" },
+        "author": { "@type": "Person", "name": "Tech Review Team", "url": "https://nexus4ktv.pro/about", "sameAs": ["https://nexus4ktv.pro"] },
         "datePublished": "2026-04-20T12:00:00Z",
         "dateModified": "2026-05-01T12:00:00Z"
       }
@@ -1321,7 +1321,7 @@ const BLOG_POSTS: BlogPost[] = [
         "headline": "Best IPTV Players for Android TV (2026 Ranked & Tested)",
         "description": "Top IPTV players for Android TV in 2026. We tested apps like Tivimate and Sparkle TV for 4K streaming, EPG quality, and performance. Get your free trial today!",
         "image": "https://nexus4ktv.pro/images/blog/android-tv-players-2026.png",
-        "author": { "@type": "Person", "name": "Tech Review Team" },
+        "author": { "@type": "Person", "name": "Tech Review Team", "url": "https://nexus4ktv.pro/about", "sameAs": ["https://nexus4ktv.pro"] },
         "datePublished": "2026-04-17T10:00:00Z",
         "dateModified": "2026-05-01T12:00:00Z",
         "publisher": {
@@ -1450,12 +1450,12 @@ const BLOG_POSTS: BlogPost[] = [
         "headline": "Best IPTV Service for Smart TV in 2026: Full Setup & Streaming Guide",
         "description": "Looking for the best IPTV for Smart TV in 2026? We cover Samsung, LG, Sony, and Android TV setup, the top apps, and how to get 30,000+ channels in 4K. Free trial available.",
         "image": "https://nexus4ktv.pro/images/blog/best-iptv-smart-tv-2026.png",
-        "author": { "@type": "Person", "name": "Tech Review Team" },
+        "author": { "@type": "Person", "name": "Tech Review Team", "url": "https://nexus4ktv.pro/about", "sameAs": ["https://nexus4ktv.pro"] },
         "datePublished": "2026-05-07T10:00:00Z",
         "dateModified": "2026-05-07T10:00:00Z",
         "publisher": {
           "@type": "Organization",
-          "name": "Nexus4kTV",
+          "name": "Nexus 4K IPTV",
           "logo": {
             "@type": "ImageObject",
             "url": "https://nexus4ktv.pro/logo.png"
@@ -1665,7 +1665,7 @@ const BLOG_POSTS: BlogPost[] = [
         "headline": "Best IPTV Service for USA in 2026: The Ultimate Buyer's Guide",
         "description": "Looking for the best IPTV service in the USA for 2026? We compare the top providers for US sports, local channels, reliability, and price. Find your perfect plan today.",
         "image": "https://nexus4ktv.pro/images/blog/best-iptv-service-usa-2026.png",
-        "author": { "@type": "Person", "name": "Tech Review Team" },
+        "author": { "@type": "Person", "name": "Tech Review Team", "url": "https://nexus4ktv.pro/about", "sameAs": ["https://nexus4ktv.pro"] },
         "datePublished": "2026-05-07T10:00:00Z",
         "dateModified": "2026-05-07T10:00:00Z",
         "publisher": {
@@ -1918,7 +1918,7 @@ const BLOG_POSTS: BlogPost[] = [
         "headline": "How to Watch IPTV on Roku in 2026: Complete Setup Guide",
         "description": "Want to watch IPTV on Roku in 2026? Discover the best methods, apps, and workarounds to get 30,000+ live channels on your Roku device today. Full step-by-step guide.",
         "image": "https://nexus4ktv.pro/images/blog/roku-iptv-2026.png",
-        "author": { "@type": "Person", "name": "Tech Review Team" },
+        "author": { "@type": "Person", "name": "Tech Review Team", "url": "https://nexus4ktv.pro/about", "sameAs": ["https://nexus4ktv.pro"] },
         "datePublished": "2026-05-07T12:00:00Z",
         "dateModified": "2026-05-07T12:00:00Z",
         "publisher": {
@@ -2154,7 +2154,7 @@ const BLOG_POSTS: BlogPost[] = [
         "headline": "How to Watch UFC Freedom 250 at the White House Live: Full Event Guide (June 14)",
         "description": "UFC Freedom 250 at the White House on June 14 features Topuria vs Gaethje and Pereira vs Gane. Here's how to watch every fight live in 4K without Paramount+ blackouts.",
         "image": "https://nexus4ktv.pro/images/blog/ufc-freedom-250-white-house-2026.jpg",
-        "author": { "@type": "Person", "name": "Tech Review Team" },
+        "author": { "@type": "Person", "name": "Tech Review Team", "url": "https://nexus4ktv.pro/about", "sameAs": ["https://nexus4ktv.pro"] },
         "datePublished": "2026-05-07T16:00:00Z",
         "dateModified": "2026-05-07T16:00:00Z",
         "publisher": {
@@ -2443,7 +2443,7 @@ const BLOG_POSTS: BlogPost[] = [
         "headline": "How to Watch IPTV on VLC in 2026: The Complete Setup Guide",
         "description": "Watch IPTV on VLC Media Player in 2026 with our step-by-step guide. Load M3U playlists, fix buffering, and stream 30,000+ live channels in 4K. No extra app needed.",
         "image": "https://nexus4ktv.pro/images/blog/vlc-iptv-setup-2026.png",
-        "author": { "@type": "Person", "name": "Tech Review Team" },
+        "author": { "@type": "Person", "name": "Tech Review Team", "url": "https://nexus4ktv.pro/about", "sameAs": ["https://nexus4ktv.pro"] },
         "datePublished": "2026-05-10T10:00:00Z",
         "dateModified": "2026-05-10T10:00:00Z",
         "publisher": {
@@ -2666,7 +2666,7 @@ const BLOG_POSTS: BlogPost[] = [
         "headline": "How to Watch IPTV on iPhone and iPad in 2026: Full Setup Guide",
         "description": "Watch IPTV on iPhone and iPad in 2026 with the best iOS apps. We cover IPTV Smarters, GSE Smart IPTV, and iPlayTV setup with your M3U or Xtream Codes. Free trial included.",
         "image": "https://nexus4ktv.pro/images/blog/iptv-iphone-ipad-2026.png",
-        "author": { "@type": "Person", "name": "Tech Review Team" },
+        "author": { "@type": "Person", "name": "Tech Review Team", "url": "https://nexus4ktv.pro/about", "sameAs": ["https://nexus4ktv.pro"] },
         "datePublished": "2026-05-10T11:00:00Z",
         "dateModified": "2026-05-10T11:00:00Z",
         "publisher": {
@@ -2912,7 +2912,7 @@ const BLOG_POSTS: BlogPost[] = [
         "headline": "Why Is My IPTV Buffering in 2026? 5 Quick Fixes for 4K Streams",
         "description": "Why is your IPTV buffering? In 2026, the cause is usually ISP throttling, network caching, or an overloaded server. Learn how to fix live TV buffering permanently.",
         "image": "https://nexus4ktv.pro/images/blog/iptv-buffering-fix-2026.png",
-        "author": { "@type": "Person", "name": "Tech Review Team" },
+        "author": { "@type": "Person", "name": "Tech Review Team", "url": "https://nexus4ktv.pro/about", "sameAs": ["https://nexus4ktv.pro"] },
         "datePublished": "2026-05-10T12:00:00Z",
         "dateModified": "2026-05-10T12:00:00Z",
         "publisher": {

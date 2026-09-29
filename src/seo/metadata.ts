@@ -9,6 +9,8 @@ interface GenerateMetadataOptions {
   ogImage?: string
   ogType?: 'website' | 'article'
   keywords?: string[]
+  publishedTime?: string
+  modifiedTime?: string
 }
 
 /**
@@ -23,6 +25,8 @@ export function generateMetadata({
   ogImage = siteConfig.ogImage,
   ogType = 'website',
   keywords = [],
+  publishedTime,
+  modifiedTime,
 }: GenerateMetadataOptions): Metadata {
   const metaTitle = typeof title === 'object' 
     ? title.absolute 
@@ -59,6 +63,8 @@ export function generateMetadata({
       description,
       url: canonicalUrl,
       siteName: siteConfig.name,
+      publishedTime,
+      modifiedTime,
       images: [
         {
           url: ogImage,

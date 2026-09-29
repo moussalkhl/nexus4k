@@ -22,8 +22,8 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: {
-    template: '%s | Nexus4kTv',
-    default: 'Nexus4kTv | Premium Nexus 4K IPTV Subscription',
+    template: '%s | Nexus 4K IPTV',
+    default: 'Nexus 4K IPTV | Premium Nexus 4K IPTV Subscription',
   },
   description: 'Premium Nexus 4K IPTV subscription. Stream 30,000+ live channels, sports, movies & series in 4K/UHD.',
 }

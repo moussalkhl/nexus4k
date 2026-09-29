@@ -24,6 +24,8 @@ export async function generateMetadata({ params }: BlogPostPageProps): Promise<M
     canonical: `/blog/${post.slug}`,
     ogType: 'article',
     ogImage: post.coverImage,
+    publishedTime: post.publishedAt,
+    modifiedTime: post.updatedAt || post.publishedAt,
   })
 }
 
@@ -72,7 +74,12 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
     '@type': 'Article',
     headline: post.title,
     description: post.excerpt,
-    author: [{ '@type': 'Person', name: post.author }],
+    author: [{ 
+      '@type': 'Person', 
+      name: post.author,
+      url: 'https://nexus4ktv.pro/about',
+      sameAs: ['https://nexus4ktv.pro']
+    }],
     datePublished: post.publishedAt,
     dateModified: post.updatedAt || post.publishedAt,
   }

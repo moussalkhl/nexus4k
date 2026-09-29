@@ -1,10 +1,10 @@
 // ─── Site Configuration ─────────────────────────────────────────────────────
 
 export const siteConfig = {
-  name: 'Nexus4kTv',
+  name: 'Nexus 4K IPTV',
   tagline: 'Stream Everything. Anywhere. Anytime.',
   description:
-    'Nexus4kTv: Premium Nexus 4K IPTV subscription with free trial. Stream 30,000+ live channels, sports, movies & series in 4K/UHD. Trusted by 20k+ users.',
+    'Nexus 4K IPTV: Premium Nexus 4K IPTV subscription with free trial. Stream 30,000+ live channels, sports, movies & series in 4K/UHD. Trusted by 20k+ users.',
   url: process.env.NEXT_PUBLIC_SITE_URL || 'https://nexus4ktv.pro',
   ogImage: '/og-image.png',
   twitterHandle: '@Nexus4KIPTV',
