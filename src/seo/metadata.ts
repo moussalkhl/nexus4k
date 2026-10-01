@@ -112,6 +112,17 @@ export function generateWebSiteJsonLd() {
     '@type': 'WebSite',
     url: 'https://nexus4ktv.pro',
     name: 'Nexus 4K IPTV',
+    author: {
+      '@type': 'Organization',
+      name: 'Nexus 4K IPTV',
+      url: 'https://nexus4ktv.pro',
+      sameAs: [
+        'https://twitter.com/Nexus4KIPTV',
+        'https://t.me/nexus4kiptv'
+      ]
+    },
+    datePublished: '2026-01-01T08:00:00Z',
+    dateModified: '2026-10-01T12:00:00Z',
     potentialAction: {
       '@type': 'SearchAction',
       target: 'https://nexus4ktv.pro/search?q={search_term_string}',
