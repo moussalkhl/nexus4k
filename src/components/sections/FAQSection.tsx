@@ -108,7 +108,7 @@ export function FAQSection() {
                   
                   <div className={`${styles.answerWrapper} ${isActive ? styles.answerOpen : ''}`}>
                     <div className={styles.answerInner}>
-                      <p className={styles.answer} dangerouslySetInnerHTML={{ __html: item.answer }} />
+                      <div className={styles.answer} dangerouslySetInnerHTML={{ __html: item.answer }} />
                     </div>
                   </div>
                 </div>
