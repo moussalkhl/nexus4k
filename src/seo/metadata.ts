@@ -45,6 +45,10 @@ export function generateMetadata({
     metadataBase: new URL(siteConfig.url),
     alternates: {
       canonical: canonicalUrl,
+      languages: {
+        'x-default': canonicalUrl,
+        'en-US': canonicalUrl,
+      },
     },
     robots: {
       index: !noindex,
@@ -95,7 +99,10 @@ export function generateOrganizationJsonLd() {
     name: 'Nexus 4K IPTV',
     url: 'https://nexus4ktv.pro',
     logo: 'https://nexus4ktv.pro/logo.png',
-    sameAs: [],
+    sameAs: [
+      'https://twitter.com/Nexus4KIPTV',
+      'https://t.me/nexus4kiptv',
+    ],
   }
 }
 

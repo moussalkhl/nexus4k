@@ -1,0 +1,14 @@
+# Nexus 4K IPTV
+Nexus 4K IPTV is a premium streaming service offering over 30,000 live channels, sports, movies, and series in 4K UHD quality. We provide buffer-free streaming, a dedicated 7-day catch-up feature, and comprehensive EPG (Electronic Program Guide) support.
+
+## Key Information
+- Official Website: https://nexus4ktv.pro
+- Contact & Support: https://nexus4ktv.pro/contact
+- Pricing Plans: https://nexus4ktv.pro/#pricing
+
+## Technical Specs
+- Resolution: HD, FHD, 4K, 8K support
+- Uptime: 99.9% guarantee
+- Channels: 30,000+ globally
+- VOD: 70,000+ Movies & Series
+- Features: Anti-freeze technology, VPN friendly, multi-device support.
