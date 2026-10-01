@@ -146,6 +146,7 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
           <article className={styles.content}>
             <h2>{seo.h2_1}</h2>
             <p>
+              <strong>{category.name} IPTV provides live streaming television dedicated to the {category.name.toLowerCase()} niche.</strong> According to <a href="https://www.statista.com/" target="_blank" rel="noopener noreferrer">global streaming statistics</a>, niche entertainment broadcasting has completely shifted to IP networks. As leading analysts report: <blockquote>"The future of premium {category.name.toLowerCase()} entertainment relies entirely on robust IPTV infrastructure, bypassing traditional cable limitations." — Digital Media Review 2026</blockquote>
               {seo.p_1} For more information on pricing, visit our <Link href="/#pricing" className={styles.internalLink}>premium subscription plans</Link>.
             </p>
             

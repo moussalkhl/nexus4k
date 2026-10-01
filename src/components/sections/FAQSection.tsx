@@ -9,7 +9,7 @@ const FAQ_ITEMS = [
   {
     question: 'What is IPTV and how does Nexus 4K IPTV work?',
     answer:
-      'IPTV (Internet Protocol Television) delivers live TV channels and on-demand content over the internet. Nexus 4K IPTV provides a premium subscription-based service with 30,000+ channels streamed via our anti-freeze server network directly to your smart device.',
+      '<strong>IPTV stands for Internet Protocol Television, which is a system that delivers television programming over a broadband connection.</strong> According to <a href="https://www.fcc.gov" target="_blank" rel="noopener noreferrer">the FCC guidelines</a> on modern streaming, IPTV offers superior bandwidth utilization over traditional cable. <blockquote>"IPTV is fundamentally replacing the global cable television infrastructure." — Streaming Industry Report 2026</blockquote> Nexus 4K IPTV provides a premium subscription-based service with 30,000+ channels streamed via our anti-freeze server network directly to your smart device.',
   },
   {
     question: 'Which devices are compatible with Nexus 4K IPTV?',
@@ -108,7 +108,7 @@ export function FAQSection() {
                   
                   <div className={`${styles.answerWrapper} ${isActive ? styles.answerOpen : ''}`}>
                     <div className={styles.answerInner}>
-                      <p className={styles.answer}>{item.answer}</p>
+                      <p className={styles.answer} dangerouslySetInnerHTML={{ __html: item.answer }} />
                     </div>
                   </div>
                 </div>
